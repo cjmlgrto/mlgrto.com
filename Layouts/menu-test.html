@@ -6,6 +6,53 @@
 
 		<style>
 
+		body {
+			font-family: "Lato";
+			background-color: #05131E;
+			color: #1F95C1;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		h1 {
+			font-size: 24px;
+		}
+
+		a {
+			color: #73D5E9;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		header {
+			max-width: 880px;
+			margin: 48px auto;
+		}
+
+		header a:after {
+			content: attr(title);
+			display: block;
+			font-size: 13px;
+			color: #7B72E9;
+			letter-spacing: 2px;
+			line-height: 16px;
+			text-transform: uppercase;
+			font-weight: normal;
+			margin-top: 17px;
+		}
+
+		header a {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		@media (max-width: 600px) {
+
+			header a:after {
+				display: none;
+			}
+
+		}
+
 		</style>
 	</head>
 
@@ -17,3 +64,4 @@
 				<a href="#" title="View Work">designer</a> who
 				<a href="#" title="Read Writings">blogs</a>
 			</h1>
+
