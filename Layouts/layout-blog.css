@@ -1,0 +1,130 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #05131E;
+}
+
+body {
+	font-family: "Lato", "Trebuchet MS", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 125%; /* 20px */
+	color: #555;
+}
+
+a, a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #7B72E9;
+}
+
+header {
+	max-width: 44em;
+	margin: 1em auto;
+	padding: 2em;
+}
+
+.brand {
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #1F95C1;
+}
+
+.brand a {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	color: #73D5E9;
+}
+
+.brand a:after {
+	text-transform: uppercase;
+	content: attr(title);
+	letter-spacing: 2px;
+	font-weight: normal;
+	line-height: 16px;
+	margin-top: 17px;
+	font-size: 13px;
+	display: block;
+	color: #7B72E9;
+}
+
+.brand a:nth-child(2) {
+	margin-right: -3px;
+}
+
+.brand a:hover {
+	color: #fff;
+}
+
+.special {
+	float: right;
+	margin-top: -2.5em;
+}
+
+.button a {
+	display: inline-block;
+	padding: 13px 0;
+	width: 190px;
+	text-align: center;
+	background-color: #0A263C;
+	-webkit-mask-image: url(button.svg);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #73D5E9;
+	letter-spacing: 2px;
+	line-height: 14px;
+}
+
+.menu {
+	display: none;
+	margin-top: 0.5em;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 2px;
+	margin-right: 2.5em;
+}
+
+@media (max-width: 780px) {
+	.special {
+		display: none;
+	}
+
+}
+
+@media (max-width: 580px) {
+
+	.brand a:after {
+		display: none;
+	}
+
+	.brand a:nth-child(2) {
+		margin-right: 0;
+	}
+
+	.menu {
+		display: block;
+	}
+}
+
+@media (max-width: 420px) {
+
+	header {
+		text-align: center;
+	}
+
+	.menu li:last-child {
+		margin-right: 0;
+	}
+
+}
