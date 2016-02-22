@@ -1,0 +1,267 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #05131E;
+}
+
+body {
+	font-family: "Lato", "Trebuchet MS", sans-serif;
+	line-height: 1.6;
+	font-size: 120%;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	color: #6B93A2;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+}
+
+.max-width {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 2em;
+}
+
+	.superuser {
+		font-size: 1.25em;
+		line-height: 1;
+
+		font-weight: normal;
+		color: #1F95C1;
+	}
+
+		.superuser a {
+			display: inline-block;
+			vertical-align: top;
+
+			font-weight: bold;
+			color: #73D5E9;
+		}
+
+		.superuser a:after {
+			content: attr(title);
+			margin-top: 20px;
+			display: none;
+
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: #7B72E9;
+		}
+
+		.superuser a:hover {
+			color: #fff;
+		}
+
+	.special {
+		margin-top: -44px;
+		display: none;
+		float: right;
+	}
+
+		.button a {
+			display: inline-block;
+			padding: 13px 0;
+			width: 190px;
+
+			text-align: center;
+			line-height: 14px;
+			font-size: 13px;
+
+			-webkit-mask-image: url(button.svg);
+			background-color: #0A263C;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: bold;
+			color: #73D5E9;
+		}
+
+		.button a:hover {
+			color: #fff;
+		}
+
+	@media (min-width: 880px) {
+		.superuser a:after, .special  {
+			display: block;
+		}
+			.superuser a:nth-child(2) {
+				margin-right: -4px;
+			}
+		.simple-menu {
+			display: none;
+		}
+	}
+
+	.simple-menu ul {
+		list-style: none;
+	}
+
+		.simple-menu li {
+			display: inline-block;
+			margin-right: 46px;
+			margin-top: 16px;
+
+			font-size: 13px;
+
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: bold;
+		}
+
+		.simple-menu a {
+			color: #7B72E9;
+		}
+
+
+section {
+	padding: 2em;
+}
+
+	article {
+		margin-bottom: 4em;
+	}
+
+		.permalink a {
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: bold;
+			display: inline-block;
+			color: #7B72E9;
+			margin-bottom: 10px;
+		}
+
+		.content {
+			max-width: 35.1em;
+		}
+
+		article p {
+			margin-bottom: 1.6em;
+		}
+
+		article h1 {
+			margin-bottom: 20px;
+		}
+
+		blockquote {
+			margin-left: 1em;
+			max-width: 34.1em;
+			font-style: italic;
+			color: #40BB9C;
+		}
+
+		article p a {
+			text-decoration: underline;
+			color: #7B72E9;
+		}
+
+			article a:hover {
+				color: #fff;
+			}
+
+		.text h1 {
+			font-size: 2.5em;
+			font-weight: 800;
+			line-height: 1.2;
+		}
+
+			.text h1 a {
+				color: #1C9AF8;
+			}
+
+		.quote h2 {
+			font-size: 1.6em;
+			font-style: italic;
+			font-weight: normal;
+			color: #40BB9C;
+			margin-bottom: 10px;
+		}
+
+			.lead {
+				color: #1F95C1;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+
+		.link h1 {
+			font-size: 1.6em;
+			font-style: italic;
+			text-decoration: underline;
+		}
+
+			.link h1 a {
+				color: #7B72E9;
+			}
+
+		.vwrap {
+			height: 0;
+			width: 100%;
+			float: none;
+			position: relative;
+			padding-bottom: 56.25%;
+			margin-bottom: 20px;
+		}
+
+			.vwrap iframe {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+
+
+
+@media (max-width: 568px) {
+	header {
+		background: rgba(0,0,0,.2);
+	}
+		.simple-menu li {
+			display: block;
+		}
+}
+
+
+@media (max-width: 480px) {
+
+	header, section {
+		padding: 1em;
+	}
+
+		.superuser {
+			margin-bottom: 1em;
+			line-height: 1.4;
+		}
+
+		.special {
+			margin-top: .5em;
+			display: block;
+			float: none;
+		}
+
+		.simple-menu {
+			margin-top: 1em;
+		}
+
+		.simple-menu li {
+			margin-top: .5em;
+			margin-right: 0;
+			padding: .5em 0;
+		}
+
+}
+
+@media (max-width: 320px) {
+	body {
+		font-size: 100%;
+	}
+
+}
