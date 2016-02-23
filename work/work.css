@@ -1,4 +1,3 @@
-/* WORK */
 
 .projects {
 	padding: 0;
@@ -18,13 +17,20 @@
 		background-color: #092236;
 	}
 
+	.project:nth-child(3) {
+		background-color: #081E30;
+	}
+
 	.centerer {
+		margin-left: .2em;
+		position: relative;
 		display: inline-block;
 	}
 
-	.projects img {
+	.project img {
 		margin-bottom: 0;
 		user-select: none;
+		margin-left: -.2em;
 		display: inline-block;
 		vertical-align: middle;
 		pointer-events: none;
@@ -36,18 +42,12 @@
 	}
 
 #glacier {
-	position: relative;
 	padding-top: 1.2em;
 	padding-bottom: 1.2em;
 }
 
-	#glacier .centerer {
-		margin-left: .2em;
-	}
-
 	#glacier img {
 		max-width: 424px;
-		margin-left: -.2em;
 	}
 
 #eight_fit {
@@ -55,13 +55,31 @@
 	padding-bottom: 5.6em;
 }
 
-	#eight_fit .centerer {
-		margin-left: .2em;
-	}
-	
 	#eight_fit img {
-		max-width: 433px;
+		max-width: 433px
+	}
+
+#videos {
+	padding-top: 2.75em;
+	padding-bottom: 2.75em;
+}
+
+	#videos .centerer {
+		display: block;
+	}
+
+	.vid {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
 		margin-left: -.2em;
+		text-align: center;
+	}
+
+	.vid img {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 364px;
 	}
 
 @media (max-width: 960px) {
@@ -70,25 +88,63 @@
 	#eight_fit img {
 		max-width: 50%;
 	}
+
+	.vid img {
+		max-width: 100%;
+	}
+
 }
 
 @media (max-width: 568px) {
 
-	#glacier {
+	.project {
+		padding: 1em;
+	}
+
+	.centerer {
 		margin-left: 0;
 	}
 
-		#glacier img {
-			margin-left: 0;
-			max-width: 100%;
-			margin-bottom: 4px;
-		}
+	#glacier {
+		padding: 1em;
+	}
 
-		#glacier img:nth-child(even) {
-			position: relative;
-			margin-left: -.75em;
-		}
+	#eight_fit {
+		padding: 2em 1em 1em;
+	}
 
+	#videos {
+		padding: 2em 1em 0;
+	}
+
+	#glacier img,
+	#eight_fit img,
+	#videos img {
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	#eight_fit img {
+		margin-bottom: 12px;
+	}
+
+	.vid {
+		width: auto;
+		max-width: 364px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	#glacier img:nth-child(3),
+	#glacier img:nth-child(4) {
+		display: none;
+	}
+
+	#glacier img:nth-child(even),
+	#eight_fit img:nth-child(even) {
+		position: relative;
+		margin-left: -.75em;
+	}
 }
 
 @media (max-width: 480px) {
