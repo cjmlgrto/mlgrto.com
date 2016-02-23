@@ -33,6 +33,7 @@ body {
 	article ul,
 	article ol
 	 {
+	 	display: block;
 		max-width: 100%;
 		margin-bottom: 20px;
 	}
@@ -246,7 +247,6 @@ section {
 
 footer {
 	padding: 1em 2em 2em;
-	background-color: rgba(0,0,0,.2);
 }
 
 	footer a:hover {
@@ -264,7 +264,8 @@ footer {
 
 @media (max-width: 568px) {
 
-	header {
+	header,
+	footer {
 		background-color: rgba(0,0,0,.2);
 	}
 

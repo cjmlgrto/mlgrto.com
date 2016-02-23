@@ -1,0 +1,149 @@
+<!-- Tumblr Theme -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>{Title}{block:PostTitle} — {PostTitle}{/block:PostTitle}</title>
+		<meta charset="utf-8">
+		<meta name="author" content="CJ Melegrito">
+		<meta name="viewport" content="inital-scale=1">
+		<meta name="description" content="CJ Melegrito is a designer who blogs.">
+		<link rel="shortcut icon" href="">
+		<link rel="apple-touch-icon" href="">
+		<link rel="stylesheet" href="/static/style.css">
+		<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+		<meta name="twitter:card" content="summary_large_image"/>
+		<meta name="twitter:site" content="@cjmlgrto"/>
+		<meta name="twitter:creator" content="@cjmlgrto"/>
+		<meta name="twitter:title" content="Carlos Melegrito's Website"/>
+		<meta name="twitter:description" content="Carlos is a designer who blogs."/>
+		<meta name="twitter:image" content=""/>
+
+		<meta property="og:title" content="Carlos Melegrito's Website"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="Carlos is a designer who blogs."/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		
+		<style>{CustomCSS}</style>
+	</head>
+
+	<body class="blog">
+		<header>
+			<div class="container">
+				<h1 class="superuser">
+					<a href="/info" title="More About Carlos">Carlos Melegrito</a> is a 
+					<a href="/work" title="View Work">designer</a> who
+					<a href="/blog" title="Read Writings">blogs</a>
+				</h1>
+
+				<div class="subscribe button">
+					<a href="/follow" title="Follow Carlos">Follow on Twitter</a> 
+				</div>
+
+				<nav class="menu">
+					<ul>
+						<li><a href="/info" title="More About Carlos">More About Carlos</a></li>
+						<li><a href="/work" title="View Work">View Work</a></li>
+						<li><a href="/blog" title="Read Writings">Read Writings</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<section>
+			<div class="container">
+			{block:posts}
+
+				{block:text}
+				<article class="text">
+					{block:date}<a href="{permalink}" class="permalink">{Month} {DayOfMonth} {Year}</a>{/block:date}
+					{block:title}<h1 class="post-title"><a href="{permalink}">{title}</a></h1>{/block:title}
+					{body}
+				</article>
+				{/block:text}
+
+				{block:photo}
+				<article class="photo">
+					{block:date}<a href="{permalink}" class="permalink">{Month} {DayOfMonth} {Year}</a>{/block:date}
+					{linkopentag}<img class="photo-title" src="{photoURL-highres}" alt="{PhotoAlt}"/>{linkclosetag}
+					{block:caption}{caption}{block:caption}
+				</article>
+				{/block:photo}
+
+				{block:quote}
+				<article class="quote">
+					{block:date}<a href="{permalink}" class="permalink">{Month} {DayOfMonth} {Year}</a>{/block:date}
+					<h2 class="quote-title">{quote}</h2>
+					{block:source}{source}{/block:source}
+				</article>
+				{/block:quote}
+
+				{block:link}
+				<article class="link">
+					{block:date}<a href="{permalink}" class="permalink">{Month} {DayOfMonth} {Year}</a>{/block:date}
+					<h1 class="link-title"><a href="{url}">{name}</a></h1>
+					{block:description}{description}{/block:description}
+				</article>
+				{/block:link}
+
+				{block:video}
+				<article class="video">
+					{block:date}<a href="{permalink}" class="permalink">{Month} {DayOfMonth} {Year}</a>{/block:date}
+					<div class="embed">{Video-700}</div>
+					{block:caption}{caption}{/block:caption}
+				</article>
+				{/block:video}
+
+			{/block:posts}
+
+			{block:pagination}
+				<div class="pagination">
+					{block:nextpage}
+					<div class="button">
+						<a href="{nextpage}">View Older Posts</a>
+					</div>
+					{/block:nextpage}
+					{block:previouspage}
+					<div class="button">
+						<a href="{previouspage}">View Newer Posts</a>
+					</div>
+					{/block:previouspage}
+				</div>
+			{/block:pagination}
+
+			{block:permalinkPage}
+				<div class="pagination">
+					{block:nextpage}
+					<div class="button">
+						<a href="#">Back to Top</a>
+					</div>
+					{/block:nextpage}
+					{block:previouspage}
+					<div class="button">
+						<a href="/blog">Front Page</a>
+					</div>
+					{/block:previouspage}
+				</div>
+			{/block:permalinkPage}
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<nav class="menu">
+					<ul>
+						<li><a href="/info" title="More About Carlos">About</a></li>
+						<li><a href="/work" title="View Work">Work</a></li>
+						<li><a href="/blog" title="Read Writings">Blog</a></li>
+					</ul>
+				</nav>
+
+				<div class="copyright">
+					© Carlos Melegrito
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
