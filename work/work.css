@@ -9,6 +9,13 @@
 		text-align: center;
 	}
 
+	.project h1 {
+		color: #1C9AF8;
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		display: none;
+	}
+
 	.project:nth-child(1) {
 		background-color: #0A263C;
 	}
@@ -23,6 +30,14 @@
 
 	.project:nth-child(4) {
 		background-color: #071A2A;
+	}
+
+	.project:nth-child(5) {
+		background-color: #061624;
+	}
+
+	.project:nth-child(6) {
+		background-color: #051421;
 	}
 
 	.centerer {
@@ -100,6 +115,77 @@
 		max-width: 306px;
 	}
 
+#logos {
+	padding-top: 3.95em;
+	padding-bottom: 3.95em;
+}
+
+	#logos img:nth-child(1) {
+		max-width: 154px;
+	}
+
+	#logos img:nth-child(2) {
+		max-width: 295px;
+		margin: 0 3em;
+	}
+
+	#logos img:nth-child(3) {
+		max-width: 162px;
+	}
+
+#misc {
+	padding-top: 4.65em;
+	padding-bottom: 4.65em;
+}
+
+	#misc .centerer {
+		width: 100%;
+	}
+
+	.tile {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: -.2em;
+		width: 50%;
+	}
+
+	.tile a {
+		display: block;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+#collabs {
+	padding-top: 2.125em;
+	padding-bottom: 2.125em;
+}
+
+	#collabs img {
+		margin: 1.5em 3em;
+	}
+
+	.bohemian {
+		max-width: 306px;
+	}
+
+	.industry {
+		max-width: 268px;
+	}
+
+	.envato {
+		max-width: 224px;
+	}
+
+	.sketchcasts {
+		max-width: 257px;
+	}
+
 @media (max-width: 960px) {
 
 	#glacier img,
@@ -119,6 +205,21 @@
 	#folders img:nth-child(2)  {
 		max-width: 36%;
 	}
+
+	#logos img:nth-child(1) {
+		max-width: 20%;
+	}
+
+	#logos img:nth-child(2) {
+		max-width: 40%;
+		margin: 0 2em;
+	}
+
+	#logos img:nth-child(3) {
+		max-width: 20%;
+	}
+
+
 
 }
 
@@ -156,9 +257,18 @@
 		padding: 1.5em 1em;
 	}
 
+	#logos {
+		padding: 1.5em 1em 0;
+	}
+
+	#collabs {
+		padding: 1.5em 1em;
+	}
+
 	#glacier img,
 	#eight_fit img,
-	#videos img {
+	#videos img,
+	#logos img {
 		margin-left: 0;
 		max-width: 100%;
 	}
@@ -183,6 +293,28 @@
 
 	#folders img:nth-child(2)  {
 		max-width: 95%;
+	}
+
+	#logos img {
+		display: block;
+		margin: 0 auto 1em;
+	}
+
+	#logos img:nth-child(1) {
+		max-width: 40%;
+	}
+
+	#logos img:nth-child(2) {
+		max-width: 80%;
+		margin: 0 auto 1em;
+	}
+
+	#logos img:nth-child(3) {
+		max-width: 40%;
+	}
+
+	#collabs img {
+		margin: 1.5em 0;
 	}
 
 	#glacier img:nth-child(3),

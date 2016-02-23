@@ -168,12 +168,12 @@ section {
 		display: inline-block;
 	}
 
-	article a {
+	section a {
 		color: #7B72E9;
 		text-decoration: underline;
 	}
 
-	article a:hover {
+	section a:hover {
 		color: #FFF;
 	}
 
