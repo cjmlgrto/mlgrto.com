@@ -311,9 +311,11 @@ footer {
 	section,
 	footer {
 		padding: 1em;
+		text-align: center;
 	}
 
 		.superuser {
+			font-size: 1.5em;
 			line-height: 1.4;
 			margin-bottom: 1em;
 		}
@@ -322,6 +324,10 @@ footer {
 			float: none;
 			display: block;
 			margin: .5em 0 1em;
+		}
+
+		.menu li {
+			margin-right: 0;
 		}
 
 	.pagination .button {

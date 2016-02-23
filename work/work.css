@@ -21,6 +21,10 @@
 		background-color: #081E30;
 	}
 
+	.project:nth-child(4) {
+		background-color: #071A2A;
+	}
+
 	.centerer {
 		margin-left: .2em;
 		position: relative;
@@ -82,6 +86,20 @@
 		max-width: 364px;
 	}
 
+#folders {
+	padding-top: 5.5em;
+	padding-bottom: 5.5em;
+}
+
+	#folders img:nth-child(1) {
+		max-width: 486px;
+		margin-right: 54px;
+	}
+
+	#folders img:nth-child(2) {
+		max-width: 306px;
+	}
+
 @media (max-width: 960px) {
 
 	#glacier img,
@@ -90,6 +108,23 @@
 	}
 
 	.vid img {
+		max-width: 90%;
+	}
+
+	#folders img:nth-child(1)  {
+		max-width: 57%;
+		margin-right: 6%;
+	}
+
+	#folders img:nth-child(2)  {
+		max-width: 36%;
+	}
+
+}
+
+@media (max-width: 414px) {
+
+	.vid {
 		max-width: 100%;
 	}
 
@@ -110,11 +145,15 @@
 	}
 
 	#eight_fit {
-		padding: 2em 1em 1em;
+		padding: 2em 1em;
 	}
 
 	#videos {
-		padding: 2em 1em 0;
+		padding: 1.2em 1em 0;
+	}
+
+	#folders {
+		padding: 1.5em 1em;
 	}
 
 	#glacier img,
@@ -132,7 +171,18 @@
 		width: auto;
 		max-width: 364px;
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 1em;
+	}
+
+	#folders img:nth-child(1)  {
+		max-width: 95%;
+		margin-right: 0;
+		margin-left: -.5em;
+		margin-bottom: 20px;
+	}
+
+	#folders img:nth-child(2)  {
+		max-width: 95%;
 	}
 
 	#glacier img:nth-child(3),
