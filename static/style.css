@@ -47,17 +47,19 @@ article ol
 .button a,
 .read_more {
 	width: 190px;
+	border: none;
 	color: #73D5E9;
 	padding: 13px 0;
 	font-size: 13px;
 	line-height: 14px;
+	border-radius: 7px;
 	text-align: center;
 	display: inline-block;
 	font-weight: bold;
 	letter-spacing: 2px;
-	text-decoration: none;
 	text-transform: uppercase;
 	background-color: #0A263C;
+	mask-image: url(button.svg);
 	-webkit-mask-image: url(button.svg);
 }
 
@@ -126,7 +128,7 @@ section {
 }
 
 article {
-	max-width: 35.1em;
+	max-width: 28.15em;
 	margin-bottom: 4em;
 }
 
@@ -154,14 +156,18 @@ hr {
 	background-color: #0A263C;
 }
 
-sup {
+sup, 
+sub {
 	line-height: 0;
-	font-size: 0.8em;
+	font-size: 0.6em;
+	font-weight: bold;
 }
 
 code {
+	top: -1px;
 	padding: 2px 5px;
 	font-size: 0.75em;
+	position: relative;
 	border-radius: 2px;
 	background-color: #0A263C;
 	font-family: "Menlo", monospace;
@@ -194,21 +200,24 @@ article ol {
 }
 
 .permalink {
+	border: none;
 	color: #7B72E9;
 	font-size: 13px;
 	margin-bottom: 10px;
 	letter-spacing: 2px;
 	display: inline-block;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 
 section a {
 	color: #7B72E9;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #1A2449;
 }
 
 section a:hover {
 	color: #FFF;
+	border-bottom-color: rgba(255,255,255,0.2);
 }
 
 .post-title {
@@ -220,7 +229,7 @@ section a:hover {
 
 .post-title a {
 	color: #1C9AF8;
-	text-decoration: none;
+	border: none;
 }
 
 .quote-title {
@@ -270,6 +279,10 @@ cite,
 
 .post-only {
 	display: none;
+}
+
+.footnotes {
+	font-size: 0.8em;
 }
 
 .pagination {
@@ -369,10 +382,13 @@ footer a:hover {
 
 @media (max-width: 480px) {
 	header,
-	section,
 	footer {
 		padding: 1em;
 		text-align: center;
+	}
+
+	section {
+		padding: 1em;
 	}
 
 	header {
@@ -393,6 +409,10 @@ footer a:hover {
 
 	.menu li {
 		margin-right: 0;
+	}
+
+	.pagination {
+		text-align: center;
 	}
 
 	.pagination .button {
