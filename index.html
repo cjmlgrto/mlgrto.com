@@ -87,9 +87,15 @@
 	<script type="text/javascript">
 		var time = (new Date()).getHours();
 		var msg = document.getElementById("greeting");
-		if (4 < time < 12) { msg.innerHTML = "Good morning!";}
-		if (12 < time < 16) { msg.innerHTML = "Good afternoon!"; }
-		if (16 < time < 24) { msg.innerHTML = "Good evening."; }
+		if (time < 12) {
+			msg.innerHTML = "Good morning!";
+		}
+		else if (time < 17) {
+			msg.innerHTML = "Good afternoon.";
+		}
+		else {
+			msg.innerHTML = "Good evening.";
+		}
 	</script>
 	<script type="text/javascript">
 
