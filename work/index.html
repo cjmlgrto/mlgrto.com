@@ -9,6 +9,7 @@
 		<link rel="shortcut icon" href="">
 		<link rel="apple-touch-icon" href="">
 		<link rel="stylesheet" href="/static/style.css">
+		<link rel="stylesheet" href="/work/work.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic">
 
 		<meta name="twitter:card" content="summary_large_image"/>
@@ -23,226 +24,6 @@
 		<meta property="og:description" content="Carlos is a designer who blogs."/>
 		<meta property="og:image" content=""/>
 		<meta property="og:url" content=""/>
-
-		<style>
-
-		.work section {
-			text-align: center;
-		}
-
-		.project {
-			padding: 0 0 6em;
-		}
-
-		.feat {
-			border-bottom: none;
-		}
-
-		.feat:hover h1 {
-			color: #FFF;
-		}
-
-		.project img {
-			margin: 0 -2px 0;
-			vertical-align: top;
-			pointer-events: none;
-			display: inline-block;
-		}
-
-		.project h1 {
-			color: #40BB9C;
-			font-size: 1.2em;
-			margin-bottom: 1em;
-			transition: color 0.25s cubic-bezier(.06,.53,.41,.89);
-		}
-
-		.vid {
-			margin: 0 2em 1em;
-			vertical-align: bottom;
-			display: inline-block;
-		}
-
-		.vid img {
-			opacity: 0.8;
-			box-shadow: 0px 2px 6px rgba(0,0,0,.25);
-			transition: opacity 0.25s cubic-bezier(.06,.53,.41,.89);
-		}
-
-		.vid:hover > img {
-			opacity: 1;
-		}
-
-		.logo {
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		.misc {
-			width: 49.5%;
-			vertical-align: top;
-			display: inline-block;
-		}
-
-		.misc h1 {
-			margin-bottom: 0;
-		}
-
-		.misc ul {
-			list-style: none;
-			font-weight: bold;
-		}
-
-		.misc li {
-			padding: .25em 0;
-		}
-
-		.company {
-			margin: 1.5em;
-			display: inline-block;
-		}
-
-		.industry {
-			margin-top: 1.75em;
-		}
-
-		#glacier img {
-			margin-bottom: 16px;
-		}
-
-		#glacier img:nth-child(even) {
-			margin-right: 26px;
-		}
-
-		#eight_fit img:nth-child(2) {
-			margin-right: 14px;
-		}
-
-		#folders img:nth-child(2) {
-			margin-right: 54px;
-		}
-
-		#calibre {
-			margin: 0 2.5em;
-		}
-
-		.actions .button {
-			margin: 0 1em;
-			display: inline-block;
-		}
-
-		@media (max-width: 950px) {
-
-			.project {
-				padding: 0 0 4em;
-			}
-
-			.project img {
-				width: 100%;
-			}
-
-			.vid {
-				max-width: 40%;
-				margin: 0 1em 1em;
-			}
-
-			.logo {
-				margin: 0 8%;
-			}
-
-			.logo img {
-				width: auto;
-			}
-
-			#glacier img {
-				max-width: 49%;
-				margin-bottom: 1.89%;
-			}
-
-			#glacier img:nth-child(even) {
-				margin-right: 1.89%;
-			}
-
-			#eight_fit img {
-				max-width: 49.19%;
-			}
-
-			#eight_fit img:nth-child(2) {
-				margin-right: 1.6%;
-			}
-
-			#folders img:nth-child(2) {
-				max-width: 57.45%;
-				margin-right: 6.38%;
-			}
-
-			#folders img:nth-child(3) {
-				max-width: 36.17%;
-			}
-
-			#calibre {
-				margin: 0;
-			}
-
-			#seb {
-				margin-left: 0;
-			}
-
-			.actions .button {
-				display: block;
-				margin: 1em auto;
-			}
-
-		}
-
-		@media (max-width: 480px) {
-
-			.project img {
-				display: block;
-				margin: 0 auto;
-			}
-
-			#glacier img {
-				max-width: 100%;
-				margin-bottom: 1.5em;
-			}
-
-			#eight_fit img {
-				max-width: 100%;
-				margin-bottom: 1em;
-			}
-
-			.vid {
-				margin: 0;
-				max-width: 100%;
-			}
-
-			#folders img:nth-child(2) {
-				max-width: 100%;
-				margin-right: 0;
-				margin-bottom: 1.5em;
-			}
-
-			#folders img:nth-child(3) {
-				max-width: 100%;
-			}
-
-			.logo {
-				display: block;
-				margin: 0 auto;
-			}
-
-			.misc {
-				width: auto;
-				margin-bottom: 2em;
-			}
-
-			.companies .misc {
-				margin-bottom: .5em;
-			}
-
-		}
-
-		</style>
 		
 	</head>
 
@@ -271,8 +52,8 @@
 
 		<section>
 			<div class="container">
-				<a href="https://glaciericons.com" title="Glacier Icons" class="feat">
-					<figure class="project" id="glacier">
+				<a href="https://glaciericons.com" title="Glacier Icons" class="project feat">
+					<figure id="glacier">
 						<figcaption><h1>Glacier Icons</h1></figcaption>
 						<img src="images/glacier-1.png"
 							 srcset="images/glacier-1@2x.png 2x, images/glacier-1@3x.png 3x"
@@ -289,8 +70,8 @@
 					</figure>
 				</a>
 
-				<a href="http://8fit.com" title="8fit Fitness Badges" class="feat">
-					<figure class="project" id="eight_fit">
+				<a href="http://8fit.com" title="8fit Fitness Badges" class="project feat">
+					<figure id="eight_fit">
 						<figcaption><h1>8fit Fitness Badges</h1></figcaption>
 						<img src="images/8fit-1.png"
 							 srcset="images/8fit-1@2x.png 2x, images/8fit-1@3x.png 3x"
@@ -301,8 +82,8 @@
 					</figure>
 				</a>
 
-				<a href="https://www.youtube.com/watch?v=VpSOvFhr1u8" title="Sketch 3 Ad" class="feat">
-					<figure class="project vid" id="sketchad">
+				<a href="https://www.youtube.com/watch?v=VpSOvFhr1u8" title="Sketch 3 Ad" class="project feat vid">
+					<figure id="sketchad">
 						<figcaption><h1>Sketch 3 Ad</h1></figcaption>
 						<img src="images/video-1.png"
 							 srcset="images/video-1@2x.png 2x, images/video-1@3x.png 3x"
@@ -310,8 +91,8 @@
 					</figure>
 				</a>
 
-				<a href="https://www.youtube.com/watch?v=dtTBglc_RRk" title="Pausefest 2016 Workshop" class="feat">
-					<figure class="project vid" id="pausefest">
+				<a href="https://www.youtube.com/watch?v=dtTBglc_RRk" title="Pausefest 2016 Workshop" class="project feat vid">
+					<figure id="pausefest">
 						<figcaption><h1>Pausefest 2016 Workshop</h1></figcaption>
 						<img src="images/video-2.png"
 							 srcset="images/video-2@2x.png 2x, images/video-2@3x.png 3x"
@@ -319,8 +100,8 @@
 					</figure>
 				</a>
 
-				<a href="https://glaciericons.com" title="Glacier Folders" class="feat">
-					<figure class="project" id="folders">
+				<a href="https://glaciericons.com" title="Glacier Folders" class="project feat">
+					<figure id="folders">
 						<figcaption><h1>Glacier Folders</h1></figcaption>
 						<img src="images/folders-1.png"
 							 srcset="images/folders-1@2x.png 2x, images/folders-1@3x.png 3x"
@@ -331,8 +112,8 @@
 					</figure>
 				</a>
 
-				<a href="https://github.com/sebj" title="Seb Jachec's Logo" class="feat">
-					<figure class="project logo" id="seb">
+				<a href="https://github.com/sebj" title="Seb Jachec's Logo" class="project feat">
+					<figure class="logo" id="seb">
 						<figcaption><h1>Seb Jachec's Logo</h1></figcaption>
 						<img src="images/logo-1.png"
 							 srcset="images/logo-1@2x.png 2x, images/logo-1@3x.png 3x"
@@ -340,8 +121,8 @@
 					</figure>
 				</a>
 
-				<a href="https://medium.com/get-calibre/the-calibre-spade-df55e577569d" title="Calibre Logo" class="feat">
-					<figure class="project logo" id="calibre">
+				<a href="https://medium.com/get-calibre/the-calibre-spade-df55e577569d" title="Calibre Logo" class="project feat">
+					<figure class="logo" id="calibre">
 						<figcaption><h1>Calibre Wordmark</h1></figcaption>
 						<img src="images/logo-2.png"
 							 srcset="images/logo-2@2x.png 2x, images/logo-2@3x.png 3x"
@@ -349,8 +130,8 @@
 					</figure>
 				</a>
 
-				<a href="#" title="Podcast Publisher" class="feat">
-					<figure class="project logo" id="podcasts">
+				<a href="#" title="Podcast Publisher" class="project feat">
+					<figure class="logo" id="podcasts">
 						<figcaption><h1>Podcast Publisher</h1></figcaption>
 						<img src="images/logo-3.png"
 							 srcset="images/logo-3@2x.png 2x, images/logo-3@3x.png 3x"
@@ -358,7 +139,7 @@
 					</figure>
 				</a>
 
-				<div class="project">
+				<div class="project linkage">
 					<div class="misc" id="websites">
 						<h1>Websites</h1>
 						<ul>
