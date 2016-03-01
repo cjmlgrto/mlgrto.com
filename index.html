@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="CJ Melegrito is a designer who blogs.">
 		<link rel="shortcut icon" href="http://mlgrto.com/static/favicon.ico">
+		<link rel="shortcut icon" href="/static/favicon.ico">
 		<link rel="apple-touch-icon" href="http://mlgrto.com/static/icon.png">
 		<link rel="stylesheet" href="http://mlgrto.com/static/style.css">
 
@@ -87,15 +88,9 @@
 	<script type="text/javascript">
 		var time = (new Date()).getHours();
 		var msg = document.getElementById("greeting");
-		if (time < 12) {
-			msg.innerHTML = "Good morning!";
-		}
-		else if (time < 17) {
-			msg.innerHTML = "Good afternoon.";
-		}
-		else {
-			msg.innerHTML = "Good evening.";
-		}
+		if (time < 12) { msg.innerHTML = "Good morning!"; }
+		else if (time < 17) { msg.innerHTML = "Good afternoon."; }
+		else { msg.innerHTML = "Good evening."; }
 	</script>
 	<script type="text/javascript">
 	  WebFontConfig = {
