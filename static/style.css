@@ -176,7 +176,7 @@ code {
 pre {
 	padding: 1em;
 	border-radius: 2px;
-	white-space: pre-line;
+	white-space: pre-wrap;
 	background-color: #0A263C;
 }
 
