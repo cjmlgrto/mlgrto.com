@@ -8,7 +8,7 @@
 		<meta name="description" content="Carlos Melegrito is a designer who blogs.">
 		<link rel="shortcut icon" href="http://mlgrto.com/static/imgs/favicon.ico">
 		<link rel="apple-touch-icon" href="http://mlgrto.com/static/imgs/icon.png">
-		<link rel="stylesheet" href="http://mlgrto.com/static/style.css">
+		<link rel="stylesheet" href="http://mlgrto.com/static/style.min.css">
 		<link rel="alternate" type="application/rss+xml" href="/rss">
 
 		<meta name="twitter:card" content="summary"/>
@@ -26,7 +26,7 @@
 
 		<style>{CustomCSS}</style>
 	</head>
-	<body class="blog">
+	<body class="blog" {block:permalinkPage}onload="art();"{/block:permalinkPage}>
 		<header role="banner" class="header">
 			<h1 class="brand">
 				<a href="http://mlgrto.com/" title="About Him">Carlos</a> is a
