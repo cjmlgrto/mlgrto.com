@@ -310,6 +310,34 @@ cite,
 		font-weight: normal;
 	}
 
+/* @group info */
+
+#profile {
+	text-align: right;
+}
+
+#profile figcaption {
+	text-align: left;
+	font-size: 0.65em;
+	max-width: 6.7rem;
+	vertical-align: top;
+	display: inline-block;
+	transition: opacity 0.25s cubic-bezier(.06,.53,.41,.89);
+}
+
+#greeting {
+	color: #40BB9C;
+	font-size: 2em;
+	line-height: 1.2;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 1.3rem;
+}
+
+.info .content {
+	margin-top: -2rem;
+}
+
 /* @group blog */
 
 article {
@@ -380,6 +408,10 @@ article {
 	font-size: 0.8em;
 }
 
+article .button {
+	margin-top: 2rem;
+}
+
 .pagination .button {
 	display: inline-block;
 	margin-right: 1rem;
@@ -413,6 +445,14 @@ article {
 
 	.sidebar {
 		display: none;
+	}
+
+	#profile figcaption {
+		display: none;
+	}
+
+	.info .content {
+		margin-top: 0;
 	}
 
 	.footer .copyright {
