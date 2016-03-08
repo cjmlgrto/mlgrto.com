@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Carlos — Blog{block:PostTitle} on {PostTitle}{/block:PostTitle}</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Carlos Melegrito">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="CJ Melegrito is a designer who blogs.">
+		<link rel="shortcut icon" href="/static/favicon.ico">
+		<link rel="apple-touch-icon" href="/static/icon.png">
+		<link rel="stylesheet" href="/static/max.css">
+		<link rel="alternate" type="application/rss+xml" href="/rss">
+		<style>{CustomCSS}</style>
+	</head>
+	<body class="blog">
+		<header role="banner" class="header">
+			<h1 class="brand">
+				<a href="http://mlgrto.com/" title="About Him">Carlos</a> is a
+				<a href="http://mlgrto.com/work" title="View Work">designer</a> with a
+				<a href="/" title="Read Writings">blog</a>
+			</h1>
+			<div class="button subscribe">
+				<a href="http://tumblr.com/follow/cjmlgrto" title="Follow Carlos">Subscribe</a>
+			</div>
+			<nav role="navigation">
+				<ul class="sitemap">
+					<li><a href="http://mlgrto.com/" title="About">About</a></li>
+					<li><a href="http://mlgrto.com/work" title="Work">Work</a></li>
+					<li><a href="/" title="Blog">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main role="main" class="main">
+			<section class="content">
+				{block:posts}
+					{block:text}
+						<article role="article">
+							{block:date}
+								<time class="permalink"><a href="{permalink}">{Month} {DayOfMonth} {Year}</a></time>
+							{/block:date}
+							{block:title}
+								<h1 class="post-title"><a href="{permalink}">{title}</a></h1>
+							{/block:title}
+							{body}
+						</article>
+					{/block:text}
+					{block:photo}
+						<article role="article">
+							{block:date}
+								<time class="permalink"><a href="{permalink}">{Month} {DayOfMonth} {Year}</a></time>
+							{/block:date}
+							{linkopentag}<img src="{photoURL-highres}"/>{linkclosetag}
+							{block:caption}{caption}{/block:caption}
+						</article>
+					{/block:photo}
+					{block:quote}
+						<article role="article">
+							{block:date}
+								<time class="permalink"><a href="{permalink}">{Month} {DayOfMonth} {Year}</a></time>
+							{/block:date}
+							<h2 class="quote-title">{quote}</h2>
+							{block:source}{source}{/block:source}
+						</article>
+					{/block:quote}
+					{block:link}
+						<article role="article">
+							{block:date}
+								<time class="permalink"><a href="{permalink}">{Month} {DayOfMonth} {Year}</a></time>
+							{/block:date}
+							<h1 class="link-title"><a href="{url}" {target}>{name}</a></h1>
+							{block:description}{description}{/block:description}
+						</article>
+					{/block:link}
+					{block:video}
+						<article role="article">
+							{block:date}
+								<time class="permalink"><a href="{permalink}">{Month} {DayOfMonth} {Year}</a></time>
+							{/block:date}
+							<div class="embed">{Video-700}</div>
+							{block:caption}{caption}{/block:caption}
+						</article>
+					{/block:video}
+				{/block:posts}
+				{block:pagination}
+					<div class="pagination">
+						{block:nextpage}
+							<div class="button">
+								<a href="{nextpage}">Older Posts</a>
+							</div>
+						{/block:nextpage}
+						<div class="button">
+							<a href="/archive">View Archive</a>
+						</div>
+						{block:previouspage}
+							<div class="button">
+								<a href="{previouspage}">Newer Posts</a>
+							</div>
+						{/block:previouspage}
+					</div>
+				{/block:pagination}
+				{block:permalinkPage}
+					<div class="pagination">
+						<div class="button">
+							<a href="#">Back to Top</a>
+						</div>
+						<div class="button">
+							<a href="/">Return to Blog</a>
+						</div>
+					</div>
+				{/block:permalinkPage}
+			</section>
+			{block:IndexPage}
+				<aside role="complementary" class="sidebar">
+					<div class="panel">
+						<h4><a href="http://mlgrto.com/">About Carlos</a></h4>
+						{block:description}{description}{/block:description}
+					</div>
+					<div class="panel">
+						<h4><a href="http://twitter.com/cjmlgrto">Get Social</a></h4>
+						<p>Follow me on the interwebs for updates! I’m <a href="http://twitter.com/cjmlgrto">@cjmlgrto</a> on most social networks:</p>
+
+						<ul class="networks">
+							<li><a href="http://twitter.com/cjmlgrto">Twitter</a></li>
+							<li><a href="http://instagram.com/cjmlgrto">Instagram</a></li>
+							<li><a href="http://github.com/cjmlgrto">Github</a></li>
+							<li><a href="http://linkedin.com/in/cjmlgrto">LinkedIn</a></li>
+						</ul>
+					</div>
+				</aside>
+			{/block:IndexPage}
+		</main>
+		<footer class="footer">
+			<nav role="navigation">
+				<ul class="sitemap">
+					<li><a href="http://mlgrto.com/" title="About">About</a></li>
+					<li><a href="http://mlgrto.com/work" title="Work">Work</a></li>
+					<li><a href="/" title="Blog">Blog</a></li>
+				</ul>
+			</nav>
+			<div class="copyright">
+				<a href="http://mlgrto.com/" title="© {CopyrightYears}">© Carlos Melegrito</a>, unless otherwise specified.
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+
