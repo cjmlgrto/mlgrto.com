@@ -6,7 +6,7 @@
 ## Files Inside
 My goal is to keep my site as lean and clean as much as possible. There's barely anything else in here other than HTML and CSS files. Here's a little explainer of what each file is for, though:
 
-- ``blog`` — the tumblr theme, of which I'm yet to integrate art direction
-- ``static`` — all the resources, which still needs to be cleaned up and optimised
-- ``work`` — my portfolio, which includes a bucket-load of images and a seperate stylesheet
+- ``blog`` — the tumblr theme
+- ``static`` — all the resources ever
+- ``work`` — my portfolio page
 - ``index.html`` — my info page that also serves as my homepage
