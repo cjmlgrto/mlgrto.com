@@ -5,11 +5,24 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Carlos Melegrito">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="description" content="CJ Melegrito is a designer who blogs.">
-		<link rel="shortcut icon" href="/static/favicon.ico">
-		<link rel="apple-touch-icon" href="/static/icon.png">
-		<link rel="stylesheet" href="/static/max.css">
+		<meta name="description" content="Carlos Melegrito is a designer who blogs.">
+		<link rel="shortcut icon" href="/static/imgs/favicon.ico">
+		<link rel="apple-touch-icon" href="/static/imgs/icon.png">
+		<link rel="stylesheet" href="/static/style.css">
 		<link rel="alternate" type="application/rss+xml" href="http://log.mlgrto.com/rss">
+
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@cjmlgrto"/>
+		<meta name="twitter:creator" content="@cjmlgrto"/>
+		<meta name="twitter:title" content="Carlos Melegrito's Website"/>
+		<meta name="twitter:description" content="Carlos is a designer who blogs."/>
+		<meta name="twitter:image" content="http://mlgrto.com/static/imgs/icon.png"/>
+
+		<meta property="og:title" content="Carlos Melegrito's Website"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="Carlos is a designer who blogs."/>
+		<meta property="og:image" content="http://mlgrto.com/static/imgs/icon.png"/>
+		<meta property="og:url" content="http://mlgrto.com/"/>
 	</head>
 	<body class="info">
 		<header role="banner" class="header">
@@ -19,7 +32,7 @@
 				<a href="/blog" title="Read Writings">blog</a>
 			</h1>
 			<div class="button subscribe">
-				<a href="/follow" title="Follow Carlos">Subscribe</a>
+				<a href="/follow" onclick="_gs('event', 'Clicked follow button')" title="Follow Carlos">Subscribe</a>
 			</div>
 			<nav role="navigation">
 				<ul class="sitemap">
@@ -36,7 +49,7 @@
 			</figure>
 			<section class="content">
 				<article role="article">
-					<h2 id="greeting">Oh, hello! Good afternoon!</h2>
+					<h2 id="greeting">Oh, hello!</h2>
 					<p>My name is <a href="https://twitter.com/cjmlgrto">Carlos Melegrito</a>. I'm a <a href="/work">visual designer</a>, <a href="http://github.com/cjmlgrto">web developer</a>, <a href="https://www.youtube.com/watch?v=VpSOvFhr1u8">video producer</a>, and a <a href="https://tutsplus.com/authors/cj-melegrito">design instructor</a>.</p>
 
 					<p>While I'm not working, I study <a href="https://www.youtube.com/watch?v=V51OJr0ee6E">Computational Science</a> and <a href="https://www.youtube.com/watch?v=DfnBW6HvNwM">Maths</a> at <a href="http://monash.edu/">Monash University</a>. I'm also a <a href="http://haveyougottheedge.com/">Global Challenges student</a></p>
@@ -77,7 +90,32 @@
 			</div>
 		</footer>
 	</body>
+	<script type="text/javascript">
+		var time = (new Date()).getHours();
+		var msg = document.getElementById("greeting");
+		if (time < 12) { msg.innerHTML += " Good morning!"; }
+		else if (time < 17) { msg.innerHTML += " Good afternoon."; }
+		else { msg.innerHTML += " Good evening."; }
+	</script>
+	<script type="text/javascript">
+	  WebFontConfig = {
+	    google: { families: [ 'Lato:400,400italic,700,700italic,900:latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); 
+	</script>
+	<script>
+	  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+	  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+	  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+	  insertBefore(d,q)}(window,document,'script','_gs');
+
+	  _gs('GSN-937880-I');
+	</script>
 </html>
-
-
-

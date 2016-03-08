@@ -5,12 +5,25 @@
 		<meta charset="utf-8">
 		<meta name="author" content="Carlos Melegrito">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<meta name="description" content="CJ Melegrito is a designer who blogs.">
-		<link rel="shortcut icon" href="/static/favicon.ico">
-		<link rel="apple-touch-icon" href="/static/icon.png">
-		<link rel="stylesheet" href="/static/max.css">
+		<meta name="description" content="Carlos Melegrito is a designer who blogs.">
+		<link rel="shortcut icon" href="/static/imgs/favicon.ico">
+		<link rel="apple-touch-icon" href="/static/imgs/icon.png">
+		<link rel="stylesheet" href="/static/style.css">
 		<link rel="stylesheet" href="/static/work.css">
 		<link rel="alternate" type="application/rss+xml" href="http://log.mlgrto.com/rss">
+		
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@cjmlgrto"/>
+		<meta name="twitter:creator" content="@cjmlgrto"/>
+		<meta name="twitter:title" content="Carlos Melegrito's Website"/>
+		<meta name="twitter:description" content="Carlos is a designer who blogs."/>
+		<meta name="twitter:image" content="http://mlgrto.com/static/imgs/icon.png"/>
+
+		<meta property="og:title" content="Carlos Melegrito's Website"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="Carlos is a designer who blogs."/>
+		<meta property="og:image" content="http://mlgrto.com/static/imgs/icon.png"/>
+		<meta property="og:url" content="http://mlgrto.com/"/>
 	</head>
 	<body class="work">
 		<header role="banner" class="header">
@@ -20,7 +33,7 @@
 				<a href="/blog" title="Read Writings">blog</a>
 			</h1>
 			<div class="button subscribe">
-				<a href="/follow" title="Follow Carlos">Subscribe</a>
+				<a href="/follow" onclick="_gs('event', 'Clicked follow button')" title="Follow Carlos">Subscribe</a>
 			</div>
 			<nav role="navigation">
 				<ul class="sitemap">
@@ -190,6 +203,28 @@
 			</div>
 		</footer>
 	</body>
+	<script type="text/javascript">
+	  WebFontConfig = {
+	    google: { families: [ 'Lato:400,400italic,700,700italic,900:latin' ] }
+	  };
+	  (function() {
+	    var wf = document.createElement('script');
+	    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+	    wf.type = 'text/javascript';
+	    wf.async = 'true';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(wf, s);
+	  })(); 
+	</script>
+	<script>
+	  !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+	  arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+	  d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+	  insertBefore(d,q)}(window,document,'script','_gs');
+
+	  _gs('GSN-937880-I');
+	</script>
+</html>
 
 
 

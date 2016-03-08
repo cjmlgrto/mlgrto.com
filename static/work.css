@@ -9,13 +9,16 @@
 	margin-bottom: 6rem;
 }
 
-	.project > a, .companies a {
+	.project > a, 
+	.companies a {
 		display: block;
 		border: none;
 	}
 
 
-	.project figcaption, .linkage h1, .companies h1 {
+	.linkage h1, 
+	.companies h1,
+	.project figcaption {
 		color: #40BB9C;
 		font-size: 1.2em;
 		line-height: 1.2;
