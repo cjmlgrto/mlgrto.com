@@ -9,7 +9,7 @@ body:before {
 	line-height: 1;
 	font-weight: 900;
 	text-align: center;
-	text-shadow: 5px 5px 0 #05131E;
+	text-shadow: 1px 1px 0 #05131E, 2px 2px 0 #05131E, 3px 3px 0 #05131E, 4px 4px 0 #05131E, 5px 5px 0 #05131E, 6px 6px 0 #05131E, 7px 7px 0 #05131E;
 	background-image: url(imgs/atlassian_office.jpg);
 	background-color: transparent;
 	background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body:before {
 	max-width: 100%;
 	font-size: 6em;
 	padding: 14rem 5rem 16rem;
-	box-shadow: 0 0 10rem rgba(0,0,0,.75) inset;
+	box-shadow: 0 0 10rem rgba(0, 0, 0, .75) inset, 0 -.5rem .5rem #141e2e inset;
 }
 
 .main:before {
@@ -96,6 +96,11 @@ figcaption {
 
 .slightly-large figcaption {
 	text-align: center;
+}
+
+.footnotes {
+	font-size: 0.65em;
+	margin-top: 4rem;
 }
 
 @media (max-width: 1024px) {
