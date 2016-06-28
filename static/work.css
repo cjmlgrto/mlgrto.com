@@ -100,6 +100,10 @@
 
 /* @group work projects */
 
+#uicons img:nth-child(even) {
+	margin-right: -9px;
+}
+
 #glacier img {
 	margin-bottom: 16px;
 }
@@ -126,7 +130,7 @@
 
 /* @group work media queries */
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
 
 	.project img {
 		max-width: 100%;
@@ -149,6 +153,10 @@
 	.actions .button {
 		display: block;
 		margin: 1em auto;
+	}
+
+	#uicons img {
+		max-width: 50.57%;
 	}
 
 	#glacier img {
@@ -220,6 +228,15 @@
 
 	.company {
 		margin-bottom: 2rem;
+	}
+
+	#uicons img {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	#uicons img:nth-child(even) {
+		margin-right: 0;
 	}
 
 	#glacier img {
