@@ -6,10 +6,13 @@ a {
 	color: $color-links;
 	text-decoration: none;
 	border-bottom: 2px solid rgba($color-links, .25);
+	transition: border 0.25s cubic-bezier(.06, .53, .41, .89), color 0.25s cubic-bezier(.06, .53, .41, .89);
 }
 
 a:hover, a:active {
-	border-bottom-color: $color-links;
+	color: $color-headings;
+	border-bottom-color: $color-headings;
+	transition: border 0s linear, color 0s linear;
 }
 
 h1, h2, h3 {
@@ -97,6 +100,7 @@ sup a {
 hr {
 	width: 100%;
 	clear: both;
+	border: none;
 	margin: 2rem auto;
 	@include divider;
 }
