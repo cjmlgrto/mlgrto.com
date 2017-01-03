@@ -2,6 +2,10 @@
 // TYPE: Site-wide typography
 // ------------------------------------------
 
+::selection {
+	background-color: rgba($color-links, .25);
+}
+
 a {
 	color: $color-links;
 	text-decoration: none;
@@ -47,7 +51,7 @@ time, cite {
 }
 
 ul, ol {
-	margin-left: 1rem;
+	margin-left: 2rem;
 }
 
 blockquote {
