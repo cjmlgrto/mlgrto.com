@@ -1,0 +1,45 @@
+// ------------------------------------------
+// FOOT: Styles for _includes/footer.html
+// ------------------------------------------
+
+.site-footer {
+	background-color: rgba($color-body, .125);
+
+	img {
+		float: left;
+		max-width: 4rem;
+		margin-top: .5rem;
+		margin-right: 1rem;
+		border-radius: 2rem;
+	}
+
+	p {
+		min-height: 5rem;
+	}
+
+	.endcap {
+		display: flex;
+		padding-top: 1rem;
+		align-items: baseline;
+		justify-content: space-between;
+		@include divider;
+	}
+
+	.endcap a {
+		font-size: .875em;
+		@include capital;
+	}
+
+	.endcap a:hover {
+		color: $color-links;
+	}
+
+}
+
+@media (max-width: $width-mobile) {
+
+	.twit {
+		display: none;
+	}
+
+}

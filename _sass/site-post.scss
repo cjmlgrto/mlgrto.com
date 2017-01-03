@@ -1,0 +1,42 @@
+// ------------------------------------------
+// POST: Styles for _layouts/post.html
+// ------------------------------------------
+
+.page-title {
+	padding-bottom: 0;
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	a {
+		border-bottom: none;
+		color: $color-headings;
+	}
+
+}
+
+.pull-left {
+	float: left;
+	margin-top: .5rem;
+	margin-right: 2rem;
+	max-width: calc(50% - 2rem);
+}
+
+.pull-right {
+	float: right;
+	margin-top: .5rem;
+	margin-left: 2rem;
+	max-width: calc(50% - 2rem);
+}
+
+@media (max-width: $width-mobile) {
+
+	.pull-left,
+	.pull-right {
+		float: none;
+		max-width: 100%;
+		margin: 0 auto 1rem;
+	}
+
+}

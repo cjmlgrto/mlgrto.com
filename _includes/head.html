@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+
+		<meta name="author" content="{{ site.author }}">
+		<meta name="theme-color" content="{{ site.color }}">
+		<meta name="description" content="{{ site.description }}">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@{{ site.author_twitter }}"/>
+		<meta name="twitter:creator" content="@{{ site.author_twitter }}"/>
+		<meta name="twitter:title" content="{{ page.title | xml_escape }}"/>
+		<meta name="twitter:description" content="{{ page.content | strip_html | strip | truncatewords: 50 }}"/>
+		<meta name="twitter:image" content="{% if page.preview_image %}{{ page.preview_image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}"/>
+
+		<meta property="og:url" content="{{ page.url }}"/>
+		<meta property="og:title" content="{{ page.title | xml_escape }}"/>
+		<meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}"/>
+		<meta property="og:description" content="{{ page.content | strip_html | strip | truncatewords: 50 }}"/>
+		<meta property="og:image" content="{% if page.preview_image %}{{ page.preview_image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}"/>
+
+		<link rel="stylesheet" href="/static/style.css">
+		<link rel="shortcut icon" href="{{ site.icon | absolute_url }}">
+		<link rel="apple-touch-icon" href="{{ site.icon | absolute_url }}">
+		{% if page.style %}<link rel="stylesheet" href="{{ page.style }}">{% endif %}
+	</head>

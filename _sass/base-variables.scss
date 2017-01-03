@@ -1,0 +1,28 @@
+// ------------------------------------------
+// VARS: Variables
+// ------------------------------------------
+
+$font-size: 112.5%;
+$font-base: 1.875;
+$font-stack: "qWNHNgXEpEmhJDNFu8", "Gill Sans", "Gill Sans MS", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+$width-mobile: 414px;
+$width-tablet: 768px;
+$width-content: 40rem;
+$width-desktop: 1024px;
+
+$color-body: #AAAAAA;
+$color-links: #CFA352;
+$color-headings: #FFFFFF;
+$color-background: #111111;
+
+@mixin divider {
+	border-top: 2px solid rgba($color-body, .125);
+}
+
+@mixin capital {
+	border-bottom: none;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	color: rgba($color-body, .5);
+}

@@ -1,0 +1,84 @@
+// ------------------------------------------
+// BLOG: Styles for index.md
+// ------------------------------------------
+
+.grid {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.tile {
+	display: block;
+	position: relative;
+	width: calc(100% / 3);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: calc(100% / 3);
+	background-position: center center;
+
+	.post {
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		border-bottom: none;
+		background-color: rgba($color-background, .5);
+	}
+
+	h1 {
+		font-size: 1.5em;
+		margin-bottom: 0;
+	}
+
+	time {
+		color: rgba($color-headings, .5);
+	}
+
+	p {
+		margin-top: 1rem;
+		font-size: .875rem;
+		color: $color-body;
+	}
+
+	:nth-child(n) {
+		background-color: rgba($color-body, .25);
+	}
+
+	:nth-child(2n) {
+		background-color: rgba($color-body, .5);
+	}
+
+	:hover .post {
+		background-color: rgba($color-background, .75);
+	}
+
+	:hover h1 {
+		color: $color-links;
+	}
+}
+
+.blogroll {
+	margin-left: 0;
+	list-style: none;
+
+	li {
+		border-bottom: 2px solid rgba($color-body, .125);
+	}
+
+	li:last-child {
+		border-bottom: none;
+	}
+
+	a {
+		display: flex;
+		padding: .5rem 0;
+		border-bottom: none;
+		align-items: baseline;
+		color: $color-headings;
+		justify-content: space-between;
+	}
+}
