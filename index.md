@@ -3,7 +3,7 @@ title: Blog
 layout: default
 permalink: /
 ---
-{% assign featured = 3 %}
+{% assign featured = 6 %}
 <ul class="grid">
 	{% for post in site.posts limit:featured %}
 	<li class="tile"{% if post.preview_image %} style="background-image:url({{ post.preview_image }});"{% endif %}>
@@ -14,7 +14,7 @@ permalink: /
 			{% if post.subtitle %}
 			<p>{{ post.subtitle }}</p>
 			{% else %}
-			<p>{{ post.content | strip_html | truncatewords:20 }}</p>
+			<p>{{ post.content | strip_html | truncatewords:30 }}</p>
 			{% endif %}
 			{% endif %}
 		</a>

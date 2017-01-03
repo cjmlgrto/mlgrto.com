@@ -43,22 +43,22 @@
 		font-size: .875rem;
 		color: $color-body;
 	}
+}
 
-	:nth-child(n) {
-		background-color: rgba($color-body, .25);
-	}
+.tile:nth-child(n) {
+	background-color: rgba($color-body, .25);
+}
 
-	:nth-child(2n) {
-		background-color: rgba($color-body, .5);
-	}
+.tile:nth-child(2n) {
+	background-color: rgba($color-body, .5);
+}
 
-	:hover .post {
-		background-color: rgba($color-background, .75);
-	}
+.tile:hover .post {
+	background-color: rgba($color-background, .75);
+}
 
-	:hover h1 {
-		color: $color-links;
-	}
+.tile:hover h1 {
+	color: $color-links;
 }
 
 .blogroll {
@@ -81,4 +81,41 @@
 		color: $color-headings;
 		justify-content: space-between;
 	}
+
+	a:hover {
+		color: $color-links;
+	}
+}
+
+@media (max-width: $width-content) {
+
+	.tile {
+		width: calc(100% / 2);
+		padding-bottom: calc(100% / 2);
+	}
+
+}
+
+@media (max-width: $width-mobile) {
+
+	.tile {
+		width: 100%;
+		padding-bottom: 0;
+		height: 10rem;
+	}
+
+	.tile p {
+		display: none;
+	}
+
+	.blogroll a, .blogroll span, .blogroll time {
+		display: block;
+		line-height: 1.4;
+		text-align: left;
+	}
+
+	.blogroll span {
+		margin-bottom: .4rem;
+	}
+
 }

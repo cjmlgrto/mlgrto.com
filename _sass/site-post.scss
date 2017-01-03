@@ -3,6 +3,7 @@
 // ------------------------------------------
 
 .page-title {
+	padding-top: 0;
 	padding-bottom: 0;
 
 	h1 {
@@ -14,6 +15,10 @@
 		color: $color-headings;
 	}
 
+}
+
+.page-header_image {
+	margin-bottom: 2rem;
 }
 
 .pull-left {
