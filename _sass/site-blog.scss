@@ -27,11 +27,13 @@
 		position: absolute;
 		border-bottom: none;
 		background-color: rgba($color-background, .5);
+		transition: background-color 0.25s cubic-bezier(.06, .53, .41, .89);
 	}
 
 	h1 {
 		font-size: 1.5em;
 		margin-bottom: 0;
+		transition: color 0.25s cubic-bezier(.06, .53, .41, .89);
 	}
 
 	time {
@@ -55,10 +57,12 @@
 
 .tile:hover .post {
 	background-color: rgba($color-background, .75);
+	transition: background-color 0s linear;
 }
 
 .tile:hover h1 {
 	color: $color-links;
+	transition: color 0s linear;
 }
 
 .blogroll {
