@@ -1,0 +1,18 @@
+// ------------------------------------------
+// WORK: Styles for work.md
+// ------------------------------------------
+
+.featured-projects {
+
+	.meta {
+		text-indent: -999em;
+		background-color: transparent;
+		transition: background-color 0.25s cubic-bezier(.06, .53, .41, .89);
+	}
+
+	.meta:hover {
+		background-color: rgba($color-background, .5);
+		transition: background-color 0s linear;
+	}
+
+}
