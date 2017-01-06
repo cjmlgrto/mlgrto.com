@@ -10,8 +10,8 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 
 		<meta name="twitter:card" content="summary"/>
-		<meta name="twitter:site" content="@{{ site.author_twitter }}"/>
-		<meta name="twitter:creator" content="@{{ site.author_twitter }}"/>
+		<meta name="twitter:site" content="@{{ site.twitter }}"/>
+		<meta name="twitter:creator" content="@{{ site.twitter }}"/>
 		<meta name="twitter:title" content="{{ page.title | xml_escape }}"/>
 		<meta name="twitter:description" content="{{ page.content | strip_html | strip | truncatewords: 50 }}"/>
 		<meta name="twitter:image" content="{% if page.preview_image %}{{ page.preview_image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}"/>
