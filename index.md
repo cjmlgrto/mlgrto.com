@@ -3,6 +3,11 @@ title: Blog
 layout: default
 permalink: /
 ---
+<div class="page-title container">
+	<h1>Hello! I'm Carlos Melegrito— a designer studying computer science.</h1>
+	<p class="page-subtitle">This is my blog, and I write about design, tech, movies, books and other cool things from around the interwebs. (Basically, anything I can geek out on). Feel free to check out <a href="/work">my portfolio</a>, find out <a href="/info">more about me</a>— or just browse my writing below.</p>
+
+</div>
 {% assign featured = 6 %}
 <ul class="grid featured-posts">
 	{% for post in site.posts limit:featured %}
@@ -22,7 +27,7 @@ permalink: /
 	{% endfor %}
 </ul>
 <section class="container">
-	<h2>Articles</h2>
+	<h2>Older Articles</h2>
 	<ul class="blogroll">
 		{% for post in site.posts offset:featured %}
 		<li>

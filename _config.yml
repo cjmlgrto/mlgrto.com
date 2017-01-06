@@ -31,6 +31,5 @@ defaults:
     title: null
     subtitle: null
     header_image: null
-    header_image_caption: null
     preview_image: null
     style: null

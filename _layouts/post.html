@@ -10,14 +10,14 @@
 					<time>{{ page.date | date: "%B %-d %Y" }}</time>
 					{% endif %}
 					{% if page.subtitle %}
-					<p class="page-subtitle">{{ page.subtitle }}</p>
+					<p class="page-subtitle">{{ page.subtitle | markdownify }}</p>
 					{% endif %}
 				</div>
 				{% endif %}
 
 				{% if page.header_image %}
 				<figure class="page-header_image">
-					<img src="{{ page.header_image }}"/>
+					<img src="{{ page.header_image }}" alt="{{ page.title }}"/>
 				</figure>
 				{% endif %}
 			</header>

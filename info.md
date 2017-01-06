@@ -1,11 +1,10 @@
 ---
-title: "Hello, I’m Carlos Melegrito!"
+title: "A bit more about me"
+subtitle: "I'm Carlos Melegrito, a multidisciplinary designer and software engineer. In other words, I'm really good at drawing icons, prototyping apps, building websites, producing videos— and sometimes, I teach people how to code."
 layout: post
 permalink: /info
 header_image: /static/images/workshop.jpg
 ---
-
-I'm an multidisciplinary designer and software engineer. I'm really good at drawing icons, prototyping apps, building websites, producing videos— and sometimes, I teach people how to code.
 
 I've previously worked with the team that built [Sketch for Mac](https://sketchapp.com), became a design journalist for a while on [The Industry](http://theindustry.cc/author/cj/) and then worked as a design instructor for [Envato](https://envato.com). Currently, I'm an intern at [Collective Campus](http://www.collectivecamp.us), all the while building [a startup](http://initiator.fund) with my classmates.
 
