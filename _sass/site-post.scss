@@ -5,6 +5,7 @@
 .page-title {
 	padding-top: 0;
 	padding-bottom: 0;
+	margin-bottom: 2rem;
 
 	h1 {
 		margin-bottom: 0;
@@ -15,10 +16,14 @@
 		color: $color-headings;
 	}
 
+	.page-subtitle {
+		margin-top: 1rem;
+	}
+
 }
 
 .page-header_image {
-	margin-bottom: 2rem;
+	margin-bottom: 0;
 }
 
 .pull-left {
