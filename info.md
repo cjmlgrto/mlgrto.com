@@ -8,7 +8,7 @@ header_image: /static/images/workshop.jpg
 
 I've previously worked with the team that built [Sketch for Mac](https://sketchapp.com), became a design journalist for a while on [The Industry](http://theindustry.cc/author/cj/) and then worked as a design instructor for [Envato](https://envato.com). Currently, I'm an intern at [Collective Campus](http://www.collectivecamp.us), all the while building [a startup](http://initiator.fund) with my classmates.
 
-While I'm not working, I study Computational Science and Maths at [Monash University](https://monash.edu). I'm also a [Global Challenges](https://www.monash.edu/global-challenges) student. 
+While I'm not working, I study Computational Science and Maths at [Monash University](https://monash.edu). I'm also a [Global Challenges](https://www.monash.edu/global-challenges) student.
 
 ## Elsewhere on the web
 
