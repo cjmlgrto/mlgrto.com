@@ -8,10 +8,7 @@ description: Carlos Melegrito is a designer studying Computer Science
 
 icon: /static/images/carlos.jpg
 color: "#CFA352"
-
-author_description: "Hello! I'm a Carlos, a visual designer studying computer science. Read my [blog](/blog), view my [portfolio](/work) or find out more [about me](/info). Welcome to my little corner on the information superhighway."
-author_image: /static/images/carlos.jpg
-author_twitter: cjmlgrto
+twitter: cjmlgrto
 
 sections:
   blog: /
@@ -34,6 +31,5 @@ defaults:
     title: null
     subtitle: null
     header_image: null
-    header_image_caption: null
     preview_image: null
     style: null

@@ -3,18 +3,22 @@
 		{% include header.html %}
 		<article>
 			<header class="page-header">
-				{% if page.header_image %}
-				<figure class="page-header_image">
-					<img src="{{ page.header_image }}"/>
-				</figure>
-				{% endif %}
 				{% if page.title %}
 				<div class="page-title container">
 					<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 					{% if page.date %}
 					<time>{{ page.date | date: "%B %-d %Y" }}</time>
 					{% endif %}
+					{% if page.subtitle %}
+					<p class="page-subtitle">{{ page.subtitle | markdownify }}</p>
+					{% endif %}
 				</div>
+				{% endif %}
+
+				{% if page.header_image %}
+				<figure class="page-header_image">
+					<img src="{{ page.header_image }}" alt="{{ page.title }}"/>
+				</figure>
 				{% endif %}
 			</header>
 			<div class="container">

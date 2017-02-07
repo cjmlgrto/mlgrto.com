@@ -3,19 +3,6 @@
 // ------------------------------------------
 
 .site-footer {
-	background-color: rgba($color-body, .125);
-
-	img {
-		float: left;
-		max-width: 4rem;
-		margin-top: .5rem;
-		margin-right: 1rem;
-		border-radius: 2rem;
-	}
-
-	p {
-		min-height: 5rem;
-	}
 
 	.endcap {
 		display: flex;
@@ -32,14 +19,6 @@
 
 	.endcap a:hover {
 		color: $color-links;
-	}
-
-}
-
-@media (max-width: $width-mobile) {
-
-	.twit {
-		display: none;
 	}
 
 }
