@@ -1,0 +1,22 @@
+# ------------------------------------------
+# CONFIG: Site-wide settings
+# ------------------------------------------
+
+title: mlgrto.com
+author: Carlos Melegrito
+description: Carlos Melegrito is a designer studying Computer Science
+
+icon: ""
+color: "#CFA352"
+twitter: cjmlgrto
+
+sections:
+  blog: /
+  work: /work
+  info: /info
+
+sass:
+  sass_style: compressed
+
+exclude:
+- clean.sh
