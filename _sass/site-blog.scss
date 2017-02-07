@@ -52,8 +52,14 @@
 		transition: color 0.25s cubic-bezier(.06, .53, .41, .89);
 	}
 
-	time {
+	time, span {
 		color: rgba($color-headings, .5);
+	}
+
+	span {
+		display: none;
+		font-size: .875em;
+		@include capital;
 	}
 
 	p {
@@ -70,6 +76,14 @@
 	.tile:hover h1 {
 		color: $color-links;
 		transition: color 0s linear;
+	}
+
+	.tile:hover time {
+		display: none;
+	}
+
+	.tile:hover span {
+		display: inline;
 	}
 
 }

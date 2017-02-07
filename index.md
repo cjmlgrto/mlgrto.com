@@ -10,6 +10,7 @@ permalink: /
 		<a href="{{ post.url }}" class="meta">
 			<h1>{{ post.title }}</h1>
 			<time>{{ post.date | date: "%B %-d %Y" }}</time>
+			<span>Read Article</span>
 			{% if post.preview_image == null %}
 			{% if post.subtitle %}
 			<p>{{ post.subtitle }}</p>
@@ -22,7 +23,7 @@ permalink: /
 	{% endfor %}
 </ul>
 <section class="container">
-	<h2>Articles</h2>
+	<h2>Older Articles</h2>
 	<ul class="blogroll">
 		{% for post in site.posts offset:featured %}
 		<li>
