@@ -1,5 +1,5 @@
 // ------------------------------------------
-// BASE: Base styles
+// RESET: Base styles
 // ------------------------------------------
 
 * {
@@ -18,6 +18,12 @@ html {
 
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
+
+	padding: 1.5em;
+
+	// background-image: url(/static/images/grid.png);
+	// background-size: 1px 16px;
+	// background-position: -1px -1px;
 }
 
 ul, ol,
