@@ -2,6 +2,10 @@
 // Typography
 // ------------------------------------------
 
+::selection {
+	background-color: rgba($color-links, .25);
+}
+
 a {
 	color: $color-links;
 	text-decoration: none;
@@ -21,11 +25,85 @@ h1, h2 {
 	line-height: calc(4/3);
 }
 
-p + h1, p + h2 {
+h3 {
+	font-size: 1em;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+* + h1, * + h2, * + h3 {
 	margin-top: 3rem;
 }
 
-h3 {
-	font-size: 1em;
-	@include allcaps;
+h1 + h2, h2 + h3 {
+	margin-top: 0;
+}
+
+time, cite, .caps {
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}
+
+cite {
+	font-style: normal;
+	font-size: 0.875rem;
+	color: rgba($color-headings, .5);
+}
+
+ul, ol {
+	margin-left: 2rem;
+}
+
+blockquote {
+	padding-left: 1rem;
+	color: rgba($color-body, .75);
+}
+
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: .5rem;
+}
+
+figcaption {
+	font-size: .875em;
+	color: rgba($color-body, .75);
+}
+
+code {
+	font-size: .875em;
+	padding: .1rem .25rem;
+	color: lighten($color-body, 10%);
+	background-color: rgba($color-body, .5);
+	font-family: "SF Mono", "Menlo", monospace;
+}
+
+pre {
+	padding: .5rem;
+	line-height: 1.4;
+	overflow-x: scroll;
+	margin-bottom: 1rem;
+	background-color: rgba($color-body, .5);
+}
+
+pre code {
+	background-color: transparent;
+}
+
+sup {
+	font-size: .8rem;
+	margin-left: .1rem;
+}
+
+sup a {
+	border-bottom: none;
+}
+
+hr {
+	width: 50%;
+	clear: both;
+	border: none;
+	margin: 3rem auto;
+	border-top: 1px solid rgba($color-body, .125);
 }

@@ -15,8 +15,3 @@ $color-body: #AAAAAA;
 $color-links: #CFA352;
 $color-headings: #FFFFFF;
 $color-background: #111111;
-
-@mixin allcaps {
-	letter-spacing: .1rem;
-	text-transform: uppercase;
-}
