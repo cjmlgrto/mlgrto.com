@@ -1,0 +1,57 @@
+// ------------------------------------------
+// Page
+// ------------------------------------------
+
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.page-title {
+	width: 100%;
+	line-height: 1.2;
+	font-weight: bold;
+	font-size: 2.5rem;
+	margin-bottom: 4rem;
+}
+
+.page-subtitle {
+	display: block;
+	width: calc(((1/3)*100%) - 1.5rem);
+}
+
+.page-content {
+	width: calc(((11/20)*100%) - 1.5rem);
+}
+
+@media (max-width: $width-content) {
+
+	.page-content {
+		width: calc(((2/3)*100%) - 1.5rem);
+	}
+
+}
+
+@media (max-width: $width-mobile-wide) {
+
+	.page-content {
+		width: calc((2/3)*100%);
+	}
+
+}
+
+@media (max-width: $width-mobile) {
+
+	.page {
+		display: block;
+	}
+
+	.page-title, .page-subtitle {
+		margin-bottom: 1rem;
+	}
+
+	.page-subtitle, .page-content {
+		width: auto;
+	}
+
+}

@@ -1,1 +1,7 @@
 title: Carlos Melegrito
+
+sass:
+  sass_style: compressed
+
+exclude:
+- clean.sh

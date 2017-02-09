@@ -28,8 +28,8 @@ figure, img, video, audio, embed {
 	margin-bottom: 1rem;
 }
 
-// DELETE
-main {
+.container {
 	margin: 0 auto;
-	max-width: 468px;
+	padding: 0 1.5rem;
+	max-width: $width-content;
 }
