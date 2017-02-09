@@ -1,0 +1,31 @@
+// ------------------------------------------
+// Typography
+// ------------------------------------------
+
+a {
+	color: $color-links;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: $color-headings;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+	color: $color-headings;
+}
+
+h1, h2 {
+	font-size: 1.5em;
+	line-height: calc(4/3);
+}
+
+p + h1, p + h2 {
+	margin-top: 3rem;
+}
+
+h3 {
+	font-size: 1em;
+	@include allcaps;
+}
