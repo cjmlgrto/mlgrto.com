@@ -57,6 +57,10 @@ ul, ol {
 blockquote {
 	padding-left: 1rem;
 	color: rgba($color-body, .75);
+	background-image: linear-gradient(to bottom, rgba($color-headings, 0.25) 0%, rgba($color-headings, 0.1) 100%);
+	background-size: 0.125rem 100%;
+	background-position: 0 2px;
+	background-repeat: no-repeat;
 }
 
 figure img {
@@ -103,7 +107,8 @@ sup a {
 hr {
 	width: 50%;
 	clear: both;
+	height: 1px;
 	border: none;
-	margin: 3rem auto;
+	margin: 3rem auto calc(3rem - 1px);
 	border-top: 1px solid rgba($color-body, .125);
 }

@@ -1,7 +1,9 @@
 ---
 title: Style Guide
 subtitle: January 20 2017
-layout: default
+image: /uploads/sf.jpg
+
+layout: page
 permalink: /
 ---
 
@@ -22,3 +24,5 @@ In terms of writing however, there are three rules:
 Distinct sections such as this one are only to be used when a different idea needs to be conveyed. Not only does this make a lengthy article look skimmable, it also allows the reader to experience the full visual style of the website. Also notice the extra breathing room between each section above the subheading.
 
 Lorem ipsum dolor sit amet, consectetur adip + isicing elit, sed do eiusmod + tempor incididunt ut labore et dolore magna aliqua.
+
+> This is an example of a blockquote. There used to be a website called Readmill where I could post reviews of books that I’ve read. It was fairly popular in its hayday and some likened it to be the Yelp of books. But it shut down not too long ago and— coupled with my hectic transition into Uni— I’ve slowly lost interest in reading.

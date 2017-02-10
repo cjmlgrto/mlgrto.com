@@ -1,6 +1,11 @@
 {% include head.html %}
 	<body>
 		<article class="page container">
+			{% if page.image %}
+			<figure class="page-image">
+				<img src="{{ page.image }}"/>
+			</figure>
+			{% endif %}
 			<h1 class="page-title">{{ page.title }}</h1>
 			<time class="page-subtitle">{{ page.subtitle }}</time>
 			<div class="page-content">

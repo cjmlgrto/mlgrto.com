@@ -18,6 +18,10 @@ html {
 
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
+
+	background-image: url(/uploads/grid.png);
+	background-size: 1px 16px;
+	background-position: 0 -1px;
 }
 
 ul, ol,
