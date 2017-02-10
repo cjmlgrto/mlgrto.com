@@ -4,16 +4,15 @@
 
 
 .page {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 
 .page__title {
 	font-size: 2.5em;
 	line-height: 1.2;
 	font-weight: bold;
-	margin-top: calc(4rem + 0.5rem);
-	margin-bottom: calc(4rem + 0.3rem);
+	margin-top: calc(4rem + .5rem);
+	margin-bottom: calc(4rem + .3rem);
 
 	a {
 		color: inherit;
@@ -32,7 +31,7 @@
 
 .page__image {
 	overflow: hidden;
-	margin-top: -1px;
+	margin-top: calc(3rem - 2px);
 	max-height: 25rem;
 	margin-bottom: 1px;
 	position: relative;
@@ -47,7 +46,7 @@
 		height: 100%;
 		display: block;
 		position: absolute;
-		box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
+		box-shadow: 0 0 0 1px rgba(255,255,255,.1) inset;
 	}
 
 }
@@ -63,8 +62,12 @@
 @media (max-width: $width-mobile) {
 
 	.page__title {
-		margin-top: calc(1rem + 0.5rem);
-		margin-bottom: calc(1rem + 0.3rem);
+		margin-top: calc(1rem + .5rem);
+		margin-bottom: calc(1rem + .3rem);
+	}
+
+	.page__image {
+		margin-top: calc(1rem - 2px);
 	}
 
 }

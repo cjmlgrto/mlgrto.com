@@ -9,13 +9,13 @@
 a {
 	color: $color-links;
 	text-decoration: none;
-	border-bottom: 2px solid rgba($color-links, 0.5);
-	transition: border 0.25s cubic-bezier(.06, .53, .41, .89), color 0.25s cubic-bezier(.06, .53, .41, .89);
+	border-bottom: 2px solid rgba($color-links, .5);
+	transition: border .25s cubic-bezier(.06, .53, .41, .89), color .25s cubic-bezier(.06, .53, .41, .89);
 }
 
 a:hover, a:active {
 	color: $color-headings;
-	border-bottom-color: rgba($color-headings, 0.5);
+	border-bottom-color: rgba($color-headings, .5);
 	transition: border 0s linear, color 0s linear;
 }
 
@@ -50,7 +50,7 @@ time, cite, .caps {
 
 cite {
 	font-style: normal;
-	font-size: 0.875rem;
+	font-size: .875rem;
 	color: rgba($color-headings, .5);
 }
 
@@ -62,9 +62,9 @@ blockquote {
 	padding-left: 1rem;
 	background-repeat: no-repeat;
 	color: rgba($color-body, .75);
-	background-size: 0.125rem 100%;
-	background-position: 0 0.125rem;
-	background-image: linear-gradient(to bottom, rgba($color-headings, 0.25) 0%, rgba($color-headings, 0.1) 100%);
+	background-size: .125rem 100%;
+	background-position: 0 .125rem;
+	background-image: linear-gradient(to bottom, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
 
 figure img {
@@ -81,7 +81,7 @@ figcaption {
 
 code {
 	padding: .1rem .25rem;
-	font-size: 0.875em;
+	font-size: .875em;
 	line-height: 1.5rem;
 	color: rgba($color-headings, .6);
 	font-family: "SF Mono", "Menlo", monospace;
@@ -119,4 +119,19 @@ hr {
 	border: none;
 	margin: 3rem auto calc(3rem - 1px);
 	border-top: 1px solid rgba($color-body, .125);
+}
+
+.link-icon {
+	margin-left: .5rem;
+	display: inline-block;
+}
+
+.link-icon path {
+	fill: currentColor;
+	transition: fill .25s cubic-bezier(.06, .53, .41, .89);
+}
+
+a:hover .link-icon path {
+	fill: currentColor;
+	transition: fill 0s linear;
 }

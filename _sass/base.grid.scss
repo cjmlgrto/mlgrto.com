@@ -48,7 +48,7 @@
 
 }
 
-#gridify:target {
+#gridify:target .grid {
 	background-image: 
 		linear-gradient(to right, 
 			transparent 2.35%,  $color-links 2.4%, transparent 2.45%,
@@ -57,18 +57,23 @@
 			transparent 64.25%, $color-links 64.3%, transparent 64.35%,
 			transparent 69.05%, $color-links 69.1%, transparent 69.15%,
 			transparent 97.55%, $color-links 97.6%, transparent 97.65%
-		),
-		linear-gradient(to top, 
-			rgba($color-links, 0.1) 6.25%, transparent 6.3%
 		);
-	background-size: 100% 100%, 1px 16px;
+	background-size: 100% 100%;
 	background-position: 0 -1px;
+}
+
+#gridify:target {
+	background-image:
+		linear-gradient(to top, 
+			rgba($color-links, .1) 6.25%, transparent 6.3%
+		);
+	background-size: 1px 16px;
 }
 
 @media (max-width: $width-content) {
 
-	#gridify:target {
-		background-size: 0% 0%, 1px 16px;
+	#gridify:target .grid {
+		background-image: none;
 	}
 
 }
