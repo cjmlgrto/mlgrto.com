@@ -1,0 +1,74 @@
+// ------------------------------------------
+// Grid
+// ------------------------------------------
+
+.grid {
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	max-width: $width-content;
+
+	.grid__col--full {
+		width: 100%;
+		display: block;
+	}
+
+	.grid__col--wide {
+		display: block;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		width: calc(100% - (2*1.5rem));
+	}
+
+	.grid__col--mini {
+		display: block;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		width: calc((1/3)*100% - (2*1.5rem));
+	}
+
+	.grid__col--maxi {
+		display: block;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		width: calc((2/3)*100% - (2*1.5rem));
+	}
+}
+
+@media (max-width: $width-mobile) {
+
+	.grid {
+
+		.grid__col--mini,
+		.grid__col--maxi {
+			width: calc(100% - (2*1.5rem));
+		}
+
+	}
+
+}
+
+#gridify:target {
+	background-image: 
+		linear-gradient(to right, 
+			transparent 2.35%,  $color-links 2.4%, transparent 2.45%,
+			transparent 30.85%, $color-links 30.9%, transparent 30.95%,
+			transparent 35.65%, $color-links 35.7%, transparent 35.75%,
+			transparent 64.25%, $color-links 64.3%, transparent 64.35%,
+			transparent 69.05%, $color-links 69.1%, transparent 69.15%,
+			transparent 97.55%, $color-links 97.6%, transparent 97.65%
+		),
+		linear-gradient(to top, 
+			rgba($color-links, 0.1) 6.25%, transparent 6.3%
+		);
+	background-size: 100% 100%, 1px 16px;
+	background-position: 0 -1px;
+}
+
+@media (max-width: $width-content) {
+
+	#gridify:target {
+		background-size: 0% 0%, 1px 16px;
+	}
+
+}

@@ -27,15 +27,3 @@ figure, img, video, audio, embed {
 	max-width: 100%;
 	margin-bottom: 1rem;
 }
-
-.container {
-	margin: 0 auto;
-	padding: 0 1.5rem;
-	max-width: $width-content;
-}
-
-#grid:target {
-	background-position: 0 -1px;
-	background-size: 1px 16px;
-	background-image: url(/uploads/grid.png);
-}
