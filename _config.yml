@@ -1,7 +1,35 @@
-title: Carlos Melegrito
+# ------------------------------------------
+# Configuration
+# ------------------------------------------
+
+title: mlgrto.com
+author: Carlos Melegrito
+description: Carlos Melegrito is a designer studying Computer Science
+
+icon:
+color: "#CFA352"
+twitter: cjmlgrto
+
+sections:
+  blog: /
+  work: /work
+  info: /info
 
 sass:
   sass_style: compressed
 
 exclude:
 - clean.sh
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post
+    is_post: true
+    title: null
+    subtitle: null
+    header_image: null
+    preview_image: null
+    style: null

@@ -1,5 +1,6 @@
 {% include head.html %}
 	<body>
+		{% include header.html %}
 		<article class="page grid" id="gridify">
 			{% if page.image %}
 			<figure class="page__image grid__col--full">
@@ -12,5 +13,6 @@
 				{{ content }}
 			</div>
 		</article>
+		{% include footer.html %}
 	</body>
 {% include foot.html %}
