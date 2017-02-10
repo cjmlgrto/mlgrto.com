@@ -9,10 +9,14 @@
 a {
 	color: $color-links;
 	text-decoration: none;
+	border-bottom: 2px solid rgba($color-links, 0.5);
+	transition: border 0.25s cubic-bezier(.06, .53, .41, .89), color 0.25s cubic-bezier(.06, .53, .41, .89);
 }
 
 a:hover, a:active {
 	color: $color-headings;
+	border-bottom-color: rgba($color-headings, 0.5);
+	transition: border 0s linear, color 0s linear;
 }
 
 h1, h2, h3 {
@@ -115,8 +119,4 @@ hr {
 	border: none;
 	margin: 3rem auto calc(3rem - 1px);
 	border-top: 1px solid rgba($color-body, .125);
-}
-
-.nd, .nl {
-	color: rgba($color-headings, .9);
 }
