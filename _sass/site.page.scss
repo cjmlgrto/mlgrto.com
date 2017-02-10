@@ -14,6 +14,11 @@
 	font-weight: bold;
 	margin-top: calc(4rem + 0.5rem);
 	margin-bottom: calc(4rem + 0.3rem);
+
+	a {
+		color: inherit;
+		border-bottom: none;
+	}
 }
 
 .page__subtitle {
