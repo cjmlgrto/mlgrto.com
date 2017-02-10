@@ -56,11 +56,11 @@ ul, ol {
 
 blockquote {
 	padding-left: 1rem;
-	color: rgba($color-body, .75);
-	background-image: linear-gradient(to bottom, rgba($color-headings, 0.25) 0%, rgba($color-headings, 0.1) 100%);
-	background-size: 0.125rem 100%;
-	background-position: 0 2px;
 	background-repeat: no-repeat;
+	color: rgba($color-body, .75);
+	background-size: 0.125rem 100%;
+	background-position: 0 0.125rem;
+	background-image: linear-gradient(to bottom, rgba($color-headings, 0.25) 0%, rgba($color-headings, 0.1) 100%);
 }
 
 figure img {
@@ -76,22 +76,26 @@ figcaption {
 }
 
 code {
-	font-size: .875em;
 	padding: .1rem .25rem;
-	color: lighten($color-body, 10%);
-	background-color: rgba($color-body, .5);
+	font-size: 0.875em;
+	line-height: 1.5rem;
+	color: rgba($color-headings, .6);
 	font-family: "SF Mono", "Menlo", monospace;
+	background-color: rgba($color-headings, .1);
+	box-shadow: 0 0 0 1px rgba($color-headings, .15);
 }
 
 pre {
-	padding: .5rem;
-	line-height: 1.4;
+	padding: 1rem;
+	position: relative;
 	overflow-x: scroll;
-	margin-bottom: 1rem;
-	background-color: rgba($color-body, .5);
+	background-color: rgba($color-headings, .1);
+	box-shadow: 0 0 0 1px rgba($color-headings, .15);
 }
 
 pre code {
+	padding: 0;
+	box-shadow: none;
 	background-color: transparent;
 }
 
@@ -111,4 +115,8 @@ hr {
 	border: none;
 	margin: 3rem auto calc(3rem - 1px);
 	border-top: 1px solid rgba($color-body, .125);
+}
+
+.nd, .nl {
+	color: rgba($color-headings, .9);
 }

@@ -7,7 +7,7 @@ layout: page
 permalink: /
 ---
 
-The style guide dictates the overall visual style and writing style of the entire website. Visually— in order for the text to look *aesthetically appealing* and highly readable even for the most [unlettered](https://www.merriam-webster.com/dictionary/unlettered) of readers— the text is broken down into chunks, each with their own respective subheading.
+The style guide dictates the overall visual style `@include caps` and writing style of the entire website. Visually— in order for the text to look *aesthetically appealing* and highly readable even for the most [unlettered](https://www.merriam-webster.com/dictionary/unlettered) of readers— the text is broken down into chunks, each with their own respective subheading.
 
 There used to be a website called Readmill where I could post reviews of books that I’ve read. It was fairly popular in its hayday and some likened it to be the Yelp of books. But it shut down not too long ago and—  coupled with my hectic transition into Uni— I’ve slowly lost interest in reading.
 
@@ -23,6 +23,16 @@ In terms of writing however, there are three rules:
 
 Distinct sections such as this one are only to be used when a different idea needs to be conveyed. Not only does this make a lengthy article look skimmable, it also allows the reader to experience the full visual style of the website. Also notice the extra breathing room between each section above the subheading.
 
+```sass
+@include capitalise {
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+}
+```
+
 Lorem ipsum dolor sit amet, consectetur adip + isicing elit, sed do eiusmod + tempor incididunt ut labore et dolore magna aliqua.
 
 > This is an example of a blockquote. There used to be a website called Readmill where I could post reviews of books that I’ve read. It was fairly popular in its hayday and some likened it to be the Yelp of books. But it shut down not too long ago and— coupled with my hectic transition into Uni— I’ve slowly lost interest in reading.
+
+Here is an example of inline code as `calc(3px - 0.5rem)` just like so, but in CSS.
