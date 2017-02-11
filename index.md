@@ -1,7 +1,7 @@
 ---
 title: Fluid Type
 subtitle: January 20 2017
-
+image: /uploads/sf.jpg
 
 layout: page
 permalink: /

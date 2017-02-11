@@ -6,9 +6,10 @@ title: mlgrto.com
 author: Carlos Melegrito
 description: Carlos Melegrito is a designer studying Computer Science
 
-icon:
+icon: /static/images/carlos.jpg
 color: "#CFA352"
 twitter: cjmlgrto
+contact: "mailto:cj@mlgrto.com"
 
 sections:
   blog: /
