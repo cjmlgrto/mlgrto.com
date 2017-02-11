@@ -14,6 +14,7 @@
 	border-bottom: none;
 	width: calc((1/3)*100%);
 	background-size: cover;
+	background-position: center;
 	background-color: rgba($color-headings, .1);
 
 	&:nth-child(2n + 1) {
@@ -27,7 +28,7 @@
 	padding: 1.5rem;
 	position: absolute;
 	background-color: rgba($color-background, .25);
-	transition: background-color .25s cubic-bezier(.06, .53, .41, .89), -webkit-backdrop-filter .25s cubic-bezier(.06, .53, .41, .89);
+	transition: background-color .25s $transition, -webkit-backdrop-filter .25s $transition;
 	-webkit-backdrop-filter: blur(0px);
 }
 
@@ -40,18 +41,18 @@
 .featured--meta--date {
 	opacity: 1;
 	display: block;
-	transition: all .25s cubic-bezier(.06, .53, .41, .89);
+	transition: all .25s $transition;
 }
 
 .featured--meta--prompt {
 	opacity: 0;
 	display: block;
 	margin-bottom: -1rem;
-	transition: all .25s cubic-bezier(.06, .53, .41, .89);
+	transition: all .25s $transition;
 }
 
 .featured--content:hover {
-	background-color: rgba($color-background, .5);
+	background-color: rgba($color-background, .75);
 	-webkit-backdrop-filter: blur(10px);
 
 	.featured--meta--date {
@@ -62,6 +63,31 @@
 	.featured--meta--prompt {
 		opacity: 1;
 		transform: translateY(-1.5rem);
+	}
+
+}
+
+@media (max-width: $width-small) {
+
+	.featured {
+		padding-top: calc(1rem - .2rem);
+	}
+
+	.featured--tile {
+		width: 100%;
+		height: 14rem;
+	}
+
+}
+
+@media (max-width: $width-tiny) {
+
+	.featured--tile {
+		height: 10rem;
+
+		p {
+			display: none;
+		}
 	}
 
 }
