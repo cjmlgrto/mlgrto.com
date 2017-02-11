@@ -1,18 +1,11 @@
 <header class="header grid">
-			<a href="/" class="header__home grid__col--mini">{{ site.title }}</a>
-			<nav class="header__nav grid__col--mini">
+			<a href="/" class="header--home grid--col--mini">{{ site.title }}</a>
+			<nav class="header--nav grid--col--mini">
 				<ul>
 					{% for section in site.sections %}
 					<li><a href="{{ section[1] }}" class="caps{% if page.permalink == section[1] %} active{% endif %}">{{ section[0] }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>
-			<a href="{{ site.contact }}" class="header__prompt grid__col--mini caps">
-				Get in touch
-				<svg width="16px" height="16px" viewBox="0 0 16 16" class="link-icon">
-				    <g>
-				        <path d="M15,1.77817459 L15,5.50899482 C15,5.77211952 15.2238576,6 15.5,6 C15.7680664,6 16,5.78016949 16,5.50899482 L16,0.491005182 C16,0.360871295 15.9452443,0.239358168 15.8564884,0.149769472 C15.7645999,0.0567001018 15.6430733,0 15.5089948,0 L10.4910052,0 C10.2278805,0 10,0.223857625 10,0.5 C10,0.768066406 10.2198305,1 10.4910052,1 L14.3684946,1 C14.3539272,1.01157478 14.3398716,1.0240894 14.3264119,1.03754915 L7.23424829,8.12971274 C7.04166268,8.32229835 7.0369709,8.64357262 7.23223305,8.83883476 C7.42178462,9.02838634 7.74497994,9.03319465 7.94135508,8.83681952 L15,1.77817459 Z M15,1.00339089 L15,1 L14.9958041,1 C14.9972081,1.00112169 14.9986068,1.00225199 15,1.00339089 Z M7.99876335,4 L1.00247329,4 C0.455760956,4 0,4.44882258 0,5.00247329 L0,14.9975267 C0,15.544239 0.448822582,16 1.00247329,16 L10.9975267,16 C11.544239,16 12,15.5511774 12,14.9975267 L12,8.00123665 L12,11 L11,11 L11,15 L1,15 L1,5 L5,5 L5,4 L7.99876335,4 Z" fill="#FFFFFF"></path>
-				    </g>
-				</svg>
-			</a>
+			<a href="{{ site.contact }}" class="header--prompt grid--col--mini caps">Get in touch {% include link-icon.svg %}</a>
 		</header>

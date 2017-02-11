@@ -3,11 +3,48 @@
 // ------------------------------------------
 
 .featured {
-	
+	padding-top: calc(4rem - .2rem);
 }
 
-.featured__tile {
+.featured--tile {
 	height: 21rem;
-	background-color: #ccc;
+	padding: 1.5rem;
 	width: calc((1/3)*100%);
+	background-color: rgba($color-headings, .1);
+
+	&:nth-child(2n + 1) {
+		background-color: rgba($color-headings, .2);
+	}
+}
+
+.featured--meta {
+	margin-top: -.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.featured--meta--date {
+	opacity: 1;
+	display: block;
+	transition: all .25s cubic-bezier(.06, .53, .41, .89);
+}
+
+.featured--meta--prompt {
+	opacity: 0;
+	display: block;
+	margin-bottom: -1rem;
+	transition: all .25s cubic-bezier(.06, .53, .41, .89);
+}
+
+.featured--tile:hover {
+
+	.featured--meta--date {
+		opacity: 0;
+		transform: translateY(-1.5rem);
+	}
+
+	.featured--meta--prompt {
+		opacity: 1;
+		transform: translateY(-1.5rem);
+	}
+
 }
