@@ -31,10 +31,10 @@
 
 .page__image {
 	overflow: hidden;
-	margin-top: calc(3rem - 2px);
 	max-height: 25rem;
 	margin-bottom: 1px;
 	position: relative;
+	margin-top: calc(4rem - 2px);
 
 	img {
 		margin-bottom: 0;
@@ -51,7 +51,7 @@
 
 }
 
-@media (max-width: $width-tablet) {
+@media (max-width: $width-medium) {
 
 	.page__content {
 		padding-right: 0;
@@ -59,7 +59,7 @@
 
 }
 
-@media (max-width: $width-mobile) {
+@media (max-width: $width-tiny) {
 
 	.page__title {
 		margin-top: calc(1rem + .5rem);

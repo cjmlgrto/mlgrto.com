@@ -2,6 +2,7 @@
 title: Fluid Type
 subtitle: January 20 2017
 
+
 layout: page
 permalink: /
 ---

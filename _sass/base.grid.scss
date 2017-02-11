@@ -7,48 +7,46 @@
 	margin: 0 auto;
 	flex-wrap: wrap;
 	max-width: $width-content;
-
-	.grid__col--full {
-		width: 100%;
-		display: block;
-	}
-
-	.grid__col--wide {
-		display: block;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-		width: calc(100% - (2*1.5rem));
-	}
-
-	.grid__col--mini {
-		display: block;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-		width: calc((1/3)*100% - (2*1.5rem));
-	}
-
-	.grid__col--maxi {
-		display: block;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
-		width: calc((2/3)*100% - (2*1.5rem));
-	}
 }
 
-@media (max-width: $width-mobile) {
+.grid__col--full {
+	width: 100%;
+	display: block;
+}
 
-	.grid {
+.grid__col--wide {
+	display: block;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	width: calc(100% - (2*1.5rem));
+}
 
-		.grid__col--mini,
-		.grid__col--maxi {
-			width: calc(100% - (2*1.5rem));
-		}
+.grid__col--mini {
+	display: block;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	width: calc((1/3)*100% - (2*1.5rem));
+}
 
+.grid__col--maxi {
+	display: block;
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+	width: calc((2/3)*100% - (2*1.5rem));
+}
+
+@media (max-width: $width-tiny) {
+
+	.grid__col--mini,
+	.grid__col--maxi {
+		width: calc(100% - (2*1.5rem));
 	}
 
 }
 
 #gridify:target .grid {
+	background-size: 100% 100%;
+	background-position: 0 -1px;
 	background-image: 
 		linear-gradient(to right, 
 			transparent 2.35%,  $color-links 2.4%, transparent 2.45%,
@@ -58,16 +56,14 @@
 			transparent 69.05%, $color-links 69.1%, transparent 69.15%,
 			transparent 97.55%, $color-links 97.6%, transparent 97.65%
 		);
-	background-size: 100% 100%;
-	background-position: 0 -1px;
 }
 
 #gridify:target {
+	background-size: 1px 16px;
 	background-image:
 		linear-gradient(to top, 
 			rgba($color-links, .1) 6.25%, transparent 6.3%
 		);
-	background-size: 1px 16px;
 }
 
 @media (max-width: $width-content) {

@@ -49,8 +49,8 @@ time, cite, .caps {
 }
 
 cite {
-	font-style: normal;
 	font-size: .875rem;
+	font-style: normal;
 	color: rgba($color-headings, .5);
 }
 
@@ -80,9 +80,9 @@ figcaption {
 }
 
 code {
-	padding: .1rem .25rem;
 	font-size: .875em;
 	line-height: 1.5rem;
+	padding: .1rem .25rem;
 	color: rgba($color-headings, .6);
 	font-family: "SF Mono", "Menlo", monospace;
 	background-color: rgba($color-headings, .1);

@@ -4,11 +4,8 @@
 
 .header {
 	line-height: 1;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
 	align-items: baseline;
-	justify-content: space-between;
-	padding-top: calc(1rem + .7rem);
+	padding-top: calc(4rem + .7rem);
 
 	a {
 		color: $color-body;
@@ -29,23 +26,51 @@
 	font-size: 1.5rem;
 }
 
-.header__nav {
+.header__nav ul {
+	display: flex;
+	margin-left: 0;
+	list-style: none;
+	text-align: center;
+	justify-content: space-between;
 
-	ul {
-		display: flex;
-		margin-left: 0;
-		list-style: none;
-		text-align: center;
-		justify-content: center;
+}
+
+.header__prompt {
+	text-align: right;
+}
+
+@media (max-width: $width-content) {
+
+	.header {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		justify-content: space-between;
 	}
 
-	a {
-		padding: calc(1rem + .9rem);
+	.header__home, .header__nav, .header__prompt {
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.header__nav {
+		ul {
+			justify-content: center;
+		}
+
+		a {
+			padding: calc(1rem + .9rem);
+		}
+
 	}
 
 }
 
-@media (max-width: $width-tablet) {
+@media (max-width: $width-medium) {
+
+	.header {
+		padding-top: calc(1rem + .6rem);
+	}
 
 	.header__nav a {
 		padding: 1rem;
@@ -53,7 +78,7 @@
 
 }
 
-@media (max-width: $width-narrow) {
+@media (max-width: $width-small) {
 
 	.header__home {
 		width: 100%;

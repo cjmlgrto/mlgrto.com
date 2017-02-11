@@ -1,13 +1,13 @@
 <header class="header grid">
-			<a href="/" class="header__home">{{ site.title }}</a>
-			<nav class="header__nav">
+			<a href="/" class="header__home grid__col--mini">{{ site.title }}</a>
+			<nav class="header__nav grid__col--mini">
 				<ul>
 					{% for section in site.sections %}
 					<li><a href="{{ section[1] }}" class="caps{% if page.permalink == section[1] %} active{% endif %}">{{ section[0] }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>
-			<a href="mailto:cj@mlgrto.com" class="header__prompt caps">
+			<a href="mailto:cj@mlgrto.com" class="header__prompt grid__col--mini caps">
 				Get in touch
 				<svg width="16px" height="16px" viewBox="0 0 16 16" class="link-icon">
 				    <g>
