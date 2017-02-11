@@ -8,7 +8,11 @@
 			</figure>
 			{% endif %}
 			<h1 class="page__title grid__col--wide"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-			<time class="page__subtitle grid__col--mini">{{ page.subtitle }}</time>
+			{% if page.date %}
+			<time class="page__subtitle grid__col--mini">{{ page.date | date: "%B %-d %Y" }}</time>
+			{% else %}
+			<span class="page__subtitle grid__col--mini caps">{{ page.subtitle }}</span>
+			{% endif %}
 			<div class="page__content grid__col--maxi">
 				{{ content }}
 			</div>
