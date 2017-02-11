@@ -67,6 +67,11 @@ blockquote {
 	background-image: linear-gradient(to bottom, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
 
+figure {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
 figure img {
 	display: block;
 	margin-left: auto;
@@ -113,12 +118,12 @@ sup a {
 }
 
 hr {
-	width: 50%;
+	width: calc(50% + 1.6rem);
 	clear: both;
 	height: 1px;
 	border: none;
-	margin: 3rem auto calc(3rem - 1px);
-	border-top: 1px solid rgba($color-body, .125);
+	margin: 3rem 0 calc(3rem - 1px);
+	background-image: linear-gradient(to right, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
 
 .link-icon {

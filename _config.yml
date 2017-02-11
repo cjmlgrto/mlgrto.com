@@ -32,7 +32,6 @@ defaults:
     layout: page
     is_post: true
     title: null
-    subtitle: null
     image: null
     preview: null
     style: null
