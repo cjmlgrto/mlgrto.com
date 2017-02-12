@@ -1,6 +1,5 @@
 ---
 title: Blog
-
 layout: default
 permalink: /
 ---
@@ -25,7 +24,6 @@ permalink: /
 	</a>
 	{% endfor %}
 </section>
-
 <section class="blog grid">
 	{% for post in site.posts offset:featured %}
 	{% assign currentdate = post.date | date: "%Y" %}

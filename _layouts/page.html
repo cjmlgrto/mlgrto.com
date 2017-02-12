@@ -9,9 +9,9 @@
 			{% endif %}
 			<h1 class="page--title grid--col--wide"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 			{% if page.date %}
-			<time class="page--subtitle grid--col--mini">{{ page.date | date: "%B %-d %Y" }}</time>
+				<time class="page--subtitle grid--col--mini">{{ page.date | date: "%B %-d %Y" }}</time>
 			{% else %}
-			<span class="page--subtitle grid--col--mini caps">{{ page.subtitle }}</span>
+				<span class="page--subtitle grid--col--mini caps">{{ page.subtitle }}</span>
 			{% endif %}
 			<div class="page--content grid--col--maxi">
 				{{ content }}

@@ -1,5 +1,10 @@
 <!doctype html>
 <html lang="en" id="gridify">
+	<!-- 
+		DON'T BE SILLY, YOU SHOULDN'T BE READING THE CODE FROM THE BROWSER 
+		INSTEAD, READ THE CODE FROM GITHUB:
+		https://github.com/cjmlgrto/mlgrto.com
+	-->
 	<head>
 		<meta charset="utf-8"/>
 		<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
@@ -13,14 +18,14 @@
 		<meta name="twitter:site" content="@{{ site.twitter }}"/>
 		<meta name="twitter:creator" content="@{{ site.twitter }}"/>
 		<meta name="twitter:title" content="{{ page.title | xml_escape }}"/>
-		<meta name="twitter:description" content="{{ page.content | strip_html | strip | truncatewords: 50 }}"/>
-		<meta name="twitter:image" content="{% if page.preview_image %}{{ page.preview_image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}"/>
+		<meta name="twitter:description" content="{% if page.type == 'blog' or page.type == 'work' %}{{ page.excerpt | strip_html | strip | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}"/>
+		<meta name="twitter:image" content="{% if page.preview %}{{ page.preview| absolute_url }}{% else %}{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}{% endif %}"/>
 
 		<meta property="og:url" content="{{ page.url }}"/>
 		<meta property="og:title" content="{{ page.title | xml_escape }}"/>
-		<meta property="og:type" content="{% if page.is_post %}article{% else %}website{% endif %}"/>
-		<meta property="og:description" content="{{ page.content | strip_html | strip | truncatewords: 50 }}"/>
-		<meta property="og:image" content="{% if page.preview_image %}{{ page.preview_image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}"/>
+		<meta property="og:type" content="{% if page.type == 'blog' %}article{% else %}website{% endif %}"/>
+		<meta property="og:description" content="{% if page.type == 'blog' or page.type == 'work' %}{{ page.excerpt | strip_html | strip | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}"/>
+		<meta property="og:image" content="{% if page.preview %}{{ page.preview| absolute_url }}{% else %}{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}{% endif %}"/>
 
 		<link rel="stylesheet" href="/static/style.css">
 		<link rel="shortcut icon" href="{{ site.icon | absolute_url }}">

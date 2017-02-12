@@ -1,6 +1,8 @@
 ---
 ---
 
+$color: {{ site.color }};
+
 @import 'base.variables';
 @import 'base.reset';
 @import 'base.grid';

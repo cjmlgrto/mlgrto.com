@@ -21,6 +21,7 @@
 	align-items: center;
 	margin-bottom: calc(1rem + 1px);
 	background-color: rgba($color-headings, .1);
+	transition: background-color .25s $transition;
 
 	img {
 		width: 100%;
@@ -34,6 +35,10 @@
 		display: block;
 		position: absolute;
 		box-shadow: 0 0 0 1px rgba($color-headings, .1) inset;
+	}
+
+	&:hover {
+		background-color: rgba($color-headings, .05);
 	}
 
 }

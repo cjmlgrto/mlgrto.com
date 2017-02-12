@@ -23,6 +23,15 @@ sass:
 
 exclude:
 - clean.sh
+- .gitignore
+
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
 
 defaults:
 - scope:
@@ -30,7 +39,17 @@ defaults:
     type: posts
   values:
     layout: page
-    is_post: true
+    type: blog
+    title: null
+    image: null
+    preview: null
+    style: null
+- scope:
+    path: ""
+    type: projects
+  values:
+    layout: page
+    type: work
     title: null
     image: null
     preview: null
