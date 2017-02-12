@@ -4,6 +4,10 @@ module Jekyll
 			alias process convert
 
 			def convert(content)
+
+				# Convert videos links
+				content = content.gsub(/@\[([^\]]+)\]\(([^\=]+)=(\w+)\)/, '<figure><div class="embed"><iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/\3?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>')
+
 				# Let the Kramdown converter process the raw Markdown content first
 				html = process(content)
 

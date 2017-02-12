@@ -125,18 +125,3 @@ hr {
 	margin: 3rem 0 calc(3rem - 1px);
 	background-image: linear-gradient(to right, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
-
-.link-icon {
-	margin-left: .5rem;
-	display: inline-block;
-}
-
-.link-icon path {
-	fill: currentColor;
-	transition: fill .25s $transition;
-}
-
-a:hover .link-icon path {
-	fill: currentColor;
-	transition: fill 0s linear;
-}

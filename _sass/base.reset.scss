@@ -23,7 +23,7 @@ html {
 ul, ol,
 h1, h2, h3,
 p, blockquote, pre,
-figure, img, video, audio, embed {
+figure, img, video, audio, embed, .embed {
 	max-width: 100%;
 	margin-bottom: 1rem;
 }
