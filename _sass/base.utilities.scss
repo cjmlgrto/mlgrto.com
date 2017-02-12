@@ -5,6 +5,9 @@
 .link-icon {
 	margin-left: .5rem;
 	display: inline-block;
+	transform: translateZ(0);
+	filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
+	-webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
 }
 
 .link-icon path {
