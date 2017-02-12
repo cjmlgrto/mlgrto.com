@@ -1,42 +1,26 @@
 // ------------------------------------------
-// Page
+// Work
 // ------------------------------------------
 
-.page {
+.projects {
 	padding-top: 4rem;
 	padding-bottom: 3rem;
 }
 
-.page--title {
-	font-size: 2.5em;
-	line-height: 1.2;
-	font-weight: bold;
-	margin-top: .5rem;
-	margin-bottom: calc(4rem + .3rem);
-
-	a {
-		color: inherit;
-		border-bottom: none;
-	}
-}
-
-.page--subtitle {
+.project {
 	display: block;
-	margin-bottom: 1.5rem;
+	border-bottom: none;
 }
 
-.page--content {
-	padding-right: 10%;
-}
-
-.page--image {
-	overflow: hidden;
-	max-height: 30rem;
-	margin-bottom: calc(4rem + 1px);
-	position: relative;
-	margin-top: -2px;
+.project--image {
 	display: flex;
+	overflow: hidden;
+	margin-top: -2px;
+	max-height: 30rem;
+	position: relative;
 	align-items: center;
+	margin-bottom: calc(1rem + 1px);
+	background-color: rgba($color-headings, .1);
 
 	img {
 		width: 100%;
@@ -54,25 +38,13 @@
 
 }
 
-@media (max-width: $width-medium) {
-
-	.page--content {
-		padding-right: 0;
-	}
-
-}
-
 @media (max-width: $width-small) {
 
-	.page {
+	.projects {
 		padding-top: 1rem;
 	}
-	
-	.page--title {
-		margin-bottom: calc(1rem + .3rem);
-	}
 
-	.page--image {
+	.project--image {
 		margin-top: -2px;
 		margin-bottom: 1rem;
 	}
