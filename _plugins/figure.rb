@@ -3,31 +3,43 @@ module Jekyll
 		class Markdown < Converter
 			alias process convert
 
+			YOUTUBE = /@\[(.*)\]\([^\=]+youtube[^\=]+=([^&"\)]+[^\&)])[^\)]*\)/
+			YOUTUBE_ALT = /@\[(.*)\]\([^\=]+youtu\.be\/([^&"\)]+[^\&)])[^\)]*\)/
+			VIMEO = /@\[(.*)\]\(.+vimeo\.com\/([0-9]+)\)/
+
+			IMAGE = /(alt=".*")(.*)(class=".*")/
+
+			BOLD = /([\-\— ])\*\*(.*)\*\*([\.\-?!:\— \n])/i
+			BOLD_ALT = /([\-\— ])__(.*)__([\.\-?!:\— \n])/i
+			ITALIC = /([\-\— ])\*(.*)\*([\.\-?!:\— \n])/i
+			ITALIC_ALT = /([\-\— ])_(.*)_([\.\-?!:\— \n])/i
+			LINK = /\[([^\]]+)\]\(([^)]+)\)/
+
+			YOUTUBE_SUB = '<figure><div class="embed"><iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/\2?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>'
+			VIMEO_SUB = '<figure><div class="embed"><iframe src="https://player.vimeo.com/video/\2?color=FFFFFF&title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>'
+
+			BOLD_SUB = '\1<strong>\2</strong>\3'
+			ITALIC_SUB = '\1<em>\2</em>\3'
+
 			def convert(content)
 
-				# Convert videos links
-				content = content.gsub(/@\[([^\]]+)\]\(([^\=]+)=(\w+)\)/, '<figure><div class="embed"><iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/\3?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>')
+				content = content.gsub(YOUTUBE,YOUTUBE_SUB)
+				content = content.gsub(YOUTUBE_ALT,YOUTUBE_SUB)
+				content = content.gsub(VIMEO,VIMEO_SUB)
 
-				# Let the Kramdown converter process the raw Markdown content first
 				html = process(content)
 
-				# Swap 'class="..."' with 'alt="..."'
-				html = html.gsub(/(alt=".*")(.*)(class=".*")/i, '\3 \1')
-
-				# Assumes we're using the Kramdown converter. Kramdown wraps <img> tags with <p>'s
-				# We then replace accordingly
+				html = html.gsub(IMAGE, '\3 \1')
 				html = html.gsub("<p><img", "<figure><img")
 				html = html.gsub("\" /></p>", "</figcaption></figure>")
 				html = html.gsub(" alt=\"", "/><figcaption>")
 
-				# Parse ALL leftover markdown
-				html = html.gsub(/\*\*(.*)\*\*/i, '<strong>\1</strong>')
-				html = html.gsub(/__(.*)__/i, '<strong>\1</strong>')
-				html = html.gsub(/\*(.*)\*/i, '<em>\1</em>')
-				html = html.gsub(/_(.*)_/i, '<em>\1</em>')
-				html = html.gsub(/\[([^\]]+)\]\(([^)]+)\)/, '<a href="\2">\1</a>')
+				html = html.gsub(BOLD, BOLD_SUB)
+				html = html.gsub(BOLD_ALT, BOLD_SUB)
+				html = html.gsub(ITALIC, ITALIC_SUB)
+				html = html.gsub(ITALIC_ALT, ITALIC_SUB)
+				html = html.gsub(LINK, '<a href="\2">\1</a>')
 
-				# Finally, we then push the updated html back as the content
 				content = html
 			end
 		end

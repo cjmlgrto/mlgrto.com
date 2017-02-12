@@ -25,7 +25,7 @@ a:hover .link-icon path {
 	width: 100%;
 	float: none;
 	position: relative;
-	padding-bottom: 55.6%;
+	padding-bottom: calc((9/16)*100%);
 }
 
 .embed iframe {
