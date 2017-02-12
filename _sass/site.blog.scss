@@ -98,7 +98,6 @@
 
 	.featured {
 		padding-top: calc(1rem - .2rem);
-		padding-bottom: 1rem;
 	}
 
 	.featured--tile {
@@ -106,14 +105,18 @@
 		height: 14rem;
 	}
 
-	.blog--year {
-		margin-top: 3rem;
-		margin-bottom: 3.5rem;
-	}
-
 }
 
 @media (max-width: $width-tiny) {
+
+	.featured {
+		padding-bottom: 1rem;
+	}
+
+	.blog--year {
+		margin-top: 3rem;
+		margin-bottom: 2.5rem;
+	}
 
 	.featured--tile {
 		height: 10rem;
