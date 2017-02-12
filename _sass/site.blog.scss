@@ -98,11 +98,17 @@
 
 	.featured {
 		padding-top: calc(1rem - .2rem);
+		padding-bottom: 1rem;
 	}
 
 	.featured--tile {
 		width: 100%;
 		height: 14rem;
+	}
+
+	.blog--year {
+		margin-top: 3rem;
+		margin-bottom: 3.5rem;
 	}
 
 }

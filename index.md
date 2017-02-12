@@ -27,59 +27,20 @@ permalink: /
 </section>
 
 <section class="blog grid">
-	<time class="blog--year grid--col--mini">2016</time>
+	{% for post in site.posts %}
+	{% assign currentdate = post.date | date: "%Y" %}
+	{% if currentdate != date %}
+	{% unless forloop.first %}</div>{% endunless %}
+	<span class="blog--year grid--col--mini caps"><time>{{ currentdate }}</time> Articles</span>
 	<div class="blog--items grid--col--maxi">
-		<a href="#" class="blog--item">
+	{% assign date = currentdate %}
+	{% endif %}
+		<a href="{{ post.url }}" class="blog--item">
 			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
+				<h1>{{ post.title }}</h1>
+				<time class="blog--date">{{ post.date | date: "%B %-d %Y" }}</time>
 			</article>
 		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-	</div>
-
-	<time class="blog--year grid--col--mini">2016</time>
-	<div class="blog--items grid--col--maxi">
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-		<a href="#" class="blog--item">
-			<article>
-				<h1>Recommended Resources</h1>
-				<time class="blog--date">January 27</time>
-			</article>
-		</a>
-	</div>
+	{% if forloop.last %}</div>{% endif %}
+	{% endfor %}
 </section>
