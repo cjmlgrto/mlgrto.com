@@ -44,6 +44,7 @@ defaults:
     image: null
     preview: null
     style: null
+    link: null
 - scope:
     path: ""
     type: projects
@@ -54,3 +55,4 @@ defaults:
     image: null
     preview: null
     style: null
+    link: null
