@@ -28,6 +28,7 @@
 	height: 100%;
 	padding: 1.5rem;
 	position: absolute;
+	transform: translateZ(0);
 	-webkit-backdrop-filter: blur(0px);
 	background-color: rgba($color-background, .25);
 	transition: background-color .25s $transition, -webkit-backdrop-filter .25s $transition;
@@ -58,6 +59,7 @@
 }
 
 .featured--content:hover {
+	transform: translateZ(0);
 	-webkit-backdrop-filter: blur(10px);
 	background-color: rgba($color-background, .75);
 
