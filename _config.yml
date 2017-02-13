@@ -23,6 +23,7 @@ sass:
 
 exclude:
 - clean.sh
+- README.md
 - .gitignore
 
 collections:
