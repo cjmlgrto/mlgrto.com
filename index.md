@@ -15,7 +15,7 @@ permalink: /
 			</div>
 			{% if post.preview == null %}
 				{% if post.subtitle %}
-					<p>{{ post.subtitle }}</p>
+					{{ post.subtitle | markdownify }}
 				{% else %}
 					{{ post.excerpt | truncatewords: 20 }}
 				{% endif %}
