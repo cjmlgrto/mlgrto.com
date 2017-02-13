@@ -15,8 +15,8 @@ a {
 
 a:hover, a:active {
 	color: $color-headings;
-	border-bottom-color: rgba($color-headings, .5);
 	transition: border 0s linear, color 0s linear;
+	border-bottom-color: rgba($color-headings, .5);
 }
 
 h1, h2, h3 {

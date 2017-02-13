@@ -3,8 +3,7 @@
 // ------------------------------------------
 
 .featured {
-	padding-top: calc(4rem - .2rem);
-	padding-bottom: 4rem;
+	margin-top: -.2rem;
 	text-shadow: 0 1px 1px rgba(0,0,0,.25);
 }
 
@@ -18,7 +17,7 @@
 	background-position: center;
 	background-color: rgba($color-headings, .1);
 
-	&:nth-child(2n + 1) {
+	&:nth-child(odd) {
 		background-color: rgba($color-headings, .2);
 	}
 }
@@ -100,10 +99,6 @@
 }
 
 @media (max-width: $width-small) {
-
-	.featured {
-		padding-top: calc(1rem - .2rem);
-	}
 
 	.featured--tile {
 		width: 100%;

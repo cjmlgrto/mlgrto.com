@@ -1,26 +1,28 @@
 {% include head.html %}
 	<body>
 		{% include header.html %}
-		<article class="page grid">
-			{% if page.image %}
-			<figure class="page--image grid--col--full">
-				{% if page.type == 'work' %}
-				<img src="{{ page.image }}" srcset="{{ page.image | replace:'.','@2x.' }} 2x"/>
-				{% else %}
-				<img src="{{ page.image }}"/>
+		<main>
+			<article class="page grid">
+				{% if page.image %}
+				<figure class="page--image grid--col--full">
+					{% if page.type == 'work' %}
+						<img src="{{ page.image }}" srcset="{{ page.image | replace:'.','@2x.' }} 2x"/>
+					{% else %}
+						<img src="{{ page.image }}"/>
+					{% endif %}
+				</figure>
 				{% endif %}
-			</figure>
-			{% endif %}
-			<h1 class="page--title grid--col--wide"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-			{% if page.date and page.type == 'blog' %}
-				<time class="page--subtitle grid--col--mini">{{ page.date | date: "%B %-d %Y" }}</time>
-			{% else %}
-				<span class="page--subtitle grid--col--mini caps">{{ page.subtitle }}</span>
-			{% endif %}
-			<div class="page--content grid--col--maxi">
-				{{ content }}
-			</div>
-		</article>
+				<h1 class="page--title grid--col--wide"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+				{% if page.date and page.type == 'blog' %}
+					<time class="page--subtitle grid--col--mini">{{ page.date | date: "%B %-d %Y" }}</time>
+				{% else %}
+					<span class="page--subtitle grid--col--mini caps">{{ page.subtitle }}</span>
+				{% endif %}
+				<div class="page--content grid--col--maxi">
+					{{ content }}
+				</div>
+			</article>
+		</main>
 		{% include footer.html %}
 	</body>
 {% include foot.html %}
