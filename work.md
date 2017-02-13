@@ -12,7 +12,7 @@ permalink: /work
 			{% else %}
 				{% assign source = project.image %}
 			{% endif %}
-			<img src="{{ source }}" srcset="{{ source | replace:'.','@2x.' }} 2x, {{ source | replace:'.','@3x.' }} 3x"/>
+			<img src="{{ source }}" srcset="{{ source | replace:'.','@2x.' }} 2x"/>
 		</figure>
 	</a>
 	{% endfor %}

@@ -30,13 +30,14 @@
 }
 
 .page--image {
-	overflow: hidden;
-	max-height: 30rem;
-	margin-bottom: calc(4rem + 1px);
-	position: relative;
-	margin-top: -2px;
 	display: flex;
+	overflow: hidden;
+	margin-top: -2px;
+	max-height: 30rem;
+	position: relative;
 	align-items: center;
+	margin-bottom: calc(4rem + 1px);
+	background-color: rgba($color-headings, .1);
 
 	img {
 		width: 100%;
