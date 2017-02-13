@@ -22,7 +22,7 @@ sass:
   sass_style: compressed
 
 exclude:
-- clean.sh
+- Makefile
 - README.md
 - .gitignore
 
