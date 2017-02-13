@@ -5,7 +5,7 @@ permalink: /work
 ---
 <section class="projects grid">
 	{% for project in site.projects %}
-	<a href="{{ project.url }}" class="project">
+	<a href="{% if project.link %}{{ project.link }}{% else %}{{ project.url }}{% endif %}" class="project">
 		<figure class="project--image grid--col--full">
 			{% if project.preview %}
 				{% assign source = project.preview %}

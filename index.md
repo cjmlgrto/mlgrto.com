@@ -6,7 +6,7 @@ permalink: /
 {% assign featured = 6 %}
 <section class="featured grid">
 	{% for post in site.posts limit:featured %}
-	<a href="{{ post.url }}" class="featured--tile"{% if post.preview %} style="background-image:url({{ post.preview }});"{% endif %}>
+	<a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}" class="featured--tile"{% if post.preview %} style="background-image:url({{ post.preview }});"{% endif %}>
 		<article class="featured--content">
 			<h1>{{ post.title }}</h1>
 			<div class="featured--meta">
@@ -33,7 +33,7 @@ permalink: /
 	<div class="blog--items grid--col--maxi">
 	{% assign date = currentdate %}
 	{% endif %}
-		<a href="{{ post.url }}" class="blog--item">
+		<a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}" class="blog--item">
 			<article>
 				<h1>{{ post.title }}</h1>
 				<time class="blog--date">{{ post.date | date: "%B %-d %Y" }}</time>
