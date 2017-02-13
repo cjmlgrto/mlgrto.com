@@ -118,10 +118,10 @@ sup a {
 }
 
 hr {
-	width: calc(50% + 1.6rem);
 	clear: both;
 	height: 1px;
 	border: none;
+	width: calc(50% + 1.6rem);
 	margin: 3rem 0 calc(3rem - 1px);
 	background-image: linear-gradient(to right, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
