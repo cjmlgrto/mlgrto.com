@@ -25,7 +25,7 @@ permalink: /
 	{% endfor %}
 </section>
 <section class="blog grid">
-	{% for post in site.posts offset:featured %}
+	{% for post in site.posts %}
 		{% assign currentdate = post.date | date: "%Y" %}
 		{% if currentdate != date %}
 			{% unless forloop.first %}</div>{% endunless %}
