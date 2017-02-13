@@ -1,7 +1,8 @@
 # PRE-PUBLISH TODO LIST
 
 - [x] Clean up CSS (Prevent duplicates?)
-- [ ] Clean up Jekyll directory
+- [x] Clean up Jekyll directory
+- [ ] Add XML file for RSS
 - [ ] Write case studies for projects
 - [ ] Import blog posts and images
 - [ ] Write blog post
