@@ -2,31 +2,9 @@
 // Page
 // ------------------------------------------
 
-.page {
+main {
 	padding-top: 4rem;
-	padding-bottom: 3rem;
-}
-
-.page--title {
-	font-size: 2.5em;
-	line-height: 1.2;
-	font-weight: bold;
-	margin-top: .5rem;
-	margin-bottom: calc(4rem + .3rem);
-
-	a {
-		color: inherit;
-		border-bottom: none;
-	}
-}
-
-.page--subtitle {
-	display: block;
-	margin-bottom: 1.5rem;
-}
-
-.page--content {
-	padding-right: 10%;
+	padding-bottom: 4rem;
 }
 
 .page--image {
@@ -55,19 +33,42 @@
 
 }
 
-@media (max-width: $width-medium) {
+.page--title {
+	font-size: 2.5em;
+	line-height: 1.2;
+	font-weight: bold;
+	margin-top: .5rem;
+	margin-bottom: calc(4rem + .3rem);
+
+	a {
+		color: inherit;
+		border-bottom: none;
+	}
+}
+
+.page--subtitle {
+	display: block;
+	margin-bottom: 1.5rem;
+}
+
+@media (min-width: $width-medium) {
 
 	.page--content {
-		padding-right: 0;
+		padding-right: 10%;
+	}
+
+}
+
+@media (max-width: $width-medium) {
+
+	main {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 
 }
 
 @media (max-width: $width-small) {
-
-	.page {
-		padding-top: 1rem;
-	}
 	
 	.page--title {
 		margin-bottom: calc(1rem + .3rem);

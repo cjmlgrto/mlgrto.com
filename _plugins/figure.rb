@@ -2,43 +2,78 @@ module Jekyll
 	module Converters
 		class Markdown < Converter
 			alias process convert
+			
+			# RegEx for Vimeo and YouTube URLs
+			V = /@\[(.*)\]\(.+vimeo\.com\/([0-9]+)\)/
+			Y = /@\[(.*)\]\([^\=]+youtube[^\=]+=([^&"\)]+[^\&)])[^\)]*\)/
+			Y_ALT = /@\[(.*)\]\([^\=]+youtu\.be\/([^&"\)]+[^\&)])[^\)]*\)/
 
-			YOUTUBE = /@\[(.*)\]\([^\=]+youtube[^\=]+=([^&"\)]+[^\&)])[^\)]*\)/
-			YOUTUBE_ALT = /@\[(.*)\]\([^\=]+youtu\.be\/([^&"\)]+[^\&)])[^\)]*\)/
-			VIMEO = /@\[(.*)\]\(.+vimeo\.com\/([0-9]+)\)/
+			# RegEx for Markdown images
+			IMAGE = /!\[(.*)\]\(([^\)]+)\)(?:{:([^}]+)})*/
+			
+			# RegEx for Markdown styles
+			LINK = /<figcaption>(.*)\[([^\]]+)\]\(([^)]+)\)(.*)<\/figcaption>/
+			ITALIC = /<figcaption>(.*)([\-\— ])\*(.*)\*([\.\-?!:\— \n])(.*)<\/figcaption>/i
+			ITALIC_ALT = /<figcaption>(.*)([\-\— ])_(.*)_([\.\-?!:\— \n])(.*)<\/figcaption>/i
+			BOLD = /<figcaption>(.*)([\-\— ])\*\*(.*)\*\*([\.\-?!:\— \n])(.*)<\/figcaption>/i
+			BOLD_ALT = /<figcaption>(.*)([\-\— ])__(.*)__([\.\-?!:\— \n])(.*)<\/figcaption>/i
 
-			IMAGE = /(alt=".*")(.*)(class=".*")/
+			# Substitutes for Vimeo and YouTube URLs
+			Y_EMBED = '<figure>' +
+						'<div class="embed">' +
+						'<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/'+
+						'\2' +
+						'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' +
+						'</div>' +
+						'<figcaption>' +
+						'\1' +
+						'</ficaption>' +
+						'</figure>'
+			V_EMBED = '<figure>' +
+						'<div class="embed">' +
+						'<iframe src="https://player.vimeo.com/video/' +
+						'\2' +
+						'?color=FFFFFF&title=0&byline=0&portrait=0" ' +
+						'width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' +
+						'</div>' +
+						'<figcaption>' +
+						'\1' +
+						'</figcaption>' +
+						'</figure>'
 
-			BOLD = /([\-\— ])\*\*(.*)\*\*([\.\-?!:\— \n])/i
-			BOLD_ALT = /([\-\— ])__(.*)__([\.\-?!:\— \n])/i
-			ITALIC = /([\-\— ])\*(.*)\*([\.\-?!:\— \n])/i
-			ITALIC_ALT = /([\-\— ])_(.*)_([\.\-?!:\— \n])/i
-			LINK = /\[([^\]]+)\]\(([^)]+)\)/
+			# Substitutes for images
+			IMG = '<figure>' +
+						'<img src="' +
+						'\2' + '" ' +
+						'\3' +
+						'/>' +
+						'<figcaption>' +
+						'\1' +
+						'</figcaption>' +
+						'</figure>'
 
-			YOUTUBE_SUB = '<figure><div class="embed"><iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/\2?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>'
-			VIMEO_SUB = '<figure><div class="embed"><iframe src="https://player.vimeo.com/video/\2?color=FFFFFF&title=0&byline=0&portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><figcaption>\1</figcaption></figure>'
-
-			BOLD_SUB = '\1<strong>\2</strong>\3'
-			ITALIC_SUB = '\1<em>\2</em>\3'
+			# Substitutes for styles
+			EM = '<figcaption>\1\2<em>\3</em>\4\5</figcaption>'
+			URL = '<figcaption>\1<a href="\3">\2</a>\4</figcaption>'
+			STRONG = '<figcaption>\1\2<strong>\3</strong>\4\5</figcaption>'
 
 			def convert(content)
 
-				content = content.gsub(YOUTUBE,YOUTUBE_SUB)
-				content = content.gsub(YOUTUBE_ALT,YOUTUBE_SUB)
-				content = content.gsub(VIMEO,VIMEO_SUB)
+				# Convert videos and images to their substitutes
+				content = content.gsub(V,V_EMBED)
+				content = content.gsub(Y,Y_EMBED)
+				content = content.gsub(Y_ALT,Y_EMBED)
+				content = content.gsub(IMAGE, IMG)
 
+				# Get Kramdown to process the raw content as Markdown
 				html = process(content)
 
-				html = html.gsub(IMAGE, '\3 \1')
-				html = html.gsub("<p><img", "<figure><img")
-				html = html.gsub("\" /></p>", "</figcaption></figure>")
-				html = html.gsub(" alt=\"", "/><figcaption>")
-
-				html = html.gsub(BOLD, BOLD_SUB)
-				html = html.gsub(BOLD_ALT, BOLD_SUB)
-				html = html.gsub(ITALIC, ITALIC_SUB)
-				html = html.gsub(ITALIC_ALT, ITALIC_SUB)
-				html = html.gsub(LINK, '<a href="\2">\1</a>')
+				# Process the leftover Markdown within <figcaption>s
+				html = html.gsub(BOLD, STRONG)
+				html = html.gsub(BOLD_ALT, STRONG)
+				html = html.gsub(ITALIC, EM)
+				html = html.gsub(ITALIC_ALT, EM)
+				html = html.gsub(LINK, URL)
 
 				content = html
 			end

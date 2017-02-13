@@ -43,33 +43,3 @@
 	}
 
 }
-
-#gridify:target .grid {
-	background-size: 100% 100%;
-	background-position: 0 -1px;
-	background-image: 
-		linear-gradient(to right, 
-			transparent 2.35%,  $color-links 2.4%, transparent 2.45%,
-			transparent 30.85%, $color-links 30.9%, transparent 30.95%,
-			transparent 35.65%, $color-links 35.7%, transparent 35.75%,
-			transparent 64.25%, $color-links 64.3%, transparent 64.35%,
-			transparent 69.05%, $color-links 69.1%, transparent 69.15%,
-			transparent 97.55%, $color-links 97.6%, transparent 97.65%
-		);
-}
-
-#gridify:target {
-	background-size: 1px 16px;
-	background-image:
-		linear-gradient(to top, 
-			rgba($color-links, .1) 6.25%, transparent 6.3%
-		);
-}
-
-@media (max-width: $width-content) {
-
-	#gridify:target .grid {
-		background-image: none;
-	}
-
-}

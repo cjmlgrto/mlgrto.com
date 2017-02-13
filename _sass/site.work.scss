@@ -2,11 +2,6 @@
 // Work
 // ------------------------------------------
 
-.projects {
-	padding-top: 4rem;
-	padding-bottom: 3rem;
-}
-
 .project {
 	display: block;
 	border-bottom: none;
@@ -24,7 +19,6 @@
 	transition: background-color .25s $transition;
 
 	img {
-		width: 100%;
 		margin-bottom: 0;
 	}
 
@@ -44,10 +38,6 @@
 }
 
 @media (max-width: $width-small) {
-
-	.projects {
-		padding-top: 1rem;
-	}
 
 	.project--image {
 		margin-top: -2px;
