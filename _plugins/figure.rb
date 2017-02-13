@@ -75,6 +75,7 @@ module Jekyll
 				html = html.gsub(ITALIC_ALT, EM)
 				html = html.gsub(LINK, URL)
 
+				# Hand over the processed content back to Jekyll
 				content = html
 			end
 		end
