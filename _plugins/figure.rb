@@ -27,7 +27,7 @@ module Jekyll
 						'</div>' +
 						'<figcaption>' +
 						'\1' +
-						'</ficaption>' +
+						'</figcaption>' +
 						'</figure>'
 			V_EMBED = '<figure>' +
 						'<div class="embed">' +
