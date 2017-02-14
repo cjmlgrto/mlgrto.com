@@ -10,7 +10,7 @@ Melbourne's premiere university-level tech hackathon was on this weekend. Just l
 
 I learned so much in the span of 36 sleepless hours. While fresh in my mind, here's what happened, in the form of major 🔑 lessons from [UNIHACK](http://unihack.net):
 
-## 1. Don't be afraid to try something old ♻️
+## Don't be afraid to try something old ♻️
 
 When you're starting out as an entrepreneur, trying to come up with a unique business idea [feels like the biggest problem in the world](https://www.quora.com/What-are-the-best-ways-to-generate-good-business-ideas).
 
@@ -22,7 +22,7 @@ So my team and I decided to [stick to our idea](https://github.com/cjmlgrto/busy
 
 ![](/uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/win.jpg)
 
-## 2. Work Fast, Speak Slowly 💬
+## Work Fast, Speak Slowly 💬
 
 6 hours before the deadline, my team and I were facing some really bad issues building our app. We couldn't get the core functionality to work. We had a huge backlog of tasks that needed to be finished in just a small amount of time— and lot of that work was dependent on this core feature.
 
@@ -36,7 +36,7 @@ Every one of us in our team was too concerned about getting stuff done that we d
 
 30 minutes before the deadline was when we finally resolved all our issues. It was extremely stressful, but one heck of a lesson to learn: you can [never assume that other people know as much as you](http://sethgodin.typepad.com/seths_blog/2016/02/a-manifesto-for-small-teams-doing-important-work.html). When you do anything, _explain before_, _explain during_, and _explain after_!
 
-## 3. It's all about the pitch 📈
+## It's all about the pitch 📈
 
 There are so many ways to phrase this. Here's a few that I like: 
 
