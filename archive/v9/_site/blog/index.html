@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Carlos Melegrito ⋮ Articles I‘ve written</title>
+
+		<meta name="author" content="Carlos Melegrito">
+		<meta name="theme-color" content="#7B72E9">
+		<meta name="description" content="Carlos is a computer science student and designer.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@cjmlgrto"/>
+		<meta name="twitter:creator" content="@cjmlgrto"/>
+		<meta name="twitter:title" content="Articles I‘ve written"/>
+		<meta name="twitter:description" content="{% for post in site.posts %} {% assign currentdate = post.date | date: "%Y" %} {% if currentdate != date %} {% unless forloop.first %}{% endunless %} {{ currentdate }} {% assign date = currentdate %} {% endif %} {{ post.title }} {{ post.subtitle }} {% if forloop.last %}{% endif..."/>
+		<meta name="twitter:image" content="/static/images/carlos.png"/>
+
+		<meta property="og:url" content="http://localhost:4000"/>
+		<meta property="og:title" content="Articles I‘ve written"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="{% for post in site.posts %} {% assign currentdate = post.date | date: "%Y" %} {% if currentdate != date %} {% unless forloop.first %}{% endunless %} {{ currentdate }} {% assign date = currentdate %} {% endif %} {{ post.title }} {{ post.subtitle }} {% if forloop.last %}{% endif..."/>
+		<meta property="og:image" content="/static/images/carlos.png"/>
+
+		<link rel="stylesheet" href="/static/style.css">
+		<link rel="apple-touch-icon" href="/static/images/carlos.png">
+		<link rel="shortcut icon" href="/static/images/carlos.png">
+		
+	</head>
+	<body>
+		<main class="container">
+			<header class="align">
+				<a href="/" class="name left">Carlos</a>
+				<nav>
+					<ul>
+						<li><a href="/work/">Work</a></li>
+						<li><a href="/blog/" class="active">Blog</a></li>
+						<li><a href="/info/">Info</a></li>
+					</ul>
+				</nav>
+				<a href="/" class="name right">Melegrito</a>
+			</header>
+			<article class="content">
+				<div class="page-title">
+					<h1>Articles I‘ve written</h1>
+				</div>
+				
+
+			</article>
+			<footer class="align">
+				<div class="copyright left">
+					© Carlos Melegrito
+				</div>
+				<nav class="right">
+					<ul>
+						<li><a href="https://twitter.com/cjmlgrto">Twitter</a></li>
+						<li><a href="https://github.com/cjmlgrto">Github</a></li>
+						<li><a href="https://instagram.com/cjmlgrto">Instagram</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</main>
+	</body>
+	<!-- GoSquared Tracking Script -->
+</html>
