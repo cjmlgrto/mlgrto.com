@@ -4,7 +4,7 @@
 		<main>
 			<article class="page grid">
 				{% if page.image %}
-				<figure class="page--image grid--col--full">
+				<figure class="page--image grid--col--full" {% if page.height %}style="max-height:{{ page.height }}rem !important;"{% endif %}>
 					{% if page.type == 'work' %}
 						<img src="{{ page.image }}" srcset="{{ page.image | replace:'.','@2x.' }} 2x"/>
 					{% else %}
