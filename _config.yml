@@ -11,6 +11,7 @@ color: "#CFA352"
 twitter: cjmlgrto
 contact: "mailto:cj@mlgrto.com"
 
+permalink: pretty
 markdown: kramdown
 
 sections:
