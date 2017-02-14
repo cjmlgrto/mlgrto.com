@@ -1,0 +1,135 @@
+.post-only {
+	display: block;
+}
+
+.post-title,
+.permalink,
+.sidebar {
+	display: none;
+}
+
+.header:after {
+	display: block;
+	content: 'Fixing The Graphic Design Problem';
+	padding-top: 12%;
+	padding-bottom: 14%;
+	font-size: 6rem;
+	font-weight: 900;
+	color: #57D9B7;
+	text-align: center;
+	font-style: italic;
+	line-height: 1;
+	background-image: url(imgs/photoshop.png);
+	background-size: 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-top: 3rem;
+	text-shadow: 1px 1px 0 #05131E, 2px 2px 0 #05131E, 3px 3px 0 #05131E, 4px 4px 0 #05131E, 5px 5px 0 #05131E, 6px 6px 0 #05131E, 7px 7px 0 #05131E;
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+}
+
+figure img {
+	margin-bottom: .5rem;
+}
+
+figcaption {
+	font-size: 0.65em;
+}
+
+.right-floater {
+	float: right;
+	max-width: 30%;
+	margin-top: .5rem;
+	margin-left: 1rem;
+	vertical-align: top;
+}
+
+.right-floater figcaption {
+	text-align: right;
+}
+
+.left-floater {
+	float: left;
+	max-width: 30%;
+	margin-top: .5rem;
+	margin-right: 1rem;
+	vertical-align: top;
+}
+
+.slightly-large {
+	width: 130%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: -15%;
+}
+
+.slightly-large figcaption, .more-large figcaption {
+	text-align: center;
+}
+
+.more-large {
+	width: 150%;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	margin-left: -25%;
+}
+
+.footnotes {
+	font-size: 0.65em;
+	margin-top: 4rem;
+}
+
+@media (max-width: 1000px) {
+
+	.slightly-large, .more-large {
+		width: auto;
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 880px) {
+
+	.header:after {
+		font-size: 5rem;
+		padding-bottom: 17%;
+	}
+
+}
+
+@media (max-width: 800px) {
+	.header:after {
+		padding-bottom: 8%;
+	}
+}
+
+@media (max-width: 720px) {
+	.header:after {
+		padding-top: 2%;
+		padding-bottom: 2%;
+		background-position: center;
+	}
+}
+
+
+@media (max-width: 414px) {
+
+	.header:after {
+		font-size: 3em;
+	}
+
+	.right-floater, .left-floater {
+		float: none;
+		max-width: 100%;
+		margin: 0 auto 1rem;
+	}
+
+	figcaption {
+		text-align: left !important;
+	}
+
+}

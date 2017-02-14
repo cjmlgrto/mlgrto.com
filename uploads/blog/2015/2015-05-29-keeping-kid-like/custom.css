@@ -1,0 +1,199 @@
+/* @custom - keeping kid-like-25-5 */
+
+.post-only {
+	display: block;
+}
+
+.push {
+	max-width: 80%;
+	margin: 0 auto 4em;
+}
+
+#name:before {
+	background-image: url(avatar.png);
+}
+
+#name span {
+	background-image: url(span.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	border: 1px solid #6EC60D;
+	padding: .87rem .9rem 0 1.05rem;
+}
+
+.nav a,
+.post a,  
+.navlink {
+	color: #6EC60D;
+}
+
+.active, 
+article h1 a {
+	color: #000 !important;
+}
+
+.meta, article h1 {
+	display: none;
+}
+
+article:before {
+	text-align: center;
+	display: block;
+	color: #000;
+	position: relative;
+	bottom: -5em;
+	font-weight: 500;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	content: 'Youth-Led Change';
+	font-family: "Avenir", "avenir-web", Futura, sans-serif;
+}
+
+#main-title {
+	width: 140%;
+	margin-top: -1em;
+	margin-bottom: 6.85em;
+	margin-left: -20%;
+	box-sizing: border-box;
+	padding: 33%;
+	display: block;
+	background-image: url(title.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	transition: opacity 0.2s ease-out;
+}
+
+#main-title:hover {
+	background-image: url(play.png), url(title.png);
+	background-size: 150px 150px, 100%;
+	opacity: 0.5;
+}
+
+article:hover article:before {
+	opacity: 0;
+}
+
+blockquote {
+	margin-left: 0;
+	text-align: center;
+	font-size: 1.5em;
+	color: #BD10E0;
+}
+
+blockquote cite {
+	display: block;
+	margin-top: 1em;
+	color: #9013FE;
+}
+
+cite {
+	font-size: 0.75em;
+}
+
+.footnotes span {
+	display: block;
+	color: #6EC60D;
+	margin: 2em auto;
+	text-align: center;
+}
+
+.footnotes {
+	width: 140%;
+	margin-left: -20%;
+	margin-top: 5em;
+	margin-bottom: 2em;
+}
+
+figure:before,
+blockquote:before {
+	display: block;
+	content: ' ';
+	width: 240px;
+	height: 62px;
+	background-image: url(top.png);
+	background-size: 100%;
+	background-repeat: none;
+	margin: 2em auto 1em;
+}
+
+figure:after,
+blockquote:after {
+	display: block;
+	content: ' ';
+	width: 236px;
+	height: 69px;
+	background-image: url(bottom.png);
+	background-size: 100%;
+	background-repeat: none;
+	margin: 1em auto 2em;
+}
+
+footer, .paginate {
+	text-align: center;
+}
+
+#leaders {
+	max-width: 360px;
+	padding: 18%;
+	margin: 1em auto;
+	background-image: url(leaders.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	margin: 0;
+}
+
+#v-frame {
+	width: 140%;
+	margin-left: -20%;
+	margin-bottom: 2.4em;
+}
+
+@media screen and (max-width: 900px) {
+	#main-title, figure, .footnotes, #v-frame {
+		width: auto;
+		margin-left: 0;
+	}
+	.footnotes a {
+		width: 14em;
+		overflow: hidden;
+		white-space: nowrap;
+		display: inline-block;
+		text-overflow: ellipsis;
+	}
+	article:before {
+		bottom: -1em;
+	}
+	#main-title {
+		margin-top: -3em;
+		padding: 24%;
+		margin-bottom: 4em;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.push {
+		max-width: 100%;
+	}
+	article:before {
+		margin: 2em auto;
+		bottom: 0;
+	}
+	#main-title {
+		display: none !important;
+	}
+	#v-frame {
+		display: block !important;
+	}
+}
