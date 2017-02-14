@@ -2,7 +2,7 @@
 
 - [x] Clean up CSS (Prevent duplicates?)
 - [x] Clean up Jekyll directory
-- [ ] Import blog posts and images
+- [x] Import blog posts and images
 - [ ] Write blog post
 - [ ] Migrate remote to this repo
 - [ ] Test GitHub Pages (if Plugins don't work, migrate to S3)
