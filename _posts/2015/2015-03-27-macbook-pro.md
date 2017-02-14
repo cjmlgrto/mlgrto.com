@@ -1,8 +1,7 @@
 ---
 title: The MacBook Pro
-image: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8691.jpg
+image: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8697.jpg
 preview: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8695.jpg
-height: 40
 ---
 
 Early last week, amidst Apple’s recent reveal-slash-revival of the original MacBook lineup, I bought myself a MacBook Pro— and goodness, this thing is _beautiful_.
