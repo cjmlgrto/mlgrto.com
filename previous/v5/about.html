@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About the Author - The Backlog</title>
+<meta charset="utf-8" />
+<meta name="author" content="CJ Melegrito" />
+{block:Description}<meta name="description" content="{MetaDescription}"/>{/block:Description}
+<meta name="viewport" content="width=device-width, initial-scale=0.80" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="feed://bcklg.tumblr.com/rss">
+<link rel="shortcut icon" href="http://f.cl.ly/items/363N35252P0k142F0t0V/mr.png">
+<link rel="apple-touch-icon-precomposed" href="http://static.tumblr.com/lovrbkz/l2Qm31dr0/icon.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://static.tumblr.com/lovrbkz/h8vm31dro/icon-72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static.tumblr.com/lovrbkz/Ca6m31dpu/icon_2x.png" />
+{block:PermalinkPage}
+<style> @import url(http://dl.dropbox.com/u/15461520/tumblr/posts.css); </style>
+{/block:PermalinkPage}
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		
+<style>
+
+/* FONTS */
+
+@font-face {
+font-family: "Cheltenhm BdHd BT";
+font-weight: bold;
+src: url(http://api.cld.me/GQ4P/download/cheltenhambold.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'FF Tisa Web Pro';
+font-weight: bold;
+src: url(http://api.cld.me/GQU8/download/modified-main.otf) format('opentype');
+}
+
+@font-face {
+font-family: 'FF Tisa Web Pro';
+src: url(http://api.cld.me/GQU8/download/modified-main.otf) format('opentype');
+}
+
+@font-face {
+font-family: 'FF Tisa Web Pro';
+font-style: italic;
+src: url(http://api.cld.me/GQko/download/modified-main-italic.otf) format('opentype');
+}
+		
+/* GRID */
+		
+.full-width { width: 100%;}
+.half-width { width: 50%; }
+.half-width-margin-left { width: 40%; margin-right: 10%;}
+.half-width-margin-right { width: 40%; margin-left: 10%;}
+.clearfix { clear: both; }
+.left { float: left; }
+.right { float: right; }
+		
+/* MAIN */
+		
+body {
+max-width: 900px;
+margin: 0 auto;
+padding: 0 20px;
+font-family: "FF Tisa Web Pro", "Georgia", serif;
+font-size: 18px;
+line-height: 1.5em;
+color: #111;
+-webkit-font-smoothing: subpixel-antialiased !important;
+}
+		
+::selection {
+color: #FFF;
+background: #c1cc7c;
+}
+		
+a {
+text-decoration: none;
+-webkit-transition: all 0.2s linear;
+}
+		
+a:hover {
+color: #c1cc7c;
+}
+		
+#blog-header {
+width: 100%;
+/* border-right: 1px solid #ccc; EDITS FOR SEB */
+margin-bottom: 45px;
+}
+		
+	.logo {
+	float: left;
+	width: 200px;
+	padding: 12px 0px 12px 24px;
+	/* -webkit-mask-image: url(http://static.tumblr.com/lovrbkz/ZMLlujoxm/mask.png); */
+	}
+			
+	.top {
+	background: #c1cc7c;
+	/* border-left: 1px solid #c1cc7c; EDITS FOR SEB */
+	}
+			
+	.bottom {
+	background: #111;
+	/* border-left: 1px solid #111; EDITS FOR SEB */
+	}
+			
+	.logo span a {
+	font-family: "Cheltenhm BdHd BT", "FF Tisa Web Pro", "Georgia", serif;
+	font-size: 30px;
+	color: #FFF;
+	}
+	
+	.byline {
+	margin-left: 10px;
+	}
+			
+	.byline, .header-links a {
+	display: inline-block;
+	padding-top: 14px;
+	}
+			
+	.header-links a {
+	color: #777;
+	text-decoration: none;
+	display: inline-block;
+	width: 90px;
+	margin-right: 19px;
+	}
+	
+	.header-links a:hover {
+	color: #9AB93D;
+	}
+			
+#posts {
+width: 100%;
+}
+		
+#posts > ul, #posts > li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+		
+footer {
+height: 50px;
+margin-bottom: 50px;
+/* border-right: 1px solid #ccc; EDITS FOR SEB */
+/* border-left: 1px solid #ccc; EDITS FOR SEB */
+}
+		
+	.footer span a, .archives a {
+	display: inline-block;
+	color: #000;
+	padding: 14px 12px 0px 0px;
+	}
+	
+	.archives {
+	margin: 0 auto;
+	text-align: center;
+	width: 80px;
+	}
+	
+#notes {
+display: none;
+}
+
+#notes:target {
+display: block;
+}
+
+.notes ol, .notes li {
+list-style: none;
+margin: 0 0 1.5em;
+padding: 0;
+}
+
+.notes img {
+position: relative;
+float: left;
+margin: 6px 10px 0 0;
+}
+		
+/* POSTS */
+		
+.post {
+margin: 0 0 4.5em;
+min-height: 100px;
+}
+		
+	article header {
+	margin-bottom: 1.5em;
+	}
+		
+	.article header h1, .photo header h1, .video header h1 {
+	font-weight: normal;
+	font-size: 54px;
+	line-height: 1em;
+	margin: 0 0 13px;
+	color: #111;
+	}
+	
+		.article header h1 a, .photo header h1 a, .video header h1 a {
+		color: #111;
+		}
+		
+	.link header h1, .chat header h1 {
+	font-weight: normal;
+	margin: 0 0 13px;
+	}
+		.link header h1 a, chat header h1 {
+		color: #444;
+		}
+		
+	.quote header h1 {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 24px;
+	color: #777;
+	margin: 0 0 13px;
+	}
+		
+	article header span {
+	color: #777;
+	font-style: italic;
+	}
+		
+	article header span a {
+	font-style: normal;
+	color: #c1cc7c;
+	}
+	
+	.chat ul {
+	list-style: none;
+	margin: 0 0 1.5em;
+	padding: 0;
+	}
+		
+		.chat li {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+		color: #777;
+		}
+	
+		.odd {
+		color: #c1cc7c;
+		}
+		
+		.even {
+		color: #111;
+		}
+		
+	.audio header img {
+	max-width: 30%;
+	float: left;
+	margin-right: 10px;
+	}
+	
+	.audio header span {
+	color: #111;
+	font-style: normal;
+	}
+	
+	.audio header em {
+	color: #777;
+	}
+		
+section a {
+color: #777;
+text-decoration: underline;
+}
+
+section ul {
+list-style-type: disc;
+}
+		
+section p, section img, section h1, section h2, section h3, section h4, section ul, iframe, video, embed, object {
+margin: 0 0 1.5em;
+}
+		
+section blockquote {
+font-style: italic;
+margin: 0 0 1.5em;
+color: #777;
+}
+		
+section img, iframe, video, embed, object {
+max-width: 100%;
+}
+		
+/* MEDIA QUERIES */
+		
+		
+@media screen and (max-width: 960px) {
+
+	body {
+	-webkit-text-size-adjust: none;
+	}
+		
+	#blog-header {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+		
+	.header-links a {
+	width: 70px;
+	margin-right: 6.8%;
+	}
+		
+	.link header h1 {
+	text-decoration: underline;
+	}
+		
+	}
+		
+@media screen and (max-width: 826px) {
+		
+	.post {
+	margin: 0 0 3em;
+	}
+	
+	.article, .video {
+	margin: 0 0 4.5em !important;
+	}
+		
+	.logo {
+	width: 192px;
+	padding: 10px 0px 10px 22px;
+	}
+		
+	.header-links a {
+	margin-right: 15px;
+	}
+		
+	}
+		
+	@media screen and (max-width: 750px) {
+		
+	header {
+	padding: 0px 0px 20px;
+	border-bottom: 1px solid #ccc;
+	}
+		
+	.half-width, .half-width-margin-left, .half-width-margin-right {
+	width: 100%;
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	}
+		
+	.header-links {
+	margin-top: 10px;
+	clear: both;
+	}
+		
+	#logo-footer {
+	display: none;
+	}
+	
+	footer {
+	border-left: none;
+	}
+	
+	.read_more_container a {
+	background: #111 !important;
+	}
+		
+	}
+		
+/* FIXES */
+
+
+.article {
+margin: 0 0 6em !important;
+}
+
+.video {
+min-height: 300px !important;
+}
+
+.video p {
+margin: 1.5em 0 0 !important;
+}
+
+.fixer {
+margin-left: -3px;
+}
+
+.fixer a:hover {
+background: #9AB93D !important;
+}
+		
+.cutoff::after {
+content: '...';
+display: inline;
+}
+		
+.read_more_container {
+display: inline-block;
+margin: 5px 5px 10px 0px;
+}
+
+	
+.read_more_container a {
+color: #FFF;
+background: #111;
+padding: 2px 8px 5px;
+text-decoration: none;
+}
+		
+.read_more_container a:hover {
+background: #c1cc7c;
+}
+
+#tumblr_controls {
+display: block !important;
+position: fixed !important;
+opacity: 0 !important;
+-webkit-transition: all 0.25s linear;
+}
+
+#tumblr_controls:hover {
+opacity: 1 !important;
+}
+		
+{CustomCSS}
+
+/* COLOPHON */
+
+.colophon header {
+margin: 0 0 3em !important;
+}
+
+.colophon .contact h1 {
+color: #c1cc7c;
+padding-bottom: 1.2em;
+border-bottom: 1px solid #ccc;
+}
+
+.colophon .left h1 {
+color: #9AB93D;
+}
+
+.contact p {
+color: #444;
+}
+
+a[href="/about"] {
+color: #9AB93D;
+}
+		
+</style>
+	
+</head>
+		
+<body>
+	<div id="blog-header">
+		<div class="half-width left headers">
+			<div class="logo top"><span><a href="/">The Backlog</a></span></div>
+			<div class="byline"><i>by</i> CJ Melegrito</div>
+		</div>
+			
+		<div class="header-links half-width right">
+			<a href="/rss">Subscribe</a>
+			<a href="/portfolio">Portfolio</a>
+			<a href="/archive">Archives</a>
+			<a href="#">About</a>
+		</div>
+			
+		<div class="clearfix"></div>
+	</div>
+		
+	<div id="posts">
+	<ul>
+			<li class="post article colophon">
+				<article>
+					<header>
+						<h1>I'm one part student, one part designer and one part writer.</h1>
+					</header>
+					
+					<div class="clearfix"></div>
+					
+					<section class="half-width left">
+					<p>I'm CJ Melegrito. I often refer to myself as a <cite>Gestalt-Ingenieur</cite>. Translated from German, it literally means "Shape-Engineer", and I like to design and solve problems in my spare time. I also write code and play piano and the guitar whenever I have the chance.</p>
+					
+					<p>When I'm not writing for my site, I'm writing over at <a href="http://theindustry.cc">The Industry</a>. Elsewhere on the web, I post some of my designs up at <a href="http://dribbble.com/cjmlgrto">Dribbble, take pictures as an amateur photographer on <a href="http://flickr.com/mlgrto">Flickr</a>, or even make some <a href="http://youtube.com/thefoldedpixel">YouTube videos</a>.</p>
+					
+					<p>I also love and serve the Lord God, as I am a Catholic, and I love <a href="http://www.youversion.com/bible/verse/niv/col/1/15-20">Jesus</a> as he is my savior.</p>
+					
+					<p>If you're wondering what I sit in front of whenever I blog, I have an amazing <a href="http://bcklg.tumblr.com/post/1196346685/ta-da-i-just-said-goodbye-to-dozens-of-power">27" iMac</a>, an Apple Wireless Keyboard, an Apple Magic Mouse, an <a href="http://homescreen.me/cjmlgrto">iPhone</a> and an external 1TB hard drive, on which I use Time Machine to backup my important files with.</p>
+					
+					<h1>About This site</h1>
+					
+					<p>The Backlog is my own personal, online web-column. Here, I share some of my experiences, opinions, thoughts, <a href="http://bcklg.tumblr.com/post/9287489947/dogs-can-reliably-sniff-out-lung-cancer">some interesting links</a> from elsewhere on the internet, and perhaps, I post <a href="http://bcklg.tumblr.com/post/1036269979/churros-anyone-yes-the-truth-is-out-there-im">a photo</a> or two occasionally.</p> 
+					
+					<p>The phrase "Backlog" comes from a conjugation of the phrases <em>back-end</em> and <em>weblog</em>. I didn't really know then that the word <cite>Backlog</cite> actually meant <em>"an accumulation of something"</em>. It must've been some kind of strange, yet interesting, coincidence.</p>
+					
+					<p>The fonts I use on this site are modified versions of <a href="https://typekit.com/fonts/ff-tisa-web-pro">FF Tisa Web Pro</a> and Cheltenham Bold, which is a font used, if you've seen it, in the mobile app version of <cite>The New York Times</cite>.</p>
+	
+					</section>
+					
+					<section class="half-width-margin-right right contact">
+					<h1>Contacting me is a breeze.</h1>
+					
+					<p>I do believe that commenting systems on blogs is a great way for spammers and the like to deface the quality of one's blog. Take YouTube as an example. Besides, I also don't want spammers and random people from the interwebs selling me refurbished Android tablets and Levis.</p>
+					
+					<p>Although, if you're a nice person, and you'd like to say hello or if you'd like me to help you with some work, you can get a hold of me through Twitter or through my email, listed below. Alternatively, you can go and have a look through some of these various social networks, in which I am a part of, also listed below.</p>
+					
+					<p class="read_more_container fixer"><a href="http://twitter.com/cjmlgrto">Follow me on Twitter</a>
+					<p class="read_more_container"><a href="mailto:cjmlgrto06@gmail.com">Email Me</a></p>
+
+					</section>
+					
+					<div class="clearfix"></div>
+				</article>
+			</li>
+	</ul>
+		
+	<footer>					
+		<div id="logo-footer" class="half-width left">
+			<div class="byline">© CJ Melegrito {CopyrightYears}</div>
+		</div>
+	</footer>		
