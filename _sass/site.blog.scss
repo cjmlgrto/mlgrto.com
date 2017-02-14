@@ -5,7 +5,6 @@
 .featured {
 	margin-top: -.2rem;
 	padding-bottom: 4rem;
-	text-shadow: 0 1px 1px rgba(0,0,0,.25);
 }
 
 .featured--tile {
@@ -17,6 +16,7 @@
 	background-size: cover;
 	background-position: center;
 	background-color: rgba($color-headings, .1);
+	text-shadow: 0 1px 1px rgba(0,0,0,.25);
 
 	&:nth-child(odd) {
 		background-color: rgba($color-headings, .2);
@@ -36,6 +36,10 @@
 	figure {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	.link-icon {
+		transform: translateY(-1px);
 	}
 }
 
