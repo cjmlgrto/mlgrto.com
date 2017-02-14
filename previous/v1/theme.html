@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <title>{Title}{block:PostTitle}: {PostTitle}{/block:PostTitle}</title>
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/advofcj">
+	{block:Description}
+	<meta name="description" content="{MetaDescription}">
+	{/block:Description}
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+<style>
+
+/* RESET */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold&v1);
+
+body {
+background: #F5F5F5;
+font-family: "Droid Sans";
+-webkit-font-smoothing: subpixel-antialiased;
+}
+
+a {
+text-decoration: none;
+}
+
+::selection {
+color: #F5F5F5;
+background: #D32828;
+}
+
+::moz-selection {
+color: #F5F5F5;
+background: #1B2124;
+}
+
+body > div {
+margin: 0 auto;
+width: 640px;
+position: relative;
+}
+
+body > div > ul {
+list-style: none;
+margin-top: 60px;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.topbar {
+height: 76px;
+top: 1px;
+opacity: 1;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.tophidden {
+opacity: 0;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+#header {
+position: absolute;
+width: 640px;
+height: 105px;
+top: 0;
+border-bottom: 1px solid #FFF;
+background: #F5F5F5;
+-webkit-box-shadow: 0px 10px 30px #F5F5F5;
+-moz-box-shadow: 0px 10px 30px #F5F5F5;
+box-shadow: 0px 10px 30px #F5F5F5;
+/*-webkit-animation: fade 3s ease-in;*/
+}
+
+.inside {
+width: 640px;
+height: 104px;
+border-bottom: 1px solid #DCDCDC;
+}
+
+.inside h1 {
+float: right;
+font-size: 23px;
+font-weight: 100;
+color: #1B2124;
+margin: 45px 0;
+}
+
+.inside div {
+position: absolute;
+top: 20px;
+width: 75px;
+height: 75px;
+background: transparent url(http://static.tumblr.com/lovrbkz/uSMloqf0a/m-lo.png) no-repeat;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.inside div:hover {
+opacity: 0.75;
+}
+
+/* POSTS */
+
+.post {
+margin: 30px 0 90px -40px;
+}
+
+.post h1 {
+color: #D32828;
+font-weight: 100;
+font-size: 23px;
+text-decoration: none;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.text h1 {
+font-size: 28px;
+}
+
+.post h1:hover {
+color: #AAA;
+}
+
+.post h2 {
+color: #1B2124;
+font-weight: 100;
+font-size: 23px;
+text-decoration: none;
+}
+
+.post p {
+color: #1B2124;
+font-size: 15px;
+line-height: 20px;
+}
+
+.post a {
+color: #AAA;
+border-bottom: 1px solid #DDD;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.post a:hover {
+color: #D32828;
+}
+
+.post li {
+font-size: 15px;
+line-height: 20px;
+}
+
+.post blockquote {
+font-size: 15px;
+line-height: 20px;
+border-left: 4px solid #D32828;
+padding-left: 35px;
+margin-left: 0;
+}
+
+.post img {
+max-width: 615px;
+border: 10px solid #F9F9F9;
+-webkit-border-radius: 3px;
+-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+margin-bottom: 20px;
+margin-left: 3px;
+}
+
+.embed {
+margin: 0 auto;
+margin-bottom: 20px;
+}
+
+.chat {
+list-style: none;
+margin-left: -40px;
+}
+
+.art {
+width: 300px;
+}
+
+.ll {
+border-bottom: 1px solid #AAA;
+}
+
+/* TAGS */
+
+.meta {
+color: #D32828;
+position: relative;
+margin-top: 20px;
+padding-top: 20px;
+border-top: 1px dashed #DCDCDC;
+}
+
+.meta span {
+float: right;
+}
+
+.meta span a {
+float: right;
+text-decoration: none;
+border-bottom: none;
+color: #D32828;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.meta span a:hover {
+color: #AAA;
+}
+
+.notes {
+position: relative;
+margin-right: 5px;
+}
+
+.meta ul {
+margin-left: -40px;
+float: left;
+}
+
+.meta li {
+list-style: none;
+display: inline;
+}
+
+/* PAGINATION */
+
+.pagination {
+width: 640px;
+height: 60px;
+text-align: center;
+}
+
+.pagination a {
+color: #D32828;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.pagination a:hover {
+color: #AAA;
+}
+
+.older {
+float: left;
+}
+
+.newer {
+float: right;
+}
+
+.center {
+position: absolute;
+left: 270px;
+}
+
+/* FOOTER */
+
+.footer {
+width: 640px;
+height: 157px;
+border-top: #DCDCDC 1px solid;
+border-bottom: #FFF 1px solid;
+}
+
+.inner {
+width: 640px;
+height: 155px;
+border-top: #FFF 1px solid;
+border-bottom: #DCDCDC 1px solid;
+}
+
+.inner img {
+width: 75px;
+height: 75px;
+float: right;
+margin: 38px 0px;
+position: absolute;
+-webkit-border-radius: 5px;
+}
+
+.inner div {
+position: absolute;
+margin-left: 100px;
+margin-top: 30px;
+}
+
+.inner h2 {
+color: #1B2124;
+font-size: 20px;
+font-weight: 100;
+margin: 0;
+}
+
+.inner p {
+margin-top: 5px;
+width: 540px;
+font-size: 15px;
+line-height: 20px;
+}
+
+.bottom {
+width: 640px;
+margin-top: 20px;
+height: 60px;
+}
+
+.bottom a {
+color: #AAA;
+-webkit-transition: all 0.25s linear;
+-moz-transition: all 0.25s linear;
+transition: all 0.25s linear;
+}
+
+.bottom a:hover {
+color: #D32828;
+}
+
+.bottom span {
+font-size: 15px;
+line-height: 20px;
+}
+
+.copyright {
+float: right;
+}
+
+.contact {
+float: left;
+}
+
+/* MISC */
+
+#tumblr_controls {
+display: none;
+}
+
+.b-day {
+width: 640px;
+height: 300px;
+}
+
+.one {
+width: 97px;
+height: 189px;
+margin: 0 auto;
+left: -25px;
+position: relative;
+background: transparent url(http://static.tumblr.com/lovrbkz/rT1loqezm/one.png) no-repeat;
+-webkit-animation: fade 1s ease-in;
+}
+
+.b-daytext {
+width: 600px;
+margin: 20px auto;
+position: relative;
+font-size: 30px;
+font-weight: 100;
+text-align: center;
+-webkit-animation: fade 5s ease-in;
+}
+
+@-webkit-keyframes fade {
+0% {
+		opacity: 0;
+	}
+50% {
+		opacity: 0;
+}
+100% {
+		opacity: 1;
+}
+}
+
+{CustomCSS}
+
+
+</style>
+
+
+<script type="text/javascript">
+
+function hide (event)
+{
+	var element = event.currentTarget;
+	/* Toggle the setting of the classname attribute */
+	element.className = (element.className == 'topbar') ? 'tophidden' : 'topbar';
+}
+
+</script>
+
+	</head>
+	
+	<body>
+		<div>
+			
+			<div class="topbar">
+				<div id="header">
+					<div class="inside">
+						<a href="/"><div></div></a>
+						<h1>The Adventures of CJ</h1>
+					</div>
+				</div>
+			</div>
+			
+		<ul>
+		
+			{block:Posts}
+				{block:Text}
+					<li class="post text">
+						{block:Title}
+							<a href="{Permalink}"><h1>{Title}</h1></a>
+						{/block:Title}
+						
+						<p>{Body}</p>
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}
+						</div>
+					</li>
+				{/block:Text}
+				
+				{block:Photo}
+					<li class="post photo">
+						<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+						
+						{block:Caption}
+							<p>{Caption}</p>
+						{/block:Caption}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Photo}
+				
+				{block:Photoset}
+					<li class="post photo">
+						{LinkOpenTag}
+							{Photoset-500}
+						{LinkCloseTag}
+						
+						{block:Caption}
+							<p>{Caption}</p>
+						{/block:Caption}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Photoset}
+				
+				{block:Quote}
+					<li class="post quote">
+						<h2>"{Quote}"</h2>
+						
+						{block:Source}
+						<p>{Source}</p>
+						{/block:Source}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Quote}
+				
+				{block:Link}
+					<li class="post link">
+						<a href="{URL}" {Target}><h1>{Name} →</h1></a>
+						
+						{block:Description}
+						<p>{Description}</p>
+						{/block:Description}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Link}
+				
+				{block:Chat}
+					<li class="post chat">
+						{block:Title}
+							<a href="{Permalink}"><h1>{Title}</h1></a>
+						{/block:Title}
+						
+						<ul class="chat">
+							{block:Lines}
+								<li>
+									{block:Label}
+										<b>{Label}</b>
+									{/block:Label}
+									
+									{Line}
+								</li>
+							{/block:Lines}
+						</ul>
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Chat}
+				
+				{block:Video}
+					<li class="post video">
+						<div class="embed">
+							{Video-500}
+						</div>
+						
+						{block:Caption}
+						<p>{Caption}</p>
+						{/block:Caption}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Video}
+				
+				{block:Audio}
+					<li class="post audio">
+						{block:AlbumArt}
+							<img src="{AlbumArtURL}" class="art" />
+						{/block:AlbumArt}
+						
+						<div class="AudioPlayer">
+							{AudioPlayerBlack}
+						</div>
+						
+						{block:Caption}
+						<p>{Caption}</p>
+						{/block:Caption}
+						
+						<div class="meta">
+							{block:HasTags}
+								<ul>
+									{block:Tags}
+									<a href="{TagURL}"><li>#{Tag}</li></a>
+									{/block:Tags}
+								</ul>
+							{/block:HasTags}
+							
+							{block:Date}
+								<span>{TimeAgo}</span>
+							{/block:Date}
+							{block:NoteCount}
+								<span class="notes"><a href="{Permalink}">{NoteCountWithLabel},</a></span>
+							{/block:NoteCount}						</div>
+					</li>
+				{/block:Audio}
+				
+				{block:IfShowPostNotes}
+					{block:PostNotes}
+						<li class="post notes">
+							{PostNotes}
+						</li>
+					{/block:PostNotes}
+				{/block:IfShowPostNotes}
+				
+			{/block:Posts}
+		</ul>
+		
+		{block:Pagination}
+			<div class="pagination">
+				<span class="older">
+					{block:NextPage}<a href="{NextPage}">View Older Posts</a>{/block:NextPage}
+				</span>
+				
+				<span class="newer">
+					{block:PreviousPage}<a href="{PreviousPage}">View Newer Posts</a>{/block:PreviousPage}
+				</span>
+				
+				<span class="center">
+					<a href="/archive">View Archive</a>
+				</span>
+				
+			</div>
+		{/block:Pagination}
+		
+		<div class="footer">
+			<div class="inner">
+				<img src="{PortraitURL-96}"/>
+				
+				<div>
+					<h2>CJ Melegrito</h2>
+					
+					{block:Description}
+						<p>{Description}</p>
+					{/block:Description}
+				</div>
+			</div>
+		</div>
+		
+		<div class="bottom">
+			<span class="copyright">"All my base are belong to CJ Melegrito."</span>
+			
+			<span class="contact"><a href="/aboutme">Contact CJ</a>, or <a href="http://feeds.feedburner.com/advofcj">View RSS</a>.</span>
+		</div>
+			
+</div>
+</body>
+</html>
+
+
+								
+				
