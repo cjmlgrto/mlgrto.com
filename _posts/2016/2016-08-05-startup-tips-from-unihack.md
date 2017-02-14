@@ -1,6 +1,6 @@
 ---
 title: Startup Tips from UNIHACK
-preview: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/meet.jpg
+preview: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/pitch.jpg
 image: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/win.jpg
 ---
 
