@@ -3,10 +3,6 @@ title: The Definitive Guide to Jekyll
 subtitle: "All it takes is a `sudo brew install jekyll` to blog away!"
 ---
 
-**Note**: As you can probably tell by the date, this was written long long long ago, with a very outdated version of Jekyll. Don't follow what it says. Or do— for the hilarity.
-
----
-
 [Jekyll](http://jekyllrb.com)’s a publishing platform (sort of like Tumblr) I’ve been playing around with the past few days that’s apparently simple, and feels lightweight. As a matter of fact, it does feel lightweight, writing themes for it couldn’t be easy enough, and publishing articles with Jekyll is ridiculously fun. However, it’s not as simple as it is to get it set up:
 
 1. Download and install [Xcode](https://itunes.apple.com/au/app/xcode/id497799835?mt=12&ign-mpt=uo%3D4)
