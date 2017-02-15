@@ -10,5 +10,5 @@ build:
 	@rm -rf .sass-cache/
 
 push:
-	git add --all && git commit
-	s3_website push
+	@git add --all && git commit
+	@s3_website push
