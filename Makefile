@@ -8,3 +8,6 @@ serve:
 build:
 	@jekyll build
 	@rm -rf .sass-cache/
+
+push:
+	s3_website push
