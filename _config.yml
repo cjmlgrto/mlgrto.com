@@ -6,16 +6,17 @@ title: mlgrto.com
 author: Carlos Melegrito
 description: Carlos Melegrito is a designer studying Computer Science
 
+url: mlgrto.com
 icon: /static/images/carlos.jpg
 color: "#CFA352"
 twitter: cjmlgrto
 contact: "mailto:cj@mlgrto.com"
 
-permalink: pretty
+permalink: /blog/:year/:title/
 markdown: kramdown
 
 sections:
-  blog: /
+  blog: /blog/
   work: /work/
   info: /info/
 
