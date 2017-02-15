@@ -3,7 +3,7 @@ title: "Hello, I‘m Carlos!"
 subtitle: About Carlos
 image: /static/images/workshop.jpg
 layout: page
-permalink: /info
+permalink: /info/
 ---
 
 I'm a multidisciplinary designer and software engineer. In other words, I'm really good at drawing icons, prototyping apps, building websites, producing videos— and sometimes, I teach people how to code.

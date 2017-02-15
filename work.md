@@ -1,7 +1,7 @@
 ---
 title: Work
 layout: default
-permalink: /work
+permalink: /work/
 ---
 <section class="projects grid">
 	{% for project in site.projects %}
