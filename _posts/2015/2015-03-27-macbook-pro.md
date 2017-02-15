@@ -1,6 +1,6 @@
 ---
 title: The MacBook Pro
-image: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8697.jpg
+image: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8694.jpg
 preview: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8695.jpg
 ---
 

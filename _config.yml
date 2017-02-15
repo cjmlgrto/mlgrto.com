@@ -16,8 +16,8 @@ markdown: kramdown
 
 sections:
   blog: /
-  work: /work
-  info: /info
+  work: /work/
+  info: /info/
 
 sass:
   sass_style: compressed
