@@ -1,6 +1,6 @@
 clean:
-	@rm -rf .sass-cache/
 	@rm -rf _site/
+	@rm -rf .sass-cache/
 
 serve:
 	@jekyll serve
