@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: default
-permalink: /blog/
+permalink: /
 ---
 {% assign featured = 6 %}
 <section class="featured grid">

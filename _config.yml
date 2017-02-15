@@ -16,7 +16,7 @@ permalink: /blog/:year/:title/
 markdown: kramdown
 
 sections:
-  blog: /blog/
+  blog: /
   work: /work/
   info: /info/
 
