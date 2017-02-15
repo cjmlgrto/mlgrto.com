@@ -23,10 +23,11 @@ sass:
   sass_style: compressed
 
 exclude:
+- .env
+- .gitignore
 - Makefile
 - README.md
-- .gitignore
-- .env
+- s3_website.yml
 
 collections:
   posts:
