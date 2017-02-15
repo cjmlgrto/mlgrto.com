@@ -11,4 +11,5 @@ build:
 
 push:
 	@git add --all && git commit
+	@git push
 	@s3_website push
