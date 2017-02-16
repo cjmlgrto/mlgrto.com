@@ -8,6 +8,6 @@
 - [x] Clean up DNS records
 - [x] Migrate remote to this repo
 - [x] Write info page
-- [ ] Write a few blog posts
+- [x] Write a few blog posts
 - [ ] Write blog post
 - [ ] Merge with master
