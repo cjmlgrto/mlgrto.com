@@ -10,7 +10,7 @@ url: mlgrto.com
 icon: /static/images/carlos.jpg
 color: "#CFA352"
 twitter: cjmlgrto
-contact: "mailto:<%= ENV['EMAIL'] %>"
+contact: "mailto:cj@mlgrto.com"
 
 permalink: /blog/:year/:title/
 markdown: kramdown

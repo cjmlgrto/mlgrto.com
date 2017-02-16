@@ -1,0 +1,38 @@
+html {
+	background: white;
+	color: #333;
+}
+
+.header .active {
+	color: black;
+}
+
+.page--image {
+	max-height: 100%;
+}
+
+.page--image:before {
+	display: none;
+}
+
+.page--title {
+	color: black;
+}
+
+.link-icon {
+	filter: none;
+	-webkit-filter: none;
+}
+
+figcaption {
+	color: #888;
+}
+
+hr {
+	border-bottom: 1px solid #eee;
+}
+
+a:hover, a:active {
+	color: black;
+	border-bottom-color: black;
+}
