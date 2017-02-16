@@ -1,7 +1,7 @@
 ---
 title: Startup Tips from UNIHACK
-preview: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/pitch.jpg
 image: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/win.jpg
+preview: /uploads/blog/2016/2016-08-05-startup-tips-from-unihack/imgs/win.jpg
 ---
 
 Melbourne's premiere university-level tech hackathon was on this weekend. Just like last year, I joined in. With fierce competition, mentors & recruiters from big-name companies, and a panel of critically-acclaimed judges— it was one _exhilarating_ event.
