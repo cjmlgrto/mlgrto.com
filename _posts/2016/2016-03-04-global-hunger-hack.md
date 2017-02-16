@@ -1,5 +1,5 @@
 ---
-title: Global Hunger Hack 2015
+title: Global Hunger Hack
 preview: http://68.media.tumblr.com/ae0c71a572e145c4c6c8e94af76adb37/tumblr_o3grqjM3DI1qccn4eo1_1280.jpg
 ---
 
