@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" id="gridify">
+<html>
 <head>
-	<meta charset="utf-8"/>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+
+	<title>{{ page.title }} &#8211; {{ site.title }}</title>
 
 	<meta name="robots" content="all">
 	<meta name="author" content="{{ site.author }}">
-	<meta name="theme-color" content="{{ site.color }}">
+	<meta name="theme-color" content="#{{ site.color }}">
 	<meta name="description" content="{{ site.description }}">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:site" content="@{{ site.twitter }}"/>
-	<meta name="twitter:creator" content="@{{ site.twitter }}"/>
-	<meta name="twitter:title" content="{{ page.title | xml_escape }}"/>
-	<meta name="twitter:description" content="{% if page.type == 'blog' or page.type == 'work' %}{{ page.excerpt | strip_html | strip | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}"/>
-	<meta name="twitter:image" content="{% if page.preview %}{{ page.preview| absolute_url }}{% else %}{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}{% endif %}"/>
+    <meta property="og:locale" content="">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 
-	<meta property="og:url" content="{{ page.url }}"/>
-	<meta property="og:title" content="{{ page.title | xml_escape }}"/>
-	<meta property="og:type" content="{% if page.type == 'blog' %}article{% else %}website{% endif %}"/>
-	<meta property="og:description" content="{% if page.type == 'blog' or page.type == 'work' %}{{ page.excerpt | strip_html | strip | truncatewords: 50 }}{% else %}{{ site.description }}{% endif %}"/>
-	<meta property="og:image" content="{% if page.preview %}{{ page.preview| absolute_url }}{% else %}{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.icon | absolute_url }}{% endif %}{% endif %}"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ page.url }}">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:site" content="@{{ site.twitter }}">
+    <meta name="twitter:description" content="{{ site.description }}">
 
+	<link rel="shortcut icon" href="{{ site.icon }}">
+	<link rel="apple-touch-icon" href="{{ site.icon }}">
+	
 	<link rel="stylesheet" href="/static/style.css">
-	<link rel="shortcut icon" href="{{ site.icon | absolute_url }}">
-	<link rel="apple-touch-icon" href="{{ site.icon | absolute_url }}">
-	{% if page.style %}<link rel="stylesheet" href="{{ page.style }}">{% endif %}
+	{% if page.style %}
+	<link rel="stylesheet" href="{{ page.style }}">
+	{% endif %}
 </head>
-<!-- View the source code at github.com/cjmlgrto/mlgrto.com -->
+<!-- VIEW THE SOURCE CODE HERE: https://github.com/cjmlgrto/mlgrto.com -->

@@ -9,5 +9,5 @@
 - [x] Migrate remote to this repo
 - [x] Write info page
 - [x] Write a few blog posts
-- [ ] Write blog post
+- [x] Write blog post
 - [ ] Merge with master
