@@ -1,13 +1,13 @@
 ---
 title: Global Hunger Hack
-preview: http://68.media.tumblr.com/ae0c71a572e145c4c6c8e94af76adb37/tumblr_o3grqjM3DI1qccn4eo1_1280.jpg
+preview: /uploads/blog/2016/2016-03-04-global-hunger-hack/preview.jpg
 ---
 
 I spent the entirety of the past weekend at a [hackathon](https://www.monash.edu/science/about/events/global-hunger-hack) for [my course](http://haveyougottheedge.com)— and I can only say that it’s been insanely _exhilarating_.
 
 Here’s what we did: we were given _3 days_ to come up with a solution to _global hunger_— be it _food insecurity_, _malnutrition_, or even just preventing _food waste_. In teams, we were then tasked to turn our solution into a [minimum-viable startup](http://giphy.com/gifs/veep-reid-scott-dan-eagan-12EidnsFgFGtoY), create business plans, and at the end, pitch to a panel of [judges](http://www.stcaustralia.org/about-us/team/).
 
-![](http://68.media.tumblr.com/ae0c71a572e145c4c6c8e94af76adb37/tumblr_o3grqjM3DI1qccn4eo1_1280.jpg)
+![](/uploads/blog/2016/2016-03-04-global-hunger-hack/image.jpg)
 
 Our team focused on malnutrition; that is, giving the _right nutrients_ to the disadvantaged. It felt like a daunting task to begin with, but we were up for the challenge. We spent the next 48 hours with [amazing](https://twitter.com/marinaparonetto) [people](https://twitter.com/gilbertjoshuam), collaborating on a [brand](http://instagram.com/growyourown.cc), [products](http://growyourown.cc), and a strategy— one I’ll perhaps blog about in the near future. We worked through the night— and finally, at the end of it all, our team’s founder, [Elle Phillips](http://twitter.com/ellephee1), presented the pitch.
 
