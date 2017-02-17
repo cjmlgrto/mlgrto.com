@@ -10,6 +10,15 @@ build:
 	@rm -rf .sass-cache/
 
 push:
-	@git add --all && git commit
-	@git push
 	@s3_website push
+
+install:
+	@touch .env
+	@echo "S3_ID=" >> .env
+	@echo "S3_SECRET=" >> .env
+	@echo "S3_BUCKET=" >> .env
+	@echo "S3_ENDPOINT=" >> .env
+	@echo "CLOUDFRONT_DIST_ID=" >> .env
+	@gem install jekyll
+	@gem install s3_website
+	@echo "All setup now! Run 'make serve' to view the site."
