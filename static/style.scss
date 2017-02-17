@@ -1,18 +1,18 @@
 ---
 ---
 
-$color: {{ site.color }};
+$color: #{{ site.color }};
 
-@import 'base.variables';
-@import 'base.reset';
+@import 'base.vars';
+@import 'base.base';
 @import 'base.grid';
-@import 'base.typography';
-@import 'base.utilities';
+@import 'base.type';
+@import 'base.misc';
 
-@import 'site.header';
-@import 'site.page';
-@import 'site.blog';
-@import 'site.work';
-@import 'site.footer';
+@import 'header';
+@import 'page';
+@import 'blog';
+@import 'work';
+@import 'footer';
 
 @import 'base.font';

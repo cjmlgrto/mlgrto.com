@@ -33,7 +33,3 @@ When I just started high school, I learned to code because I wanted to build mys
 I [recently redesigned](/) this website. This tenth major version is built on top of [Jekyll](http://jekyllrb.com) and set in a typeface called [Mallory](https://frerejones.com/families/mallory). You can view the source code for it on [GitHub](https://github.com/cjmlgrto/mlgrto.com).
 
 This site's my humble little abode on the information superhighway— thanks for stopping by!
-
-
-
-

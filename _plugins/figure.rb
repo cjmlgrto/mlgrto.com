@@ -4,9 +4,9 @@ module Jekyll
 			alias process convert
 			
 			# RegEx for Vimeo and YouTube URLs
-			V = /@\[(.*)\]\(.+vimeo\.com\/([0-9]+)\)/
-			Y = /@\[(.*)\]\([^\=]+youtube[^\=]+=([^&"\)]+[^\&)])[^\)]*\)/
-			Y_ALT = /@\[(.*)\]\([^\=]+youtu\.be\/([^&"\)]+[^\&)])[^\)]*\)/
+			VIMEO_URL = /@\[(.*)\]\(.+vimeo\.com\/([0-9]+)\)/
+			YOUTUBE_URL = /@\[(.*)\]\([^\=]+youtube[^\=]+=([^&"\)]+[^\&)])[^\)]*\)/
+			YOUTUBE_SHORT_URL = /@\[(.*)\]\([^\=]+youtu\.be\/([^&"\)]+[^\&)])[^\)]*\)/
 
 			# RegEx for Markdown images
 			IMAGE = /!\[(.*)\]\(([^\)]+)\)(?:{:([^}]+)})*/
@@ -19,38 +19,39 @@ module Jekyll
 			BOLD_ALT = /<figcaption>(.*)([\-\— ])__(.*)__([\.\-?!:\— \n])(.*)<\/figcaption>/i
 
 			# Substitutes for Vimeo and YouTube URLs
-			Y_EMBED = '<figure>' +
-						'<div class="embed">' +
-						'<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/'+
-						'\2' +
-						'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' +
-						'</div>' +
-						'<figcaption>' +
-						'\1' +
-						'</figcaption>' +
-						'</figure>'
-			V_EMBED = '<figure>' +
-						'<div class="embed">' +
-						'<iframe src="https://player.vimeo.com/video/' +
-						'\2' +
-						'?color=FFFFFF&title=0&byline=0&portrait=0" ' +
-						'width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' +
-						'</div>' +
-						'<figcaption>' +
-						'\1' +
-						'</figcaption>' +
-						'</figure>'
+			VIMEO_EMBED = '<figure>' +
+			'<div class="embed">' +
+			'<iframe src="https://player.vimeo.com/video/' +
+			'\2' +
+			'?color=FFFFFF&title=0&byline=0&portrait=0" ' +
+			'width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>' +
+			'</div>' +
+			'<figcaption>' +
+			'\1' +
+			'</figcaption>' +
+			'</figure>'
+
+			YOUTUBE_EMBED = '<figure>' +
+			'<div class="embed">' +
+			'<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/'+
+			'\2' +
+			'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' +
+			'</div>' +
+			'<figcaption>' +
+			'\1' +
+			'</figcaption>' +
+			'</figure>'
 
 			# Substitutes for images
 			IMG = '<figure>' +
-						'<img src="' +
-						'\2' + '" ' +
-						'\3' +
-						'/>' +
-						'<figcaption>' +
-						'\1' +
-						'</figcaption>' +
-						'</figure>'
+			'<img src="' +
+			'\2' + '" ' +
+			'\3' +
+			'/>' +
+			'<figcaption>' +
+			'\1' +
+			'</figcaption>' +
+			'</figure>'
 
 			# Substitutes for styles
 			EM = '<figcaption>\1\2<em>\3</em>\4\5</figcaption>'
@@ -60,9 +61,9 @@ module Jekyll
 			def convert(content)
 
 				# Convert videos and images to their substitutes
-				content = content.gsub(V,V_EMBED)
-				content = content.gsub(Y,Y_EMBED)
-				content = content.gsub(Y_ALT,Y_EMBED)
+				content = content.gsub(VIMEO_URL,VIMEO_EMBED)
+				content = content.gsub(YOUTUBE_URL,YOUTUBE_EMBED)
+				content = content.gsub(YOUTUBE_SHORT_URL,YOUTUBE_EMBED)
 				content = content.gsub(IMAGE, IMG)
 
 				# Get Kramdown to process the raw content as Markdown
