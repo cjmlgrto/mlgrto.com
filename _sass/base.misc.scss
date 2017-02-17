@@ -1,0 +1,77 @@
+// ------------------------------------------
+// Utilities
+// ------------------------------------------
+
+.link-icon {
+	margin-left: .5rem;
+	margin-bottom: -1px;
+	display: inline-block;
+	transform: translateZ(0);
+	filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
+	-webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
+}
+
+.link-icon path {
+	fill: currentColor;
+	transition: fill .25s $transition;
+}
+
+a:hover .link-icon path {
+	fill: currentColor;
+	transition: fill 0s linear;
+}
+
+.embed {
+	height: 0;
+	width: 100%;
+	float: none;
+	position: relative;
+	padding-bottom: calc((9/16)*100%);
+}
+
+.embed iframe {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.footnotes {
+	margin-top: 3rem;
+	padding-top: 3rem;
+	background-position: top left;
+	background-size: calc(50% + 1.6rem) 1px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
+}
+
+#gridify:target .grid {
+	background-size: 100% 100%;
+	background-position: 0 -1px;
+	background-image: 
+		linear-gradient(to right, 
+			transparent 2.35%,  $color-links 2.4%, transparent 2.45%,
+			transparent 30.85%, $color-links 30.9%, transparent 30.95%,
+			transparent 35.65%, $color-links 35.7%, transparent 35.75%,
+			transparent 64.25%, $color-links 64.3%, transparent 64.35%,
+			transparent 69.05%, $color-links 69.1%, transparent 69.15%,
+			transparent 97.55%, $color-links 97.6%, transparent 97.65%
+		);
+}
+
+#gridify:target {
+	background-size: 1px 16px;
+	background-image:
+		linear-gradient(to top, 
+			rgba($color-links, .1) 6.25%, transparent 6.3%
+		);
+}
+
+@media (max-width: $width-content) {
+
+	#gridify:target .grid {
+		background-image: none;
+	}
+
+}
