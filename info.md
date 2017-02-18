@@ -6,30 +6,28 @@ layout: page
 permalink: /info/
 ---
 
-I'm a [designer](/work) who makes icons, interfaces and websites. I also produce videos for startups, help people build businesses and— sometimes— I teach kids how to code. Mostly however, I work as a freelance tech consultant and digital all-rounder.
+I'm a [designer](/work) who makes icons, interfaces and websites. I also produce videos and work as a tech consultant for companies. In my spare time, I teach people how to design and code.
 
-While I'm not working, I study computer science and maths. I'm also taking an exclusive entrepreneurial degree at [Monash University](https://www.monash.edu/global-challenges). In other words, I'm one of the few students chosen to learn leadership and business skills on top of a traditional science course.
+While I’m not working, I study computer science and maths. I’m also taking an exclusive entrepreneurial degree at [Monash University](http://haveyougottheedge.com). In other words, I’m one of the few students chosen to learn leadership and business skills on top of a traditional science course.
 
-I also co-founded [a startup](http://initiator.fund) that aims to help scientists better communicate their work. It's hush-hush for now, but all I can say is that I've taken on the role of technical director.
-
-I believe that science and design are one and the same: equal parts experimentation, problem-solving and excitement.
+I also co-founded [Initiator](http://initiator.fund)) — a startup that aims to help research scientists better communicate their work.
 
 ## Companies I've worked with
 
-[Envato](http://envato.com), [Bohemian Coding](http://sketchapp.com), [Itty Bitty Apps](http://revealapp.com), [River SRL](http://sparkle.cx), [Art Processors](http://artprocessors.net), [8Fit](http://8fit.com), [Collective Campus](http://collectivecamp.us), [Calibre](http://calibreapp.com) and much more...
+[Envato](http://envato.com), [Bohemian Coding](http://sketchapp.com), [Itty Bitty Apps](http://revealapp.com), [River SRL](http://sparkle.cx), [Art Processors](http://artprocessors.net), [8Fit](http://8fit.com), [Collective Campus](http://collectivecamp.us), [Calibre](http://calibreapp.com) and many more...
 
 ## Work availability
 
-February's all booked— but I'm available for work this March 2017. Feel free to [send me an email](mailto:{{ site.contact }}).
+February's all booked— but I'm available for work starting March 2017. Feel free to [send me an email](mailto:{{ site.contact }}).
 
 ## Elsewhere on the web
 
-My username is usually [@cjmlgrto](https://twitter.com/cjmlgrto). Find me sharing bits of my design process through [Twitter](https://twitter.com/cjmlgrto) and [Dribbble](https://dribbble.com/cjmlgrto), writing code on [GitHub](https://github.com/cjmlgrto/mlgrto.com) and taking photos of neat stuff on [Instagram](https://instagram.com/cjmlgrto). If you're feeling extra corporate today, you can also view my resumé on [LinkedIn](http://linkedin.com/in/cjmlgrto).
+Find me sharing bits of my design process on [Twitter](https://twitter.com/cjmlgrto) and [Dribbble](https://dribbble.com/cjmlgrto), writing code on [GitHub](https://github.com/cjmlgrto/mlgrto.com) and taking photos of neat stuff on [Instagram](https://instagram.com/cjmlgrto). You can also view my resumé on [LinkedIn](http://linkedin.com/in/cjmlgrto).
 
 ## About the site
 
-When I just started high school, I learned to code because I wanted to build myself a website. 8 years later, it's still here— and I'm still [blogging](/) about films, science, tech and design (literally anything I can geek out on).
+This site's my humble little abode on the information superhighway — thanks for stopping by!
 
-I [recently redesigned](/) this website. This tenth major version is built on top of [Jekyll](http://jekyllrb.com) and set in a typeface called [Mallory](https://frerejones.com/families/mallory). You can view the source code for it on [GitHub](https://github.com/cjmlgrto/mlgrto.com).
+This tenth major version is built on top of [Jekyll](http://jekyllrb.com) and set in a typeface called [Mallory](https://frerejones.com/families/mallory). You can view the source code for it on [GitHub](https://github.com/cjmlgrto/mlgrto.com).
 
-This site's my humble little abode on the information superhighway— thanks for stopping by!
+This site started about the same time I started high school. I learned to code because I've always wanted to build myself a website. 8 years later, it's still here — and I'm still [blogging](/) about films, science, tech and design (literally anything I can geek out on).
