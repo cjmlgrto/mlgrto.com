@@ -1,10 +1,10 @@
 # mlgrto.com
 
-Ola, amigo! This is the source code for my home on the information superhighway. Feel free to wander about, or visit the [full website](http://mlgrto.com/) in all its glory. Also, I recently redesigned this site— you can [read more about it here](http://mlgrto.com/blog/2017/ten/).
+Ola, amigo! This is the source code for my home on the information superhighway. Feel free to wander about, or visit the [full website](http://mlgrto.com/) in all its glory. Also, I recently redesigned this site — you can [read more about it here](http://mlgrto.com/blog/2017/ten/).
 
 ## Setup
 
-CJ, if you're reading this— then congratulations for getting a new computer. Or, for doing a clean install of the operating system. If you're not CJ, then you're kinda awesome for checking out my site. Anyway, read on:
+CJ, if you're reading this — then congratulations for getting a new computer. Or, for doing a clean install of the operating system. If you're not CJ, then you're kinda awesome for checking out my site. Anyway, read on:
 
 1. Clone this repo
 2. Run `make install` to install the required dependencies.

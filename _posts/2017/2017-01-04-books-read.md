@@ -4,9 +4,9 @@ image: /uploads/blog/2017/2017-01-04-books-read/image.jpg
 preview: /uploads/blog/2017/2017-01-04-books-read/preview.jpg
 ---
 
-There used to be a website called [Readmill](http://readmill.com) where I could post reviews of books that I've read. It was fairly popular in its hayday and some likened it to be the *Yelp* of books. But it shut down not too long ago and—  coupled with my [hectic transition into Uni](http://log.mlgrto.com/post/122224865875/semester-one)— I've slowly lost interest in reading.
+There used to be a website called [Readmill](http://readmill.com) where I could post reviews of books that I've read. It was fairly popular in its hayday and some likened it to be the *Yelp* of books. But it shut down not too long ago and —  coupled with my [hectic transition into Uni](http://log.mlgrto.com/post/122224865875/semester-one) — I've slowly lost interest in reading.
 
-But early last year, I decided I would go back into it. I think it's because I've gotten sick of the web's consistently poor (due to the nature of its hurriedly-written) writing quality. Anyhow, here are the books I've read— my thoughts included— during the year that was 2016.
+But early last year, I decided I would go back into it. I think it's because I've gotten sick of the web's consistently poor (due to the nature of its hurriedly-written) writing quality. Anyhow, here are the books I've read — my thoughts included — during the year that was 2016.
 
 ## Surely You Must Be Joking Mr. Feynman!
 
@@ -20,9 +20,9 @@ I enjoyed the fact that it's just a collection of stories that I could read at m
 
 ### [by Matt Parker](http://makeanddo4d.com) 
 
-I got this book in the spur of the moment while out on vacation somewhere between Melbourne and Adelaide. I've had my eyes on this book for a while— the author's a prominent *stand-up mathematician* (he's been a recurring guest on [Numberphile](https://www.youtube.com/watch?v=_s5RFgd59ao)) and I've been subscribed to his fairly [new YouTube channel](https://www.youtube.com/channel/UCSju5G2aFaWMqn-_0YBtq5A) from day one.
+I got this book in the spur of the moment while out on vacation somewhere between Melbourne and Adelaide. I've had my eyes on this book for a while — the author's a prominent *stand-up mathematician* (he's been a recurring guest on [Numberphile](https://www.youtube.com/watch?v=_s5RFgd59ao)) and I've been subscribed to his fairly [new YouTube channel](https://www.youtube.com/channel/UCSju5G2aFaWMqn-_0YBtq5A) from day one.
 
-Parker's book is exactly as it sounds: all the best bits of Numberphile jam-packed into an (incredibly) easy-to-read text. The comedy does get a little dry sometimes— but that's okay, because the math inside is very, very amusing. 
+Parker's book is exactly as it sounds: all the best bits of Numberphile jam-packed into an (incredibly) easy-to-read text. The comedy does get a little dry sometimes — but that's okay, because the math inside is very, very amusing. 
 
 ## White Tiger
 
@@ -36,9 +36,9 @@ What I loved about this book was that it begins where it ends, and each moment i
 
 ### [by Yuval Harari](http://www.ynharari.com/sapiens/short-overview/) 
 
-If I could track the kind of things I browse on the internet, I'd wager that world history would come up right on top if not right after computer science and design. I'm a sucker for history— I'd spend an afternoon down a Wikipedia *rabbit hole* full of articles about the [Indus Valley Civilisation](https://en.wikipedia.org/wiki/Indus_Valley_Civilisation) or the [origin of the English language](https://www.youtube.com/user/Xidnaf/videos).
+If I could track the kind of things I browse on the internet, I'd wager that world history would come up right on top if not right after computer science and design. I'm a sucker for history — I'd spend an afternoon down a Wikipedia *rabbit hole* full of articles about the [Indus Valley Civilisation](https://en.wikipedia.org/wiki/Indus_Valley_Civilisation) or the [origin of the English language](https://www.youtube.com/user/Xidnaf/videos).
 
-That said, I was spoiled by the amount of information this book gave me. Harari's novelisation of human history (from the first human, the spread of religion— all the way up to bionic eyes) is a fantastic insight into the psychology of our behaviour. Ten out of ten, would read this again.
+That said, I was spoiled by the amount of information this book gave me. Harari's novelisation of human history (from the first human, the spread of religion — all the way up to bionic eyes) is a fantastic insight into the psychology of our behaviour. Ten out of ten, would read this again.
 
 ## On Web Typography
 

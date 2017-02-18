@@ -1,13 +1,13 @@
 ---
 title: Miyazaki Madness
-subtitle: "To be honest, I never liked _anime_— Until I was introduced to Hayao Miyazaki."
+subtitle: "To be honest, I never liked _anime_ — Until I was introduced to Hayao Miyazaki."
 ---
 
-To be honest, I never liked _anime_. I always thought the pseudo-realistic styles and almost cheesy storylines were of rushed ideas by small, cheap set-up studios, mass-producing movies like they’re selling half-filled wasabi peas jars— _tangy_, but nonetheless unsatisfying. I took care to avoid myself from creating an interest in such cinematography.
+To be honest, I never liked _anime_. I always thought the pseudo-realistic styles and almost cheesy storylines were of rushed ideas by small, cheap set-up studios, mass-producing movies like they’re selling half-filled wasabi peas jars — _tangy_, but nonetheless unsatisfying. I took care to avoid myself from creating an interest in such cinematography.
 
 Until I was introduced to Hayao Miyazaki. Not in person, of course; I’m not the kind of person to have the famous persuade me into buying things (unless it’s Steve Jobs). But I was introduced to him, through his anime films.
 
-I don’t know whether it was an interview I watched about Pixar’s John Lasseter, when he mentioned Miyazaki’s films as one of the greatest films he’s ever watched, or whether it was the craze, present amongst my friends and colleagues, and their almost useless urges to make me watch Miyazaki’s films— but whether it was that or not, it _worked_.
+I don’t know whether it was an interview I watched about Pixar’s John Lasseter, when he mentioned Miyazaki’s films as one of the greatest films he’s ever watched, or whether it was the craze, present amongst my friends and colleagues, and their almost useless urges to make me watch Miyazaki’s films — but whether it was that or not, it _worked_.
 
 I began with _My Neighbor Totoro_. And then right after that, _Ponyo_. It wasn’t until I’ve finished watching _The Secret World of Arrietty_, _Kiki’s Delivery Service_ and _Howl’s Moving Castle_ that I realised I’ve fallen in love with his films. Never in any other movies like Pixar’s have I ever empathised so much with the characters in each film. Miyazaki’s movies have pseudo-realistic characters with heart. Storylines made of [moose milk cheese](http://blogcritics.org/the-worlds-most-expensive-cheese-500lb).
 

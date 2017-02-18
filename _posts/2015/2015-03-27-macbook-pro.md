@@ -4,7 +4,7 @@ image: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8694.jpg
 preview: /uploads/blog/2015/2015-03-27-macbook-pro/IMG_8695.jpg
 ---
 
-Early last week, amidst Apple’s recent reveal-slash-revival of the original MacBook lineup, I bought myself a MacBook Pro— and goodness, this thing is _beautiful_.
+Early last week, amidst Apple’s recent reveal-slash-revival of the original MacBook lineup, I bought myself a MacBook Pro — and goodness, this thing is _beautiful_.
 
 Actually, I’ve been meaning to buy myself a laptop ever since I started Uni (yes, it’s my first year, but more on that in another blog post sometime later). I needed a _portable powerhouse_ to work on while out and about, so I wouldn’t have to rush home and rely on my iMac had my laptop been a low-end model. And since I’m now studying Computer Science, it’s important that a lot of my work has to be with me all the time.
 
@@ -22,7 +22,7 @@ And so, I got the high-end 15” MacBook Pro. Here are its specifications:
 
 ![MacBook Top-Left Display Corner](/uploads/blog/2015/2015-03-27-macbook-pro/IMG_8694.jpg)
 
-Besides the technology inside, what really sold the Pro to me was its gorgeous new Retina Display. At twice the pixels on screen, _everything_ looks so beautiful— especially OS X Yosemite. I’m yet to do any proper design work on this screen, although I have tested and tried it out: switching from working on a non-Retina display, it’s much harder to see improperly aligned-pixels and so pixel-hinting on this can be troublesome. (Perhaps there are other methods out there I’m yet to discover.)
+Besides the technology inside, what really sold the Pro to me was its gorgeous new Retina Display. At twice the pixels on screen, _everything_ looks so beautiful — especially OS X Yosemite. I’m yet to do any proper design work on this screen, although I have tested and tried it out: switching from working on a non-Retina display, it’s much harder to see improperly aligned-pixels and so pixel-hinting on this can be troublesome. (Perhaps there are other methods out there I’m yet to discover.)
 
 ![The MacBook’s Hinge Tab](/uploads/blog/2015/2015-03-27-macbook-pro/IMG_8697.jpg)
 
@@ -40,4 +40,4 @@ A note on performance: the powerful NVIDIA graphics card, Core i7 processor and 
 
 ![MacBook Pro front view](/uploads/blog/2015/2015-03-27-macbook-pro/IMG_8696.jpg)
 
-The MacBook Pro has become the archetypal laptop that many PC manufacturers strive to create. It’s an incredibly versatile powerhouse within a sleek, modern and minimal refinement of the classic unibody aluminium design. It’s a distillation of what Apple stands for— and it is _the_ laptop I’d use for years to come.
+The MacBook Pro has become the archetypal laptop that many PC manufacturers strive to create. It’s an incredibly versatile powerhouse within a sleek, modern and minimal refinement of the classic unibody aluminium design. It’s a distillation of what Apple stands for — and it is _the_ laptop I’d use for years to come.
