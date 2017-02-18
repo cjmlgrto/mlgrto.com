@@ -10,7 +10,7 @@ I'm a [designer](/work) who makes icons, interfaces and websites. I also produce
 
 While I’m not working, I study computer science and maths. I’m also taking an exclusive entrepreneurial degree at [Monash University](http://haveyougottheedge.com). In other words, I’m one of the few students chosen to learn leadership and business skills on top of a traditional science course.
 
-I also co-founded [Initiator](http://initiator.fund)) — a startup that aims to help research scientists better communicate their work.
+I also co-founded [Initiator](http://initiator.fund) — a startup that aims to help research scientists better communicate their work.
 
 ## Companies I've worked with
 
