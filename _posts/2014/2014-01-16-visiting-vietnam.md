@@ -20,7 +20,7 @@ Late afternoon, Hanoi: smog filled the streets, motorcycles filled the streets, 
 
 ![](/uploads/blog/2014/2014-01-16-visiting-vietnam/hanoi.jpg)
 
-On the third day, departing Hanoi was one of the first of our woes, until we flew again. Unlike the domesticated, well-kept carriages we were so used to traverse with, our humble little plane was indeed, a humble, little plane. Take-off was a rickety stage show of shaking chairs, and rattling glass windows, and our landing was an encore plus a few ballet-dancing luggages. The flight however, was rather blissful — being not so high up over the clouds, merely soaring over the deep green fields of Vietnam, it truly was _flying_.
+On the third day, departing Hanoi was one of the first of our woes, until we flew again. Unlike the domesticated, well-kept carriages we were so used to traversing with, our humble little plane was indeed, a humble, little plane. Take-off was a rickety stage show of shaking chairs, and rattling glass windows, and our landing was an encore plus a few ballet-dancing luggages. The flight however, was rather blissful — being not so high up over the clouds, merely soaring over the deep green fields of Vietnam, it truly was _flying_.
 
 Our destination was a little province just shy of the border between northern Vietnam and Cambodia. Dien Bien Phu — apparently the last battleground between the French and the country’s ethnics, of which its isolated, little museum featured a bomb crater the size of the plane we just flew in. But that’s not what we were there for, in the week that will come — something far more, with that of a much greater impact.
 
