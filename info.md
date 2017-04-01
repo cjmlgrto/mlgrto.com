@@ -18,7 +18,7 @@ I also co-founded [Initiator](http://initiator.fund) — a startup that aims to
 
 ## Work availability
 
-February's all booked — but I'm available for work starting March 2017. Feel free to [send me an email](mailto:{{ site.contact }}).
+April's all booked — but I'm available for work starting May 2017. Feel free to [send me an email](mailto:{{ site.contact }}).
 
 ## Elsewhere on the web
 
