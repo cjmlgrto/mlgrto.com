@@ -34,6 +34,9 @@ collections:
   posts:
     title: Posts
     output: true
+  drafts:
+    title: Drafts
+    output: true
   projects:
     title: Projects
     output: true
@@ -50,6 +53,18 @@ defaults:
     preview: null
     style: null
     link: null
+- scope:
+    path: ""
+    type: drafts
+  values:
+    layout: page
+    type: blog
+    title: null
+    image: null
+    preview: null
+    style: null
+    link: null
+    permalink: /draft/:year/:title/
 - scope:
     path: ""
     type: projects
