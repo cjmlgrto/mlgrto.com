@@ -8,3 +8,7 @@ cloudfront_wildcard_invalidation: true
 cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DIST_ID'] %>
 
 gzip: true
+
+redirects:
+  blog: /
+  draft: /
