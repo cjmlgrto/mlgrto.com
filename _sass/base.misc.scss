@@ -2,7 +2,7 @@
 // Utilities
 // ------------------------------------------
 
-.link-icon {
+.link-icon, .chevron {
 	margin-left: .5rem;
 	margin-bottom: -1px;
 	display: inline-block;
@@ -11,12 +11,12 @@
 	-webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,.25));
 }
 
-.link-icon path {
+.link-icon path, .chevron path {
 	fill: currentColor;
 	transition: fill .25s $transition;
 }
 
-a:hover .link-icon path {
+a:hover .link-icon path, a:hover .chevron path {
 	fill: currentColor;
 	transition: fill 0s linear;
 }
