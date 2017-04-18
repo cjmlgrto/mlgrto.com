@@ -11,7 +11,7 @@ permalink: /
 				<h1>{{ post.title }}</h1>
 				<div class="featured--meta">
 					<time class="featured--meta--date">{{ post.date | date: "%B %-d %Y" }}</time>
-					<span class="featured--meta--prompt caps">Read Article {% include link-icon.svg %}</span>
+					<span class="featured--meta--prompt caps">Read Article {% include chevron.svg %}</span>
 				</div>
 				{% if post.preview == null %}
 					{% if post.subtitle %}

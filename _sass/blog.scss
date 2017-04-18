@@ -38,8 +38,12 @@
 		margin-bottom: 0;
 	}
 
-	.link-icon {
+	.link-icon, .chevron {
 		transform: translateY(-1px);
+	}
+
+	.chevron {
+		transform: translateX(-4px);
 	}
 }
 
