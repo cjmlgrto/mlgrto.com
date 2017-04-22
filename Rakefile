@@ -17,11 +17,13 @@ task :deploy do
 end
 
 task :setup do
+	system "gem install jekyll"
+	system "gem install s3_website"
 	system "touch .env"
 	system "echo 'S3_ID=' >> .env"
-	system "'echo S3_SECRET=' >> .env"
-	system "'echo S3_BUCKET=' >> .env"
-	system "'echo S3_ENDPOINT=' >> .env"
-	system "'echo CLOUDFRONT_DIST_ID=' >> .env"
+	system "echo 'S3_SECRET=' >> .env"
+	system "echo 'S3_BUCKET=' >> .env"
+	system "echo 'S3_ENDPOINT=' >> .env"
+	system "echo 'CLOUDFRONT_DIST_ID=' >> .env"
 	puts "All setup now! Run `rake serve` to preview the site"
 end
