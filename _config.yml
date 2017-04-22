@@ -26,7 +26,9 @@ sass:
 exclude:
 - .env
 - .gitignore
-- Makefile
+- Rakefile
+- Gemfile
+- Gemfile.lock
 - README.md
 - s3_website.yml
 
