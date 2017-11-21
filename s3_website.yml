@@ -12,3 +12,4 @@ gzip: true
 redirects:
   blog: /
   draft: /
+  rowan-why-even: /
