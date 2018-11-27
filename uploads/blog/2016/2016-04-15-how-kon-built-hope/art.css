@@ -1,0 +1,202 @@
+.post-only {
+	display: block;
+}
+
+html {
+	color: #333;
+	background-color: #FFF;
+}
+
+a:hover, a:focus {
+	color: #000;
+}
+
+.brand {
+	color: #333;
+}
+
+.brand a {
+	color: #000;
+}
+
+.brand a:hover {
+	color: #999;
+}
+
+.brand a:after {
+	color: #999;
+}
+
+.main a {
+	color: #7B72E9;
+	border-bottom: .1rem solid #7B72E9;
+}
+
+.main a:hover {
+	color: #000;
+	border-bottom-color: #999;
+}
+
+.post-title a {
+	color: #000;
+	border: none;
+}
+
+.button a, 
+.read_more {
+	color: #333 !important;
+	background-color: #ccc;
+}
+
+.button a:hover {
+	color: #000 !important;
+}
+
+.sitemap a {
+	color: #999;
+}
+
+.sitemap a:hover {
+	color: #000;
+}
+
+.copyright a {
+	color: #000;
+}
+
+.sidebar {
+	display: none;
+}
+
+.permalink {
+	display: none;
+}
+
+.content {
+	display: block;
+	margin: -3rem auto 0;
+}
+
+.post-title {
+	width: 200%;
+	margin-left: -50%;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	padding: 5rem;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	background-image: url(imgs/header.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.post-title a {
+	color: #555;
+}
+
+.post-title:after {
+	content: 'The Story Behind The Asylum Seeker Resource Centre';
+	display: inline-block;
+	font-size: 4.1em;
+	margin-top: 1rem;
+	letter-spacing: 0;
+	color: #000;
+	font-weight: bold;
+	text-transform: none;
+}
+
+figure img {
+	margin-bottom: .5rem;
+}
+
+figcaption {
+	font-size: 0.65em;
+}
+
+.slightly-large {
+	width: 130%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: -15%;
+}
+
+.slightly-large figcaption, .more-large figcaption {
+	text-align: center;
+}
+
+.footnotes {
+	font-size: 0.65em;
+	margin-top: 4rem;
+}
+
+hr {
+	background-color: #ddd;
+}
+
+
+@media (max-width: 1130px) {
+
+	.post-title {
+		width: 180%;
+		margin-left: -40%;
+		font-size: 1.1em;
+	}
+
+}
+
+@media (max-width: 1020px) {
+
+	.post-title {
+		width: 150%;
+		margin-left: -25%;
+		font-size: 0.9em;
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	.slightly-large, .more-large {
+		width: auto;
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 860px) {
+
+	.post-title {
+		width: 130%;
+		margin-left: -15%;
+		font-size: 0.75em;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+	.post-title {
+		font-size: 0.68em;
+		width: 120%;
+		margin-left: -10%;
+	}
+
+}
+
+@media (max-width: 690px) {
+
+	.post-title {
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
+
+}
