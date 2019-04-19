@@ -13,9 +13,8 @@
 	{{ end }}
 </section>
 <section class="blog grid">
-	{{ range (after 6 (.Pages.ByDate.Reverse.GroupByDate "2006")) }}
-		{{ .Scratch.Set "year" (.Date.Format "2006") }}
-		<span class="blog--year grid--col--mini caps"><time>{{ .Scratch.Get "year" }}</time> Articles</span>
+	{{ range (after 6 (where .Pages.ByDate.Reverse ".Type" "posts")).GroupByDate "2006" }}
+		<span class="blog--year grid--col--mini caps"><time>{{ .Key }}</time> Articles</span>
 		<div class="blog--items grid--col--maxi">
 			{{ range .Pages }}
 				<a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" class="blog--item">
