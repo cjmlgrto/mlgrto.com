@@ -1,3 +1,6 @@
 [build]
-	command = "hugo -v -s source/ -d ../dist"
 	publish = "dist/"
+	command = "hugo -v -s source/ -d ../dist --baseURL $DEPLOY_PRIME_URL"
+
+[build.environment]
+	HUGO_VERSION = "0.46"
