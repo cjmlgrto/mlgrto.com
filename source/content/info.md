@@ -1,7 +1,7 @@
 ---
 title: Hello, I’m Carlos!
 subtitle: About Me
-image: /static/images/workshop.jpg
+image: /images/workshop.jpg
 ---
 
 I'm a [designer](/work) who makes icons, interfaces and websites. I also produce videos and work as a tech consultant for companies. In my spare time, I teach people how to design and code.
