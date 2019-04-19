@@ -3,7 +3,7 @@
 # ------------------------------------------------------------
 
 title: mlgrto.com
-baseUrl: https://mlgrto.com
+baseUrl: https://mlgrto.netlify.com
 
 permalinks:
   posts: "/blog/:year/:title"
