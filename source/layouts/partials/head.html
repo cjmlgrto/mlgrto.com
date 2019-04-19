@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<title>{{ .Title }} &#8211; {{ .Site.Title }}</title>
+
+{{ $summary := trim (plainify (htmlUnescape .Page.Summary)) " \t\n" }}
+{{ $description := cond (ne (len $summary) 0) $summary .Site.Params.Description }}
+
+<meta name="robots" content="all">
+<meta name="author" content="{{ .Site.Params.Author }}">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="{{ .Site.Params.Color }}">
+<meta name="description" content="{{ $description }}">
+
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if eq .IsHome false }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}">
+<meta property="og:image" content="{{ if eq .IsHome false }}{{ if .Params.Image }}{{ .Permalink }}{{ .Params.Image }}{{ else }}{{ .Site.BaseURL }}/images/preview.png{{ end }}{{ else }}{{ .Site.BaseURL }}/images/preview.png{{ end }}"/>
+<meta property="og:locale" content="en_AU">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:description" content="{{ $description }}">
+
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:site" content="@{{ .Site.Params.Social.Twitter }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}">
+<meta name="twitter:image" content="{{ if eq .IsHome false }}{{ if .Params.Image }}{{ .Permalink }}{{ .Params.Image }}{{ else }}{{ .Site.BaseURL }}/images/preview.png{{ end }}{{ else }}{{ .Site.BaseURL }}/images/preview.png{{ end }}"/>
+<meta name="twitter:description" content="{{ $description }}">
+
+<link rel="mask-icon" href="{{ .Site.BaseURL }}/images/mask.svg" color="{{ .Site.Params.Color }}">
+<link rel="shortcut icon" href="{{ .Site.BaseURL }}/images/favicon.ico">
+<link rel="apple-touch-icon" href="{{ .Site.BaseURL }}/images/icon.png">
+
+<link rel="canonical" href="{{ .Permalink }}">
+{{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
+
+<!-- VIEW THE SOURCE CODE HERE: https://github.com/cjmlgrto/mlgrto.com -->

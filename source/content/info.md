@@ -1,4 +1,3 @@
 ---
 title: Info
-layout: "info"
 ---

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="featured grid">
+	{{ range (first 6 .Pages.ByDate.Reverse) }}
+		<a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" class="featured--tile"{{ if .Params.Preview }} style="background-image:url({{ .Params.Preview }});"{{ end }}>
+			<article class="featured--content">
+				<h1>{{ .Title }}</h1>
+				<div class="featured--meta">
+					<time class="featured--meta--date" datetime='{{ .Date.Format "2006-01-02T15:04:05-0700" }}"'>{{ .Date.Format "January 2 2006" }}</time>
+					<span class="featured--meta--prompt caps">Read Article {{ partial "chevron" . }}</span>
+				</div>
+			</article>
+		</a>
+	{{ end }}
+</section>
+<section class="blog grid">
+	{{ range (after 6 (.Pages.ByDate.Reverse.GroupByDate "2006")) }}
+		{{ .Scratch.Set "year" (.Date.Format "2006") }}
+		<span class="blog--year grid--col--mini caps"><time>{{ .Scratch.Get "year" }}</time> Articles</span>
+		<div class="blog--items grid--col--maxi">
+			{{ range .Pages }}
+				<a href="{{ if .Params.Link }}{{ .Params.Link }}{{ else }}{{ .Permalink }}{{ end }}" class="blog--item">
+					<article>
+						<h1>{{ .Title }}</h1>
+						<time class="blog--date" datetime='{{ .Date.Format "2006-01-02T15:04:05-0700" }}"'>{{ .Date.Format "January 2 2006" }}</time>
+					</article>
+				</a>
+			{{ end }}
+		</div>
+	{{ end }}
+</section>
+{{ end }}

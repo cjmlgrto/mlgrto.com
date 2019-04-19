@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		{{ partial "head" . }}
+	</head>
+	<body id="gridify">
+		{{ partial "header" . }}
+		<main>
+			{{ block "main" . }}
+				{{ .Content }}
+			{{ end }}
+		</main>
+		{{ partial "footer" . }}
+	</body>
+	{{ partial "foot" . }}
+</html>

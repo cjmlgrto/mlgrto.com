@@ -6,9 +6,10 @@ title: mlgrto.com
 baseUrl: https://mlgrto.com
 
 permalinks:
-  news: "/blog/:year/:title"
+  posts: "/blog/:year/:title"
 
 params:
   color: FF4350
   author: Carlos Melegrito
   description: Carlos Melegrito is a designer and Computer Science graduate
+  contact: cj@mlgrto.com
