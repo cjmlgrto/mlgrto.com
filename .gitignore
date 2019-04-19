@@ -4,3 +4,5 @@ source/resources/_gen/*
 
 dist/
 dist.zip
+
+.env
