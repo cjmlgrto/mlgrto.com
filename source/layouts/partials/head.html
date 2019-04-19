@@ -33,4 +33,12 @@
 <link rel="canonical" href="{{ .Permalink }}">
 {{ if .RSSLink }}<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
 
+{{ $sass := resources.Get "scss/style.scss" }}
+{{ $style := $sass | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+{{ if .Params.Style }}
+<link rel="stylesheet" href="{{ .Params.Style }}">
+{{ end }}
+
 <!-- VIEW THE SOURCE CODE HERE: https://github.com/cjmlgrto/mlgrto.com -->

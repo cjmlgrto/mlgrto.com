@@ -2,7 +2,7 @@
 <article class="page grid">
 	{{ if .Params.Image }}
 		<figure class="page--image grid--col--full">
-			<img src="{{ .Permalink }}{{ .Params.Image }}"/>
+			<img src="{{ .Params.Image }}"/>
 		</figure>
 	{{ end }}
 	<h1 class="page--title grid--col--wide"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>

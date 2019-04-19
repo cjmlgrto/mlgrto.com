@@ -9,7 +9,7 @@ permalinks:
   posts: "/blog/:year/:title"
 
 params:
-  color: FF4350
+  color: CFA352
   author: Carlos Melegrito
   description: Carlos Melegrito is a designer and Computer Science graduate
   contact: cj@mlgrto.com
