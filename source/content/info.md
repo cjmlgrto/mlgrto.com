@@ -1,0 +1,4 @@
+---
+title: Info
+layout: "info"
+---
