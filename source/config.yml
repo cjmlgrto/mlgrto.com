@@ -1,0 +1,15 @@
+# ------------------------------------------------------------
+# Site Configuration
+# ------------------------------------------------------------
+
+title: mlgrto.com
+baseUrl: https://mlgrto.com
+
+permalinks:
+  posts: "/blog/:year/:title"
+
+params:
+  color: CFA352
+  author: Carlos Melegrito
+  description: Carlos Melegrito is a designer and Computer Science graduate
+  contact: cj@mlgrto.com

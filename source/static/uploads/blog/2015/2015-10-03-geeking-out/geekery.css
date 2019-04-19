@@ -1,0 +1,65 @@
+@import url(franklin.css);
+
+html, :root {
+	background-color: #000;
+	background-image: url(Stars.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+body {
+	font-family: "Franklin Gothic FS", "FranklinGothic-Web" "Franklin Gothic", sans-serif;
+	color: #E5B13A;
+}
+
+h1 a, h1 a:visited, .lead {
+	color: #FFD87E;
+}
+
+article h1 {
+	font-family: "Franklin Gothic Medium Cond", "FranklinGothicCondensed-Web" "Avenir", "avenir-web", sans-serif;
+	text-transform: uppercase;
+	font-size: 2.2em;
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+#name:before {
+	background-image: url(Tie.png);
+}
+
+#name, .active, .active:visited, .self, .self:visited, nav a {
+	color: #1CC4F8 !important;
+}
+
+#name span {
+	background: transparent;
+	background-image: url(DeathStar.jpg);
+	background-size: 100%;
+}
+
+a, a:visited {
+	color: #fff;
+}
+
+.meta {
+	display: none;
+}
+
+.push {
+	margin: 0 auto 3em;
+	max-width: 80%;
+	text-align: justify;
+}
+
+@media screen and (max-width: 450px) {
+	
+	html, :root {
+		background-attachment: scroll;
+	}
+	
+	.push {
+		max-width: 100%;
+	}
+	
+}

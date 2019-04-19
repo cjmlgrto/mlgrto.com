@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="projects grid">
+	{{ range .Site.Data.projects }}
+		<a href="{{ .link }}" target="_blank" class="project">
+			<figure class="project--image grid--col--full">
+				<img src="{{ .Site.BaseURL }}{{ .image }}" srcset='{{ .Site.BaseURL }}{{ replace .image "." "@2x." }} 2x' alt="{{ .title }}" />
+			</figure>
+		</a>
+	{{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,700italic,500italic,400italic);
+
+header, .sidebar, footer {
+	display: none;
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+	color: #B8CBDA;
+	font-family: "Roboto Mono", "Menlo", "Courier", monospace;
+}
+
+.content:before {
+	content: 'function displayPost() { print("';
+	display: block;
+	margin-bottom: 4rem;
+	color: #6B93A2;
+}
+
+.content:after {
+	margin-top: 4rem;
+	content: '"); return LessonsLearned }';
+	display: block;
+	color: #6B93A2;
+}
+
+.content, .permalink a {
+	font-size: 16px;
+}
+
+h2, hr {
+	margin-top: 4rem;
+}
+
+h1:before {
+	content: '# ';
+	display: inline;
+}
+
+h2:before {
+	content: '## ';
+	display: inline;
+}
+
+em {
+	color: #FC920F;
+}
+
+em:before, em:after {
+	content: '_';
+	display: inline;
+}
+
+.pagination .button {
+	margin: 0;
+	display: inline;
+}
+
+.button a {
+	padding: 0 !important;
+	margin: 0 0 1rem;
+	display: block;
+	background: none;
+	text-align: left;
+	font-size: 16px;
+}
+
+.button a:before {
+	content: '> ';
+	display: inline;
+}
+
+.slightly-large {
+	width: 130%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: -15%;
+}
+
+.ending:after {
+	content: '|';
+	display: inline;
+	color: #73D5E9;
+	animation: blink-animation 1s steps(5, start) infinite;
+  	-webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 800px) {
+
+	.slightly-large {
+		width: auto;
+		margin-left: 0;
+	}
+
+}

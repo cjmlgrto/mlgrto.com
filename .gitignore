@@ -1,3 +1,6 @@
-.sass-cache/
-_site/
-.env
+.DS_Store
+
+source/resources/_gen/*
+
+dist/
+dist.zip

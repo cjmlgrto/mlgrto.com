@@ -1,0 +1,11 @@
+<header class="header grid">
+	<a href="{{ .Site.BaseURL }}" class="header--home grid--col--mini">{{ .Site.Title }}</a>
+	<nav class="header--nav grid--col--mini">
+		<ul>
+			<li><a href="/" class='caps{{ if (or (eq .RelPermalink "/") (eq .Type "posts")) }} active{{ end }}'>Blog</a></li>
+			<li><a href="/work" class='caps{{ if eq .RelPermalink "/work/" }} active{{ end }}'>Work</a></li>
+			<li><a href="/info" class='caps{{ if eq .RelPermalink "/info/" }} active{{ end }}'>Info</a></li>
+		</ul>
+	</nav>
+	<a href="mailto:{{ .Site.Params.Contact }}" class="header--prompt grid--col--mini caps">Get in touch {{ partial "link-icon" . }}</a>
+</header>
