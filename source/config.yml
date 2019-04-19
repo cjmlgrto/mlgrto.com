@@ -3,7 +3,7 @@
 # ------------------------------------------------------------
 
 title: mlgrto.com
-baseUrl: https://mlgrto.com
+baseUrl: http://mlgrto.com
 
 permalinks:
   posts: "/blog/:year/:title"
