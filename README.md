@@ -8,8 +8,6 @@ Carlos, if you're reading this — then congratulations for getting a new compu
 
 1. Clone this repo
 2. Run `./scripts/serve.sh` to preview the site locally
-3. Run `./scripts/build.sh` to build the site
-4. To deploy, ensure you have the correct `.env` and run `./scripts/deploy.sh`
-5. That's it!
+3. That's it!
 
 If you spot any issues around the site, sign into your GitHub account and [click here](https://github.com/cjmlgrto/mlgrto.com/issues/new) to report the issue.
