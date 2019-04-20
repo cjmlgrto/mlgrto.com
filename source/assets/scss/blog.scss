@@ -103,6 +103,10 @@
 	margin-bottom: .5rem;
 }
 
+.blog--items:last-child .blog--item:last-child {
+	background-image: none;
+}
+
 .blog--date {
 	display: block;
 	margin-top: -.5rem;

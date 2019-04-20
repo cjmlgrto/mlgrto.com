@@ -6,7 +6,9 @@ image: /images/workshop.jpg
 
 I'm a designer-developer hybrid, making icons, interfaces and websites. Currently, I'm working at [Itty Bitty Apps](https://www.ittybittyapps.com), helping build iOS apps and [Reveal for Mac](https://revealapp.com) — a powerful developer tool for view debugging.
 
-I recently finished my studies at [Monash University](https://www.youtube.com/watch?v=F6HM6D0w2a8&index=2&list=PL43_xv9rfcDRFKjq7_2jq9VUsfxkxVy2D). I was a part of an exclusive degree that taught entrepreneurship on top of a traditional computer science major. During my final year of study, I co-founded [ZooPhotonics](https://zoophotonics.com), a research and development company building AI-powered wildlife monitoring technology. I finished my degree with First-Class Honours.
+I recently finished my studies at [Monash University](https://www.youtube.com/watch?v=F6HM6D0w2a8&index=2&list=PL43_xv9rfcDRFKjq7_2jq9VUsfxkxVy2D). I was a part of an exclusive degree that taught entrepreneurship on top of a traditional computer science major. I finished with First-Class Honours.
+
+During my final year of study, I co-founded [ZooPhotonics](https://zoophotonics.com), a research and development group building AI-powered wildlife monitoring technology.
 
 ## Clients
 
