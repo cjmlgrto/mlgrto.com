@@ -1,6 +1,9 @@
 [build]
 	publish = "dist/"
-	command = "hugo -v -s source/ -d ../dist --baseURL $DEPLOY_PRIME_URL"
+	command = "hugo -v -s source/ -d ../dist --baseURL $URL"
 
 [build.environment]
 	HUGO_VERSION = "0.46"
+
+[context.deploy-preview]
+	command = "hugo -v -s source/ -d ../dist --baseURL $DEPLOY_PRIME_URL"
