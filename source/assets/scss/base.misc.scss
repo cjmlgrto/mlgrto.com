@@ -39,11 +39,6 @@ a:hover .link-icon path, a:hover .chevron path {
 
 .footnotes {
 	margin-top: 3rem;
-	padding-top: 3rem;
-	background-position: top left;
-	background-size: calc(50% + 1.6rem) 1px;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(to right, rgba($color-headings, .25) 0%, rgba($color-headings, .1) 100%);
 }
 
 #gridify:target .grid {
